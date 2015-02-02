@@ -1,0 +1,24 @@
+CODENAME: TPB
+
+Objective:
+File-sharing website that the file management system is based in torrenting.  The reason why we are using torrenting is because we do not have a lot of storage space to store larger files, so we can store smaller files on the server with torrents.
+
+Features:
+	Search functionality
+	Log-in functionality
+	Download/Upload capability
+	Commenting
+	Rating/Review
+	User accounts to identify uploaders
+
+
+Languages Used:
+	HTML/CSS
+		Bootstrap
+	PHP
+	JavaScript
+		Prototype
+		Ajax-util.js
+	SQL
+		MySQL
+		
