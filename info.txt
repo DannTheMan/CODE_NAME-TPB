@@ -21,6 +21,8 @@ Languages Used:
 		Ajax-util.js
 	SQL
 		MySQL
+	Gazelle server
+		LAMP server for torrents/tracking
 
 
 Pages:
