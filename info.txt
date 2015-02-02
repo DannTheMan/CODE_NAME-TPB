@@ -1,7 +1,7 @@
 CODENAME: TPB
 
 Objective:
-File-sharing website that the file management system is based in torrenting.  The reason why we are using torrenting is because we do not have a lot of storage space to store larger files, so we can store smaller files on the server with torrents.
+File-sharing website that the file management system is based in torrenting.  The reason why we are using torrenting is because we do not have a lot of storage space to store larger files, so we can store smaller files on the server with torrents.  We plan on using a Gazelle-based tracker.
 
 Features:
 	Search functionality
@@ -21,4 +21,17 @@ Languages Used:
 		Ajax-util.js
 	SQL
 		MySQL
-		
+
+
+Pages:
+	Home/Landing Page - HTML (PHP later maybe - top 10?)
+		Register
+		Login
+		Search
+		Profile
+	Register - HTML
+	Login - HTML
+	Search - PHP
+		DownloadPage
+	DownloadPage 
+	Profile
