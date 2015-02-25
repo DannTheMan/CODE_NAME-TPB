@@ -29,7 +29,7 @@ function getData(n,myUrl,d,f) {
 	var formData = new FormData($(this)[0]);
 
     $.ajax({
-        url: window.location.pathname,
+        url: myUrl,
         type: 'POST',
         data: formData,
         success : function(data) {
