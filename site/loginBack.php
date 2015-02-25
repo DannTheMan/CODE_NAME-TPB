@@ -7,7 +7,7 @@ $uname = htmlspecialchars($_POST["username"]);
 
 $sql = "SELECT hash, username FROM users WHERE username='$uname'";
 $sid = $pdo->prepare($sql);
-$id->execute();
+$sid->execute();
 $name = "";
 $ans = false;
 if ($sid->rowCount() == 0) {
