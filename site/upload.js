@@ -32,7 +32,6 @@ function getData(n,myUrl,d,f) {
         url: window.location.pathname,
         type: 'POST',
         data: formData,
-        async: false,
         success : function(data) {
 			var d = true;//(data === 'true');
 			console.log(data+"");
