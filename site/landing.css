@@ -93,6 +93,7 @@
 }
 
 #home {
+	display: inline;
 	position: relative;
 	/*float: right;*/
 	top: -40px;
@@ -101,7 +102,7 @@
 }
 
 #logout {
-	color: blue;
+	display: inline color : blue;
 	text-decoration: underline;
 	position: relative;
 	/*float: right;*/
