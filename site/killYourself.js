@@ -5,7 +5,7 @@ window.onload = function() {
 				type : 'POST',
 				success : function(data) {
 					window.location.href = "landing.php";
-					location.reload();
+					//location.reload();
 				},
 				});
 	};
