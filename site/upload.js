@@ -26,16 +26,16 @@ function upload(){
 function getData(n,myUrl,d,f) {
 	var ans = false;
 
-	dataToSend = {
+	var dataToSend = {
 		name:n,
 		desc:d,
 		file:f
 	};
-
+	var jData = JSON.stringify(dataToSend);
 	$.ajax({
 		url : myUrl,
 		type : 'POST',
-		data : dataToSend,
+		data : jData,
 		datatype : 'xml',
 		success : function(data) {
 			var d = true;//(data === 'true');

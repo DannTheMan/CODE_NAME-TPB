@@ -4,7 +4,9 @@
 ?>
 <?php
 
-$data = $_POST["data"];
+$json = $_POST["data"];
+
+$data = json_decode($json, true);
 
 $name = htmlspecialchars($data['name']);
 $desc = htmlspecialchars($data['desc']);
