@@ -1,11 +1,11 @@
 window.onload = function () {
 	document.getElementById("submitComment").onclick = function() {
-		if (document.getElementById("userComment").innerHTML.length > 0) {
+		if (document.getElementById("userComment").value.length > 0) {
 			$.ajax({
 				url : "torrentBack.php",
 				torrent : torrentID,
 				type : 'POST',
-				data : "comment="+document.getElementById("userComment").innerHTML+"",
+				data : "comment="+document.getElementById("userComment").value+"",
 				datatype : 'xml',
 				success : function(data) {
 					var d = (data === 'true');
