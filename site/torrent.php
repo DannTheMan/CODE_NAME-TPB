@@ -96,8 +96,8 @@
 								$uid = $row[0];
 								break;
 							}
-							$pdo->query(\"INSERT INTO comments (\'user_id\', \'torrent_id\', \'comment\')
-								VALUES ($uid, $s, $ucomment));
+							$pdo->query(\"INSERT INTO comments (\'id\', \'user_id\', \'torrent_id\', \'comment\')
+								VALUES (NULL, $uid, $s, $ucomment));
 
 						} else if (!isset($tempCookie)) {
 							?> <script> alert('Error:  Not logged in.');</script><?php
