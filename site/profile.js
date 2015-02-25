@@ -1,10 +1,10 @@
 function modifyProfile() {
-	document.getElementById("nametext").style.visibility = 'visible';
-	document.getElementById("emailtext").style.visibility = 'visible';
-	document.getElementById("agetext").style.visibility = 'visible';
-	document.getElementById("gendertext").style.visibility = 'visible';
-	document.getElementById("sumbit").style.visibility = 'visible';
-	document.getElementById("mod").style.visibility = 'hidden';
+	document.getElementById("nametext").style.display = 'inline-block';
+	document.getElementById("emailtext").style.display = 'inline-block';
+	document.getElementById("agetext").style.display = 'inline-block';
+	document.getElementById("gendertext").style.display = 'inline-block';
+	document.getElementById("sumbit").style.display = 'inline-block';
+	document.getElementById("mod").style.display = 'none';
 }
 
 function submitToDb() {
@@ -25,14 +25,14 @@ function submitToDb() {
 		updateGender(gender);
 	}
 
-	document.getElementById("nametext").style.visibility = 'hidden';
-	document.getElementById("emailtext").style.visibility = 'hidden';
-	document.getElementById("agetext").style.visibility = 'hidden';
-	document.getElementById("gendertext").style.visibility = 'hidden';
-	document.getElementById("sumbit").style.visibility = 'hidden';
-	document.getElementById("mod").style.visibility = 'visible';
+	document.getElementById("nametext").style.display = 'none';
+	document.getElementById("emailtext").style.display = 'none';
+	document.getElementById("agetext").style.display = 'none';
+	document.getElementById("gendertext").style.display = 'none';
+	document.getElementById("sumbit").style.display = 'none';
+	document.getElementById("mod").style.display = 'inline-block';
 
-	document.getElementById("sumbit").style.visibility = "hidden";
+	document.getElementById("sumbit").style.display = 'none';
 }
 
 function updateName(n) {
