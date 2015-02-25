@@ -87,7 +87,11 @@
 				?>
 				<br />
 				<br />
-				<form action="<?php
+				<form action="<?php torrent.php?torrent=$s ?>" method="POST">
+					<?php
+						/*
+						This should be in action, but causes 500 internal server error
+						<?php
 						$ucomment = $_POST['userComment'];
 						$tempCookie = $_COOKIE[crypt('username', 'askdalkweasdaaowej312sa9')];
 						if (strlen($ucomment) > 0 && isset($tempCookie)) {
@@ -104,7 +108,9 @@
 						} else {
 							?> <script> alert('Error:  No comment entered.');</script><?php
 						}
-						?>" method="POST">
+						?>
+						*/
+					?>
 					Comment:<br />
 					<textarea name='userComment' id='userComment'></textarea><br />
 					<input type='submit' value='submit' />
