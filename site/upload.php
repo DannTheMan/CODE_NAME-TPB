@@ -54,7 +54,7 @@
 					<br>
 					Description:
 					<br>
-					<input type="text" name="name" id="textbox" required>
+					<textarea rows="8" cols="100"></textarea>
 					<br>
 					<br>
 					File:
