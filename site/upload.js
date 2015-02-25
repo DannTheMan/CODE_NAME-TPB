@@ -8,7 +8,7 @@ function upload(){
 }
 
 function getData(n,myUrl,d,f) {
-	
+	var ans = false;
 	$.ajax({
 		url : myUrl,
 		type : 'POST',
