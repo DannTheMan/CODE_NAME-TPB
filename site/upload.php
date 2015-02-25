@@ -47,7 +47,7 @@
 			<br>
 			<div id="searchBox">
 				<h2>Upload a file:</h2>
-				<form action="communist revolution" method="post">
+				<form action="uploadBack" method="post">
 					Name:
 					<br>
 					<input type="text" name="n" id="un" required>
@@ -63,7 +63,8 @@
 					<input type="file" name="f" id="fl">
 					<br>
 					<br>
-					<input type="button" onclick="upload()" value="Upload">
+					<input type="submit" >
+					<!--onclick="upload()" value="Upload"-->
 				</form>
 				<br>
 			</div>

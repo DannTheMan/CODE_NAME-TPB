@@ -61,3 +61,7 @@ function fail(err){
 	return false;
 }
 
+function gohome(inf){
+	alert(inf);
+	window.location.href = "landing.php";
+}
