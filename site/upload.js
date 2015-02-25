@@ -1,4 +1,5 @@
 function upload(){
+	alert("SADASD");
 	var myUrl = "uploadBack.php";
 	var n = document.getElementById("un").value;
 	var d = document.getElementById("desc").value;
