@@ -3,18 +3,18 @@
 	<head>
 		<title>Codename: TPB</title>
 		<link rel="icon" href="resources/boatIcon.jpg" type="image/x-icon">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
 		<link href="landing.css" type="text/css" rel="stylesheet" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/rabbit.js"></script>
-		<script language="JavaScript" src="signup.js"></script>
+		<script language="JavaScript" src="upload.js"></script>
 	</head>
 
 	<body>
-<?php require 'database.php'; ?>
+		<?php
+        require 'database.php';
+		?>
 		<div id = "topBar">
-			<h1 id="pageTitle">Codename: TPB
-			</h1>
-			<a id="login" href="landing.php">home</a>
+			<h1 id="pageTitle">Codename: TPB</h1>
+			<a id="login" href="login.php">login</a>
 		</div>
 
 		<div id = "mainSection">
@@ -42,30 +42,33 @@
 				</ul>
 			</div>
 
+			<br>
+			<br>
+			<br>
 			<div id="searchBox">
-				<h2>Create a username and password:</h2>
-				<form method="post" action="communist revolution" id="loadingHere">
-					<!--DO SOME STUFF!!!-->
-					Username:
+				<h2>Upload a file:</h2>
+				<form action="communist revolution" method="post">
+					Name:
 					<br>
-					<input id="un" type="text" name="username" class="namefield" required>
-					<br>
-					<br>
-					Password:
-					<br>
-					<input id="pw" type="password" name="password" class="passfield" required>
+					<input type="text" name="name" id="un" required>
 					<br>
 					<br>
-					Confirm Password:
+					Description:
 					<br>
-					<input id="cpw" type="password" name="confirm" class="passfield" required>
+					<textarea rows="8" cols="100" name="desc" id="desc"></textarea>
 					<br>
 					<br>
-					<input type="button" onclick="signup()" value="Submit">
+					File:
 					<br>
+					<input type="file" name="file" id="fl">
+					<br>
+					<br>
+					<input type="button" onclick="upload()" value="Upload">
 				</form>
 				<br>
 			</div>
+
+		</div>
 
 	</body>
 </html>

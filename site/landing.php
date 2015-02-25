@@ -8,10 +8,12 @@
 	</head>
 
 	<body>
-<?php require 'database.php'; ?>
-<!--?php $sql = "INSERT INTO torrents (name) VALUES ('johnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemi')";
-    $sid = $pdo -> prepare($sql);
-    $sid -> execute(); ?-->
+		<?php
+        require 'database.php';
+		?>
+		<!--?php $sql = "INSERT INTO torrents (name) VALUES ('johnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemi')";
+		$sid = $pdo -> prepare($sql);
+		$sid -> execute(); ?-->
 		<div id = "topBar">
 			<h1 id="pageTitle">Codename: TPB</h1>
 			<a id="login" href="login.php">login</a>
@@ -42,15 +44,21 @@
 				</ul>
 			</div>
 
-			<div id="dlBox">
-                <h2>Share files with your friends:</h2>
-                <form action="upload.php">
-                    <!--DO SOME STUFF!!!-->
-                    <p>Click <a href="upload.php">here</a> to upload a file share wit hyour friends.</p>
-                </form>
-                <br>
-            </div>
-			<br><br><br>
+			<?php
+            //unset($_COOKIE[crypt("username","askdalkweasdaaowej312sa9")]);
+            if (isset($_COOKIE[crypt("username", "askdalkweasdaaowej312sa9")])) {
+                echo("<div id=\"dlBox\">
+<h2>Share files with your friends:</h2>
+<form action=\"upload.php\">
+<p>Click <a href=\"upload.php\">here</a> to upload a file share with your friends.</p>
+</form>
+<br>
+</div>");
+            }
+			?>
+			<br>
+			<br>
+			<br>
 			<div id="searchBox">
 				<h2>Find files from your friends:</h2>
 				<form action="search.php">
@@ -64,11 +72,11 @@
 				<br>
 			</div>
 			<!--div id="resultsBox">
-				<h2>Results:</h2>
-				<br>
-				<p id="resultsMessage">
-					No results found with your current search.
-				</p><ul id="results"></ul>
+			<h2>Results:</h2>
+			<br>
+			<p id="resultsMessage">
+			No results found with your current search.
+			</p><ul id="results"></ul>
 			</div-->
 		</div>
 
