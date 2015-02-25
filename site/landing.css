@@ -157,7 +157,17 @@ width: 75%;
 }
 
 .ressl {
+
 	display: inline-block;
+	margin-top: auto;
+	margin-bottom: auto;
 	width: 25%;
 	float: right;
 }
+
+.resl, .ress, .divider {
+	margin-top: auto;
+	margin-bottom: auto;
+	
+}
+
