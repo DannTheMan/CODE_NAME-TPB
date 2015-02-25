@@ -22,7 +22,7 @@ function getData(n,myUrl,d,f) {
 		complete : function() {
 			if(!ans)return fail("There was a problem uploading the file.");
 			else {
-				succeed();
+				//succeed();
 			}
 		}
 	
