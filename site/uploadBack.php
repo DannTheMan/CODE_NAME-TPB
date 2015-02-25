@@ -47,7 +47,7 @@ $file_string = file_get_contents($file);
 //echo("  K $name K  ");
 //$file_string = file_get_contents($file);
 
-$torrent_data = bdecode($file_string)
+$torrent_data = bdecode($file_string);
 $info_hash = sha1(bencode(bdecode($file_string)['info']));
 
 //variables to get the # of user sharing the torrent
@@ -78,7 +78,7 @@ echo '<h2>Sources</h2>' .
     '<b>Downloads:</b> ' . $downloads . '<br/>';
 
 
-$sql = "INSERT INTO torrents (name, description, file, info_hash) VALUES (:name , :descr , :file , UNHEX( ':info_hash' ))";
+$sql = "INSERT INTO torrents (name, description, file, info_hash) VALUES (:name , :descr , :file , UNHEX( ' :info_hash ' ))";
 //put real SQL stuff here
 $sid = $pdo -> prepare($sql);
 
