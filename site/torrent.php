@@ -104,7 +104,7 @@
 						} else {
 							?> <script> alert('Error:  No comment entered.');</script><?php
 						}
-						?>">
+						?>" method="POST">
 					Comment:<br />
 					<textarea name='userComment' id='userComment'></textarea><br />
 					<input type='submit' value='submit' />
