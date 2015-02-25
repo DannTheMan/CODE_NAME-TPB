@@ -60,6 +60,7 @@
 				?>
 				<h2><?php echo $name ?></h2>
 				<br />
+				<h4>&#09;Seeders: 32 &#09;&#09;Leechers: 1,209&#09;</h4>
 				<p>
 					<?php echo $description ?>
 				</p>
