@@ -12,7 +12,7 @@ $sid -> execute();
 $name = "";
 $ans = false;
 
-if ($sid->rowcount() == 0) {
+if ($sid->rowCount() == 0) {
     $ans = true;
     $sql = "INSERT INTO users (username,hash) VALUES ('$uname','$ss')";
     $sid = $pdo -> prepare($sql);

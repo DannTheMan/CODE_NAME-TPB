@@ -10,7 +10,7 @@ $sid = $pdo->prepare($sql);
 $id->execute();
 $name = "";
 $ans = false;
-if ($sid->rowcount() == 0) {
+if ($sid->rowCount() == 0) {
     echo('false');
 } else {
     while ($found = $sid->fetch()) {
