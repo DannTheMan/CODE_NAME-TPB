@@ -1,3 +1,3 @@
 function todownload(s){
-	alert(s);
+	window.location.href = ("torrent.php?torrent="+s);
 }
