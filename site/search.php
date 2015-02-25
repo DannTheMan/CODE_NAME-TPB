@@ -42,20 +42,7 @@
 					</li>
 				</ul>
 			</div>
-
-			<div id="dlBox">
-				<h2>Share files with your friends:</h2>
-				<form action="action_page.php">
-					<!--DO SOME STUFF!!!-->
-					Search files by name:
-					<br>
-					<input type="text" name="searchtext" id="textfield" required>
-					<br>
-					<br>
-					<input type="submit">
-				</form>
-				<br>
-			</div>
+			
 			<br>
 			<br>
 			<br>
@@ -80,11 +67,12 @@
 				</p-->
 				<ul id="results">
 					<?php
-                    $s = $_POST["searchtext"];
+                    $s = $_GET["searchtext"];
 
                     foreach ($db->query("SELECT * FROM torrents WHERE name LIKE '$s'") as $row) {
-                        echo("<div class=\"result\"><span class=\"resn\">$row[1]</span><span class=\"ress\">17</span><span class=\"resl\">5</span></div>");
+                        echo("<li><div class=\"result\">asdad<span class=\"resn\">$row[1]</span><span class=\"ress\">17</span><span class=\"resl\">5</span></div></li>");
                     }
+                    echo("<br>KKK-end<br>");
 					?>
 				</ul>
 			</div>

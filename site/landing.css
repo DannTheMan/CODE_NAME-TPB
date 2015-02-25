@@ -21,7 +21,7 @@
 	border-radius: 16px;
 	width: 96%;
 	background-color: #9fcfcf;
-	background-image: url("pirateShip.png");
+	background-image: url("*/resources/pirateShip.png");
 	left: 0%;
 	right: 0%;
 }
@@ -76,7 +76,7 @@
 }
 
 #results {
-	display: none;
+	/*display: none;*/
 }
 
 #login {
@@ -108,5 +108,15 @@
 #loading {
 	margin: auto;
 	width: 10%;
-	background:url(loading.gif) no-repeat top left;
+	background:url("*/resources/loading.gif") no-repeat top left;
+}
+
+.result {
+	position: relative;
+	height: 96px;
+	width: 90%;
+	left: 10%;
+	border: 1px solid black;
+	border-radius: 16px;
+	background-color: #9fcfcf;
 }

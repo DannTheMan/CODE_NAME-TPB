@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>tpb</title>
+		<!--link rel="icon" href="shipIcon.jpg" type="image/x-icon"/-->
 		<link href="landing.css" type="text/css" rel="stylesheet" />
 		<script language="JavaScript" src="landing.js"></script>
 	</head>
