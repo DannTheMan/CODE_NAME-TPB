@@ -66,6 +66,7 @@
 				<br />
 				<br />
 				<a href="<?php echo $file ?>" download="<?php echo $name ?>">Click here to download!</a>
+				<br />
 			</div>
 
 		</div>
