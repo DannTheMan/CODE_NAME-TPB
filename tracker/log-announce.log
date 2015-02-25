@@ -1,0 +1,860 @@
+=======  ENTRY BEGIN =======
+
+$_REQUEST DATA:
+
+$_SERVER DATA:
+	'MIBDIRS' = C:/xampp/php/extras/mibs
+	'MYSQL_HOME' = \xampp\mysql\bin
+	'OPENSSL_CONF' = C:/xampp/apache/bin/openssl.cnf
+	'PHP_PEAR_SYSCONF_DIR' = \xampp\php
+	'PHPRC' = \xampp\php
+	'TMP' = \xampp\tmp
+	'HTTP_HOST' = localhost
+	'HTTP_CONNECTION' = keep-alive
+	'HTTP_CACHE_CONTROL' = max-age=0
+	'HTTP_ACCEPT' = text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+	'HTTP_USER_AGENT' = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36
+	'HTTP_ACCEPT_ENCODING' = gzip, deflate, sdch
+	'HTTP_ACCEPT_LANGUAGE' = en-US,en;q=0.8
+	'HTTP_COOKIE' = PHPSESSID=em02pg1cs3f2gpogtsno8fliv7; DriftrAuthentication=B549734FFA624109991B92E5AF27561BF0AC3977E1887EC92083DF21BE36C3E3F11513347D9260135ABC41DCA5BF5FBE6E88F387D31E51933AE9E60247F0BABC115366D35353A84AC75B72F00A167C767D7028001601E8D8C419705E7C932A76223FED66BA00E7FE88059E782010BA9D
+	'PATH' = C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\VanDyke Software\Clients\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\MATLAB\R2013a\runtime\win64;C:\Program Files\MATLAB\R2013a\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files\Lenovo\Bluetooth Software\;C:\Program Files\Lenovo\Bluetooth Software\syswow64;C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin;C:\Dwimperl\perl\bin;C:\Dwimperl\perl\site\bin;C:\Dwimperl\c\bin;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\x64\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;.;;.;;.;
+	'SystemRoot' = C:\windows
+	'COMSPEC' = C:\windows\system32\cmd.exe
+	'PATHEXT' = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+	'WINDIR' = C:\windows
+	'SERVER_SIGNATURE' = <address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+
+	'SERVER_SOFTWARE' = Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3
+	'SERVER_NAME' = localhost
+	'SERVER_ADDR' = 127.0.0.1
+	'SERVER_PORT' = 80
+	'REMOTE_ADDR' = 127.0.0.1
+	'DOCUMENT_ROOT' = C:/xampp/htdocs
+	'REQUEST_SCHEME' = http
+	'CONTEXT_PREFIX' = 
+	'CONTEXT_DOCUMENT_ROOT' = C:/xampp/htdocs
+	'SERVER_ADMIN' = postmaster@localhost
+	'SCRIPT_FILENAME' = C:/xampp/htdocs/CODE_NAME-TPB/tracker/announce.php
+	'REMOTE_PORT' = 51750
+	'GATEWAY_INTERFACE' = CGI/1.1
+	'SERVER_PROTOCOL' = HTTP/1.1
+	'REQUEST_METHOD' = GET
+	'QUERY_STRING' = 
+	'REQUEST_URI' = /CODE_NAME-TPB/tracker/announce.php
+	'SCRIPT_NAME' = /CODE_NAME-TPB/tracker/announce.php
+	'PHP_SELF' = /CODE_NAME-TPB/tracker/announce.php
+	'REQUEST_TIME_FLOAT' = 1424830701.682
+	'REQUEST_TIME' = 1424830701
+
+=======  ENTRY END =======
+
+
+=======  ENTRY BEGIN =======
+
+$_REQUEST DATA:
+	'info_hash' = šãò@““ù>GTJºÞ€9qÕl
+	'peer_id' = -UT3420-f—o.Àô±RÚ‰
+	'port' = 25032
+	'uploaded' = 0
+	'downloaded' = 0
+	'left' = 0
+	'corrupt' = 0
+	'key' = FA1394E4
+	'event' = started
+	'numwant' = 200
+	'compact' = 1
+	'no_peer_id' = 1
+
+$_SERVER DATA:
+	'MIBDIRS' = C:/xampp/php/extras/mibs
+	'MYSQL_HOME' = \xampp\mysql\bin
+	'OPENSSL_CONF' = C:/xampp/apache/bin/openssl.cnf
+	'PHP_PEAR_SYSCONF_DIR' = \xampp\php
+	'PHPRC' = \xampp\php
+	'TMP' = \xampp\tmp
+	'HTTP_HOST' = localhost
+	'HTTP_USER_AGENT' = uTorrent/342(109418342)(38758)
+	'HTTP_ACCEPT_ENCODING' = gzip
+	'HTTP_CONNECTION' = Close
+	'PATH' = C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\VanDyke Software\Clients\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\MATLAB\R2013a\runtime\win64;C:\Program Files\MATLAB\R2013a\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files\Lenovo\Bluetooth Software\;C:\Program Files\Lenovo\Bluetooth Software\syswow64;C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin;C:\Dwimperl\perl\bin;C:\Dwimperl\perl\site\bin;C:\Dwimperl\c\bin;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\x64\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;.;;.;;.;
+	'SystemRoot' = C:\windows
+	'COMSPEC' = C:\windows\system32\cmd.exe
+	'PATHEXT' = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+	'WINDIR' = C:\windows
+	'SERVER_SIGNATURE' = <address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+
+	'SERVER_SOFTWARE' = Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3
+	'SERVER_NAME' = localhost
+	'SERVER_ADDR' = 127.0.0.1
+	'SERVER_PORT' = 80
+	'REMOTE_ADDR' = 127.0.0.1
+	'DOCUMENT_ROOT' = C:/xampp/htdocs
+	'REQUEST_SCHEME' = http
+	'CONTEXT_PREFIX' = 
+	'CONTEXT_DOCUMENT_ROOT' = C:/xampp/htdocs
+	'SERVER_ADMIN' = postmaster@localhost
+	'SCRIPT_FILENAME' = C:/xampp/htdocs/CODE_NAME-TPB/tracker/announce.php
+	'REMOTE_PORT' = 51874
+	'GATEWAY_INTERFACE' = CGI/1.1
+	'SERVER_PROTOCOL' = HTTP/1.1
+	'REQUEST_METHOD' = GET
+	'QUERY_STRING' = info_hash=%11%9a%e3%f2%40%93%81%93%f9%3eGTJ%ba%de%809q%d5l&peer_id=-UT3420-f%97o.%c0%f4%08%b1R%02%da%89&port=25032&uploaded=0&downloaded=0&left=0&corrupt=0&key=FA1394E4&event=started&numwant=200&compact=1&no_peer_id=1
+	'REQUEST_URI' = /CODE_NAME-TPB/tracker/announce.php?info_hash=%11%9a%e3%f2%40%93%81%93%f9%3eGTJ%ba%de%809q%d5l&peer_id=-UT3420-f%97o.%c0%f4%08%b1R%02%da%89&port=25032&uploaded=0&downloaded=0&left=0&corrupt=0&key=FA1394E4&event=started&numwant=200&compact=1&no_peer_id=1
+	'SCRIPT_NAME' = /CODE_NAME-TPB/tracker/announce.php
+	'PHP_SELF' = /CODE_NAME-TPB/tracker/announce.php
+	'REQUEST_TIME_FLOAT' = 1424831216.984
+	'REQUEST_TIME' = 1424831216
+
+=======  ENTRY END =======
+
+
+=======  ENTRY BEGIN =======
+
+$_REQUEST DATA:
+	'info_hash' = šãò@““ù>GTJºÞ€9qÕl
+	'peer_id' = -UT3420-f—o.Àô±RÚ‰
+	'port' = 25032
+	'uploaded' = 0
+	'downloaded' = 0
+	'left' = 0
+	'corrupt' = 0
+	'key' = FA1394E4
+	'event' = started
+	'numwant' = 200
+	'compact' = 1
+	'no_peer_id' = 1
+
+$_SERVER DATA:
+	'MIBDIRS' = C:/xampp/php/extras/mibs
+	'MYSQL_HOME' = \xampp\mysql\bin
+	'OPENSSL_CONF' = C:/xampp/apache/bin/openssl.cnf
+	'PHP_PEAR_SYSCONF_DIR' = \xampp\php
+	'PHPRC' = \xampp\php
+	'TMP' = \xampp\tmp
+	'HTTP_HOST' = localhost
+	'HTTP_USER_AGENT' = uTorrent/342(109418342)(38758)
+	'HTTP_ACCEPT_ENCODING' = gzip
+	'HTTP_CONNECTION' = Close
+	'PATH' = C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\VanDyke Software\Clients\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\MATLAB\R2013a\runtime\win64;C:\Program Files\MATLAB\R2013a\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files\Lenovo\Bluetooth Software\;C:\Program Files\Lenovo\Bluetooth Software\syswow64;C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin;C:\Dwimperl\perl\bin;C:\Dwimperl\perl\site\bin;C:\Dwimperl\c\bin;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\x64\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;.;;.;;.;
+	'SystemRoot' = C:\windows
+	'COMSPEC' = C:\windows\system32\cmd.exe
+	'PATHEXT' = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+	'WINDIR' = C:\windows
+	'SERVER_SIGNATURE' = <address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+
+	'SERVER_SOFTWARE' = Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3
+	'SERVER_NAME' = localhost
+	'SERVER_ADDR' = 127.0.0.1
+	'SERVER_PORT' = 80
+	'REMOTE_ADDR' = 127.0.0.1
+	'DOCUMENT_ROOT' = C:/xampp/htdocs
+	'REQUEST_SCHEME' = http
+	'CONTEXT_PREFIX' = 
+	'CONTEXT_DOCUMENT_ROOT' = C:/xampp/htdocs
+	'SERVER_ADMIN' = postmaster@localhost
+	'SCRIPT_FILENAME' = C:/xampp/htdocs/CODE_NAME-TPB/tracker/announce.php
+	'REMOTE_PORT' = 51967
+	'GATEWAY_INTERFACE' = CGI/1.1
+	'SERVER_PROTOCOL' = HTTP/1.1
+	'REQUEST_METHOD' = GET
+	'QUERY_STRING' = info_hash=%11%9a%e3%f2%40%93%81%93%f9%3eGTJ%ba%de%809q%d5l&peer_id=-UT3420-f%97o.%c0%f4%08%b1R%02%da%89&port=25032&uploaded=0&downloaded=0&left=0&corrupt=0&key=FA1394E4&event=started&numwant=200&compact=1&no_peer_id=1
+	'REQUEST_URI' = /CODE_NAME-TPB/tracker/announce.php?info_hash=%11%9a%e3%f2%40%93%81%93%f9%3eGTJ%ba%de%809q%d5l&peer_id=-UT3420-f%97o.%c0%f4%08%b1R%02%da%89&port=25032&uploaded=0&downloaded=0&left=0&corrupt=0&key=FA1394E4&event=started&numwant=200&compact=1&no_peer_id=1
+	'SCRIPT_NAME' = /CODE_NAME-TPB/tracker/announce.php
+	'PHP_SELF' = /CODE_NAME-TPB/tracker/announce.php
+	'REQUEST_TIME_FLOAT' = 1424831854.99
+	'REQUEST_TIME' = 1424831854
+
+=======  ENTRY END =======
+
+
+=======  ENTRY BEGIN =======
+
+$_REQUEST DATA:
+	'info_hash' = šãò@““ù>GTJºÞ€9qÕl
+	'peer_id' = -UT3420-f—o.Àô±RÚ‰
+	'port' = 25032
+	'uploaded' = 0
+	'downloaded' = 0
+	'left' = 0
+	'corrupt' = 0
+	'key' = 451997AF
+	'event' = started
+	'numwant' = 200
+	'compact' = 1
+	'no_peer_id' = 1
+
+$_SERVER DATA:
+	'MIBDIRS' = C:/xampp/php/extras/mibs
+	'MYSQL_HOME' = \xampp\mysql\bin
+	'OPENSSL_CONF' = C:/xampp/apache/bin/openssl.cnf
+	'PHP_PEAR_SYSCONF_DIR' = \xampp\php
+	'PHPRC' = \xampp\php
+	'TMP' = \xampp\tmp
+	'HTTP_HOST' = localhost
+	'HTTP_USER_AGENT' = uTorrent/342(109418342)(38758)
+	'HTTP_ACCEPT_ENCODING' = gzip
+	'HTTP_CONNECTION' = Close
+	'PATH' = C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\VanDyke Software\Clients\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\MATLAB\R2013a\runtime\win64;C:\Program Files\MATLAB\R2013a\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files\Lenovo\Bluetooth Software\;C:\Program Files\Lenovo\Bluetooth Software\syswow64;C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin;C:\Dwimperl\perl\bin;C:\Dwimperl\perl\site\bin;C:\Dwimperl\c\bin;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\x64\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;.;;.;;.;
+	'SystemRoot' = C:\windows
+	'COMSPEC' = C:\windows\system32\cmd.exe
+	'PATHEXT' = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+	'WINDIR' = C:\windows
+	'SERVER_SIGNATURE' = <address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+
+	'SERVER_SOFTWARE' = Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3
+	'SERVER_NAME' = localhost
+	'SERVER_ADDR' = 127.0.0.1
+	'SERVER_PORT' = 80
+	'REMOTE_ADDR' = 127.0.0.1
+	'DOCUMENT_ROOT' = C:/xampp/htdocs
+	'REQUEST_SCHEME' = http
+	'CONTEXT_PREFIX' = 
+	'CONTEXT_DOCUMENT_ROOT' = C:/xampp/htdocs
+	'SERVER_ADMIN' = postmaster@localhost
+	'SCRIPT_FILENAME' = C:/xampp/htdocs/CODE_NAME-TPB/tracker/announce.php
+	'REMOTE_PORT' = 51972
+	'GATEWAY_INTERFACE' = CGI/1.1
+	'SERVER_PROTOCOL' = HTTP/1.1
+	'REQUEST_METHOD' = GET
+	'QUERY_STRING' = info_hash=%11%9a%e3%f2%40%93%81%93%f9%3eGTJ%ba%de%809q%d5l&peer_id=-UT3420-f%97o.%c0%f4%08%b1R%02%da%89&port=25032&uploaded=0&downloaded=0&left=0&corrupt=0&key=451997AF&event=started&numwant=200&compact=1&no_peer_id=1
+	'REQUEST_URI' = /CODE_NAME-TPB/tracker/announce.php?info_hash=%11%9a%e3%f2%40%93%81%93%f9%3eGTJ%ba%de%809q%d5l&peer_id=-UT3420-f%97o.%c0%f4%08%b1R%02%da%89&port=25032&uploaded=0&downloaded=0&left=0&corrupt=0&key=451997AF&event=started&numwant=200&compact=1&no_peer_id=1
+	'SCRIPT_NAME' = /CODE_NAME-TPB/tracker/announce.php
+	'PHP_SELF' = /CODE_NAME-TPB/tracker/announce.php
+	'REQUEST_TIME_FLOAT' = 1424831866.009
+	'REQUEST_TIME' = 1424831866
+
+=======  ENTRY END =======
+
+
+=======  ENTRY BEGIN =======
+
+$_REQUEST DATA:
+	'info_hash' = šãò@““ù>GTJºÞ€9qÕl
+	'peer_id' = -UT3420-f—o.Àô±RÚ‰
+	'port' = 25032
+	'uploaded' = 0
+	'downloaded' = 0
+	'left' = 0
+	'corrupt' = 0
+	'key' = 451997AF
+	'event' = started
+	'numwant' = 200
+	'compact' = 1
+	'no_peer_id' = 1
+
+$_SERVER DATA:
+	'MIBDIRS' = C:/xampp/php/extras/mibs
+	'MYSQL_HOME' = \xampp\mysql\bin
+	'OPENSSL_CONF' = C:/xampp/apache/bin/openssl.cnf
+	'PHP_PEAR_SYSCONF_DIR' = \xampp\php
+	'PHPRC' = \xampp\php
+	'TMP' = \xampp\tmp
+	'HTTP_HOST' = localhost
+	'HTTP_USER_AGENT' = uTorrent/342(109418342)(38758)
+	'HTTP_ACCEPT_ENCODING' = gzip
+	'HTTP_CONNECTION' = Close
+	'PATH' = C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\VanDyke Software\Clients\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\MATLAB\R2013a\runtime\win64;C:\Program Files\MATLAB\R2013a\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files\Lenovo\Bluetooth Software\;C:\Program Files\Lenovo\Bluetooth Software\syswow64;C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin;C:\Dwimperl\perl\bin;C:\Dwimperl\perl\site\bin;C:\Dwimperl\c\bin;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\x64\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;.;;.;;.;
+	'SystemRoot' = C:\windows
+	'COMSPEC' = C:\windows\system32\cmd.exe
+	'PATHEXT' = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+	'WINDIR' = C:\windows
+	'SERVER_SIGNATURE' = <address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+
+	'SERVER_SOFTWARE' = Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3
+	'SERVER_NAME' = localhost
+	'SERVER_ADDR' = 127.0.0.1
+	'SERVER_PORT' = 80
+	'REMOTE_ADDR' = 127.0.0.1
+	'DOCUMENT_ROOT' = C:/xampp/htdocs
+	'REQUEST_SCHEME' = http
+	'CONTEXT_PREFIX' = 
+	'CONTEXT_DOCUMENT_ROOT' = C:/xampp/htdocs
+	'SERVER_ADMIN' = postmaster@localhost
+	'SCRIPT_FILENAME' = C:/xampp/htdocs/CODE_NAME-TPB/tracker/announce.php
+	'REMOTE_PORT' = 51977
+	'GATEWAY_INTERFACE' = CGI/1.1
+	'SERVER_PROTOCOL' = HTTP/1.1
+	'REQUEST_METHOD' = GET
+	'QUERY_STRING' = info_hash=%11%9a%e3%f2%40%93%81%93%f9%3eGTJ%ba%de%809q%d5l&peer_id=-UT3420-f%97o.%c0%f4%08%b1R%02%da%89&port=25032&uploaded=0&downloaded=0&left=0&corrupt=0&key=451997AF&event=started&numwant=200&compact=1&no_peer_id=1
+	'REQUEST_URI' = /CODE_NAME-TPB/tracker/announce.php?info_hash=%11%9a%e3%f2%40%93%81%93%f9%3eGTJ%ba%de%809q%d5l&peer_id=-UT3420-f%97o.%c0%f4%08%b1R%02%da%89&port=25032&uploaded=0&downloaded=0&left=0&corrupt=0&key=451997AF&event=started&numwant=200&compact=1&no_peer_id=1
+	'SCRIPT_NAME' = /CODE_NAME-TPB/tracker/announce.php
+	'PHP_SELF' = /CODE_NAME-TPB/tracker/announce.php
+	'REQUEST_TIME_FLOAT' = 1424831887.008
+	'REQUEST_TIME' = 1424831887
+
+=======  ENTRY END =======
+
+
+=======  ENTRY BEGIN =======
+
+$_REQUEST DATA:
+	'info_hash' = šãò@““ù>GTJºÞ€9qÕl
+	'peer_id' = -UT3420-f—o.Àô±RÚ‰
+	'port' = 25032
+	'uploaded' = 0
+	'downloaded' = 0
+	'left' = 0
+	'corrupt' = 0
+	'key' = 451997AF
+	'event' = started
+	'numwant' = 200
+	'compact' = 1
+	'no_peer_id' = 1
+
+$_SERVER DATA:
+	'MIBDIRS' = C:/xampp/php/extras/mibs
+	'MYSQL_HOME' = \xampp\mysql\bin
+	'OPENSSL_CONF' = C:/xampp/apache/bin/openssl.cnf
+	'PHP_PEAR_SYSCONF_DIR' = \xampp\php
+	'PHPRC' = \xampp\php
+	'TMP' = \xampp\tmp
+	'HTTP_HOST' = localhost
+	'HTTP_USER_AGENT' = uTorrent/342(109418342)(38758)
+	'HTTP_ACCEPT_ENCODING' = gzip
+	'HTTP_CONNECTION' = Close
+	'PATH' = C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\VanDyke Software\Clients\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\MATLAB\R2013a\runtime\win64;C:\Program Files\MATLAB\R2013a\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files\Lenovo\Bluetooth Software\;C:\Program Files\Lenovo\Bluetooth Software\syswow64;C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin;C:\Dwimperl\perl\bin;C:\Dwimperl\perl\site\bin;C:\Dwimperl\c\bin;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\x64\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;.;;.;;.;
+	'SystemRoot' = C:\windows
+	'COMSPEC' = C:\windows\system32\cmd.exe
+	'PATHEXT' = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+	'WINDIR' = C:\windows
+	'SERVER_SIGNATURE' = <address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+
+	'SERVER_SOFTWARE' = Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3
+	'SERVER_NAME' = localhost
+	'SERVER_ADDR' = 127.0.0.1
+	'SERVER_PORT' = 80
+	'REMOTE_ADDR' = 127.0.0.1
+	'DOCUMENT_ROOT' = C:/xampp/htdocs
+	'REQUEST_SCHEME' = http
+	'CONTEXT_PREFIX' = 
+	'CONTEXT_DOCUMENT_ROOT' = C:/xampp/htdocs
+	'SERVER_ADMIN' = postmaster@localhost
+	'SCRIPT_FILENAME' = C:/xampp/htdocs/CODE_NAME-TPB/tracker/announce.php
+	'REMOTE_PORT' = 51980
+	'GATEWAY_INTERFACE' = CGI/1.1
+	'SERVER_PROTOCOL' = HTTP/1.1
+	'REQUEST_METHOD' = GET
+	'QUERY_STRING' = info_hash=%11%9a%e3%f2%40%93%81%93%f9%3eGTJ%ba%de%809q%d5l&peer_id=-UT3420-f%97o.%c0%f4%08%b1R%02%da%89&port=25032&uploaded=0&downloaded=0&left=0&corrupt=0&key=451997AF&event=started&numwant=200&compact=1&no_peer_id=1
+	'REQUEST_URI' = /CODE_NAME-TPB/tracker/announce.php?info_hash=%11%9a%e3%f2%40%93%81%93%f9%3eGTJ%ba%de%809q%d5l&peer_id=-UT3420-f%97o.%c0%f4%08%b1R%02%da%89&port=25032&uploaded=0&downloaded=0&left=0&corrupt=0&key=451997AF&event=started&numwant=200&compact=1&no_peer_id=1
+	'SCRIPT_NAME' = /CODE_NAME-TPB/tracker/announce.php
+	'PHP_SELF' = /CODE_NAME-TPB/tracker/announce.php
+	'REQUEST_TIME_FLOAT' = 1424831927.996
+	'REQUEST_TIME' = 1424831927
+
+=======  ENTRY END =======
+
+
+=======  ENTRY BEGIN =======
+
+$_REQUEST DATA:
+	'info_hash' = šãò@““ù>GTJºÞ€9qÕl
+	'peer_id' = -UT3420-f—o.Àô±RÚ‰
+	'port' = 25032
+	'uploaded' = 0
+	'downloaded' = 0
+	'left' = 0
+	'corrupt' = 0
+	'key' = 451997AF
+	'event' = started
+	'numwant' = 200
+	'compact' = 1
+	'no_peer_id' = 1
+
+$_SERVER DATA:
+	'MIBDIRS' = C:/xampp/php/extras/mibs
+	'MYSQL_HOME' = \xampp\mysql\bin
+	'OPENSSL_CONF' = C:/xampp/apache/bin/openssl.cnf
+	'PHP_PEAR_SYSCONF_DIR' = \xampp\php
+	'PHPRC' = \xampp\php
+	'TMP' = \xampp\tmp
+	'HTTP_HOST' = localhost
+	'HTTP_USER_AGENT' = uTorrent/342(109418342)(38758)
+	'HTTP_ACCEPT_ENCODING' = gzip
+	'HTTP_CONNECTION' = Close
+	'PATH' = C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\VanDyke Software\Clients\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\MATLAB\R2013a\runtime\win64;C:\Program Files\MATLAB\R2013a\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files\Lenovo\Bluetooth Software\;C:\Program Files\Lenovo\Bluetooth Software\syswow64;C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin;C:\Dwimperl\perl\bin;C:\Dwimperl\perl\site\bin;C:\Dwimperl\c\bin;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\x64\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;.;;.;;.;
+	'SystemRoot' = C:\windows
+	'COMSPEC' = C:\windows\system32\cmd.exe
+	'PATHEXT' = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+	'WINDIR' = C:\windows
+	'SERVER_SIGNATURE' = <address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+
+	'SERVER_SOFTWARE' = Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3
+	'SERVER_NAME' = localhost
+	'SERVER_ADDR' = 127.0.0.1
+	'SERVER_PORT' = 80
+	'REMOTE_ADDR' = 127.0.0.1
+	'DOCUMENT_ROOT' = C:/xampp/htdocs
+	'REQUEST_SCHEME' = http
+	'CONTEXT_PREFIX' = 
+	'CONTEXT_DOCUMENT_ROOT' = C:/xampp/htdocs
+	'SERVER_ADMIN' = postmaster@localhost
+	'SCRIPT_FILENAME' = C:/xampp/htdocs/CODE_NAME-TPB/tracker/announce.php
+	'REMOTE_PORT' = 51991
+	'GATEWAY_INTERFACE' = CGI/1.1
+	'SERVER_PROTOCOL' = HTTP/1.1
+	'REQUEST_METHOD' = GET
+	'QUERY_STRING' = info_hash=%11%9a%e3%f2%40%93%81%93%f9%3eGTJ%ba%de%809q%d5l&peer_id=-UT3420-f%97o.%c0%f4%08%b1R%02%da%89&port=25032&uploaded=0&downloaded=0&left=0&corrupt=0&key=451997AF&event=started&numwant=200&compact=1&no_peer_id=1
+	'REQUEST_URI' = /CODE_NAME-TPB/tracker/announce.php?info_hash=%11%9a%e3%f2%40%93%81%93%f9%3eGTJ%ba%de%809q%d5l&peer_id=-UT3420-f%97o.%c0%f4%08%b1R%02%da%89&port=25032&uploaded=0&downloaded=0&left=0&corrupt=0&key=451997AF&event=started&numwant=200&compact=1&no_peer_id=1
+	'SCRIPT_NAME' = /CODE_NAME-TPB/tracker/announce.php
+	'PHP_SELF' = /CODE_NAME-TPB/tracker/announce.php
+	'REQUEST_TIME_FLOAT' = 1424832009.02
+	'REQUEST_TIME' = 1424832009
+
+=======  ENTRY END =======
+
+
+=======  ENTRY BEGIN =======
+
+$_REQUEST DATA:
+
+$_SERVER DATA:
+	'MIBDIRS' = C:/xampp/php/extras/mibs
+	'MYSQL_HOME' = \xampp\mysql\bin
+	'OPENSSL_CONF' = C:/xampp/apache/bin/openssl.cnf
+	'PHP_PEAR_SYSCONF_DIR' = \xampp\php
+	'PHPRC' = \xampp\php
+	'TMP' = \xampp\tmp
+	'HTTP_HOST' = localhost
+	'HTTP_CONNECTION' = keep-alive
+	'HTTP_ACCEPT' = text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+	'HTTP_USER_AGENT' = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36
+	'HTTP_ACCEPT_ENCODING' = gzip, deflate, sdch
+	'HTTP_ACCEPT_LANGUAGE' = en-US,en;q=0.8
+	'HTTP_COOKIE' = PHPSESSID=em02pg1cs3f2gpogtsno8fliv7; DriftrAuthentication=B549734FFA624109991B92E5AF27561BF0AC3977E1887EC92083DF21BE36C3E3F11513347D9260135ABC41DCA5BF5FBE6E88F387D31E51933AE9E60247F0BABC115366D35353A84AC75B72F00A167C767D7028001601E8D8C419705E7C932A76223FED66BA00E7FE88059E782010BA9D
+	'PATH' = C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\VanDyke Software\Clients\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\MATLAB\R2013a\runtime\win64;C:\Program Files\MATLAB\R2013a\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files\Lenovo\Bluetooth Software\;C:\Program Files\Lenovo\Bluetooth Software\syswow64;C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin;C:\Dwimperl\perl\bin;C:\Dwimperl\perl\site\bin;C:\Dwimperl\c\bin;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\x64\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;.;;.;;.;
+	'SystemRoot' = C:\windows
+	'COMSPEC' = C:\windows\system32\cmd.exe
+	'PATHEXT' = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+	'WINDIR' = C:\windows
+	'SERVER_SIGNATURE' = <address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+
+	'SERVER_SOFTWARE' = Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3
+	'SERVER_NAME' = localhost
+	'SERVER_ADDR' = 127.0.0.1
+	'SERVER_PORT' = 80
+	'REMOTE_ADDR' = 127.0.0.1
+	'DOCUMENT_ROOT' = C:/xampp/htdocs
+	'REQUEST_SCHEME' = http
+	'CONTEXT_PREFIX' = 
+	'CONTEXT_DOCUMENT_ROOT' = C:/xampp/htdocs
+	'SERVER_ADMIN' = postmaster@localhost
+	'SCRIPT_FILENAME' = C:/xampp/htdocs/CODE_NAME-TPB/tracker/test.php
+	'REMOTE_PORT' = 52043
+	'GATEWAY_INTERFACE' = CGI/1.1
+	'SERVER_PROTOCOL' = HTTP/1.1
+	'REQUEST_METHOD' = GET
+	'QUERY_STRING' = 
+	'REQUEST_URI' = /CODE_NAME-TPB/tracker/test.php
+	'SCRIPT_NAME' = /CODE_NAME-TPB/tracker/test.php
+	'PHP_SELF' = /CODE_NAME-TPB/tracker/test.php
+	'REQUEST_TIME_FLOAT' = 1424832155.579
+	'REQUEST_TIME' = 1424832155
+
+=======  ENTRY END =======
+
+
+=======  ENTRY BEGIN =======
+
+$_REQUEST DATA:
+	'info_hash' = šãò@““ù>GTJºÞ€9qÕl
+	'peer_id' = -UT3420-f—o.Àô±RÚ‰
+	'port' = 25032
+	'uploaded' = 0
+	'downloaded' = 0
+	'left' = 0
+	'corrupt' = 0
+	'key' = 451997AF
+	'event' = started
+	'numwant' = 200
+	'compact' = 1
+	'no_peer_id' = 1
+
+$_SERVER DATA:
+	'MIBDIRS' = C:/xampp/php/extras/mibs
+	'MYSQL_HOME' = \xampp\mysql\bin
+	'OPENSSL_CONF' = C:/xampp/apache/bin/openssl.cnf
+	'PHP_PEAR_SYSCONF_DIR' = \xampp\php
+	'PHPRC' = \xampp\php
+	'TMP' = \xampp\tmp
+	'HTTP_HOST' = localhost
+	'HTTP_USER_AGENT' = uTorrent/342(109418342)(38758)
+	'HTTP_ACCEPT_ENCODING' = gzip
+	'HTTP_CONNECTION' = Close
+	'PATH' = C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\VanDyke Software\Clients\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\MATLAB\R2013a\runtime\win64;C:\Program Files\MATLAB\R2013a\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files\Lenovo\Bluetooth Software\;C:\Program Files\Lenovo\Bluetooth Software\syswow64;C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin;C:\Dwimperl\perl\bin;C:\Dwimperl\perl\site\bin;C:\Dwimperl\c\bin;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\x64\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;.;;.;;.;
+	'SystemRoot' = C:\windows
+	'COMSPEC' = C:\windows\system32\cmd.exe
+	'PATHEXT' = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+	'WINDIR' = C:\windows
+	'SERVER_SIGNATURE' = <address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+
+	'SERVER_SOFTWARE' = Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3
+	'SERVER_NAME' = localhost
+	'SERVER_ADDR' = 127.0.0.1
+	'SERVER_PORT' = 80
+	'REMOTE_ADDR' = 127.0.0.1
+	'DOCUMENT_ROOT' = C:/xampp/htdocs
+	'REQUEST_SCHEME' = http
+	'CONTEXT_PREFIX' = 
+	'CONTEXT_DOCUMENT_ROOT' = C:/xampp/htdocs
+	'SERVER_ADMIN' = postmaster@localhost
+	'SCRIPT_FILENAME' = C:/xampp/htdocs/CODE_NAME-TPB/tracker/announce.php
+	'REMOTE_PORT' = 52063
+	'GATEWAY_INTERFACE' = CGI/1.1
+	'SERVER_PROTOCOL' = HTTP/1.1
+	'REQUEST_METHOD' = GET
+	'QUERY_STRING' = info_hash=%11%9a%e3%f2%40%93%81%93%f9%3eGTJ%ba%de%809q%d5l&peer_id=-UT3420-f%97o.%c0%f4%08%b1R%02%da%89&port=25032&uploaded=0&downloaded=0&left=0&corrupt=0&key=451997AF&event=started&numwant=200&compact=1&no_peer_id=1
+	'REQUEST_URI' = /CODE_NAME-TPB/tracker/announce.php?info_hash=%11%9a%e3%f2%40%93%81%93%f9%3eGTJ%ba%de%809q%d5l&peer_id=-UT3420-f%97o.%c0%f4%08%b1R%02%da%89&port=25032&uploaded=0&downloaded=0&left=0&corrupt=0&key=451997AF&event=started&numwant=200&compact=1&no_peer_id=1
+	'SCRIPT_NAME' = /CODE_NAME-TPB/tracker/announce.php
+	'PHP_SELF' = /CODE_NAME-TPB/tracker/announce.php
+	'REQUEST_TIME_FLOAT' = 1424832170.01
+	'REQUEST_TIME' = 1424832170
+
+=======  ENTRY END =======
+
+
+=======  ENTRY BEGIN =======
+
+$_REQUEST DATA:
+	'info_hash' = šãò@““ù>GTJºÞ€9qÕl
+	'peer_id' = -UT3420-f—o.Àô±RÚ‰
+	'port' = 25032
+	'uploaded' = 0
+	'downloaded' = 0
+	'left' = 0
+	'corrupt' = 0
+	'key' = 451997AF
+	'event' = started
+	'numwant' = 200
+	'compact' = 1
+	'no_peer_id' = 1
+
+$_SERVER DATA:
+	'MIBDIRS' = C:/xampp/php/extras/mibs
+	'MYSQL_HOME' = \xampp\mysql\bin
+	'OPENSSL_CONF' = C:/xampp/apache/bin/openssl.cnf
+	'PHP_PEAR_SYSCONF_DIR' = \xampp\php
+	'PHPRC' = \xampp\php
+	'TMP' = \xampp\tmp
+	'HTTP_HOST' = localhost
+	'HTTP_USER_AGENT' = uTorrent/342(109418342)(38758)
+	'HTTP_ACCEPT_ENCODING' = gzip
+	'HTTP_CONNECTION' = Close
+	'PATH' = C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\VanDyke Software\Clients\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\MATLAB\R2013a\runtime\win64;C:\Program Files\MATLAB\R2013a\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files\Lenovo\Bluetooth Software\;C:\Program Files\Lenovo\Bluetooth Software\syswow64;C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin;C:\Dwimperl\perl\bin;C:\Dwimperl\perl\site\bin;C:\Dwimperl\c\bin;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\x64\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;.;;.;;.;
+	'SystemRoot' = C:\windows
+	'COMSPEC' = C:\windows\system32\cmd.exe
+	'PATHEXT' = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+	'WINDIR' = C:\windows
+	'SERVER_SIGNATURE' = <address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+
+	'SERVER_SOFTWARE' = Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3
+	'SERVER_NAME' = localhost
+	'SERVER_ADDR' = 127.0.0.1
+	'SERVER_PORT' = 80
+	'REMOTE_ADDR' = 127.0.0.1
+	'DOCUMENT_ROOT' = C:/xampp/htdocs
+	'REQUEST_SCHEME' = http
+	'CONTEXT_PREFIX' = 
+	'CONTEXT_DOCUMENT_ROOT' = C:/xampp/htdocs
+	'SERVER_ADMIN' = postmaster@localhost
+	'SCRIPT_FILENAME' = C:/xampp/htdocs/CODE_NAME-TPB/tracker/announce.php
+	'REMOTE_PORT' = 52085
+	'GATEWAY_INTERFACE' = CGI/1.1
+	'SERVER_PROTOCOL' = HTTP/1.1
+	'REQUEST_METHOD' = GET
+	'QUERY_STRING' = info_hash=%11%9a%e3%f2%40%93%81%93%f9%3eGTJ%ba%de%809q%d5l&peer_id=-UT3420-f%97o.%c0%f4%08%b1R%02%da%89&port=25032&uploaded=0&downloaded=0&left=0&corrupt=0&key=451997AF&event=started&numwant=200&compact=1&no_peer_id=1
+	'REQUEST_URI' = /CODE_NAME-TPB/tracker/announce.php?info_hash=%11%9a%e3%f2%40%93%81%93%f9%3eGTJ%ba%de%809q%d5l&peer_id=-UT3420-f%97o.%c0%f4%08%b1R%02%da%89&port=25032&uploaded=0&downloaded=0&left=0&corrupt=0&key=451997AF&event=started&numwant=200&compact=1&no_peer_id=1
+	'SCRIPT_NAME' = /CODE_NAME-TPB/tracker/announce.php
+	'PHP_SELF' = /CODE_NAME-TPB/tracker/announce.php
+	'REQUEST_TIME_FLOAT' = 1424832491.041
+	'REQUEST_TIME' = 1424832491
+
+=======  ENTRY END =======
+
+
+=======  ENTRY BEGIN =======
+
+$_REQUEST DATA:
+
+$_SERVER DATA:
+	'MIBDIRS' = C:/xampp/php/extras/mibs
+	'MYSQL_HOME' = \xampp\mysql\bin
+	'OPENSSL_CONF' = C:/xampp/apache/bin/openssl.cnf
+	'PHP_PEAR_SYSCONF_DIR' = \xampp\php
+	'PHPRC' = \xampp\php
+	'TMP' = \xampp\tmp
+	'HTTP_HOST' = localhost
+	'HTTP_CONNECTION' = keep-alive
+	'HTTP_CACHE_CONTROL' = max-age=0
+	'HTTP_ACCEPT' = text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+	'HTTP_USER_AGENT' = Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36
+	'HTTP_ACCEPT_ENCODING' = gzip, deflate, sdch
+	'HTTP_ACCEPT_LANGUAGE' = en-US,en;q=0.8
+	'HTTP_COOKIE' = PHPSESSID=em02pg1cs3f2gpogtsno8fliv7; DriftrAuthentication=B549734FFA624109991B92E5AF27561BF0AC3977E1887EC92083DF21BE36C3E3F11513347D9260135ABC41DCA5BF5FBE6E88F387D31E51933AE9E60247F0BABC115366D35353A84AC75B72F00A167C767D7028001601E8D8C419705E7C932A76223FED66BA00E7FE88059E782010BA9D
+	'PATH' = C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\VanDyke Software\Clients\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\MATLAB\R2013a\runtime\win64;C:\Program Files\MATLAB\R2013a\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files\Lenovo\Bluetooth Software\;C:\Program Files\Lenovo\Bluetooth Software\syswow64;C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin;C:\Dwimperl\perl\bin;C:\Dwimperl\perl\site\bin;C:\Dwimperl\c\bin;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\x64\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;.;;.;;.;
+	'SystemRoot' = C:\windows
+	'COMSPEC' = C:\windows\system32\cmd.exe
+	'PATHEXT' = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+	'WINDIR' = C:\windows
+	'SERVER_SIGNATURE' = <address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+
+	'SERVER_SOFTWARE' = Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3
+	'SERVER_NAME' = localhost
+	'SERVER_ADDR' = 127.0.0.1
+	'SERVER_PORT' = 80
+	'REMOTE_ADDR' = 127.0.0.1
+	'DOCUMENT_ROOT' = C:/xampp/htdocs
+	'REQUEST_SCHEME' = http
+	'CONTEXT_PREFIX' = 
+	'CONTEXT_DOCUMENT_ROOT' = C:/xampp/htdocs
+	'SERVER_ADMIN' = postmaster@localhost
+	'SCRIPT_FILENAME' = C:/xampp/htdocs/CODE_NAME-TPB/tracker/announce.php
+	'REMOTE_PORT' = 52129
+	'GATEWAY_INTERFACE' = CGI/1.1
+	'SERVER_PROTOCOL' = HTTP/1.1
+	'REQUEST_METHOD' = GET
+	'QUERY_STRING' = 
+	'REQUEST_URI' = /CODE_NAME-TPB/tracker/announce.php
+	'SCRIPT_NAME' = /CODE_NAME-TPB/tracker/announce.php
+	'PHP_SELF' = /CODE_NAME-TPB/tracker/announce.php
+	'REQUEST_TIME_FLOAT' = 1424832608.161
+	'REQUEST_TIME' = 1424832608
+
+=======  ENTRY END =======
+
+
+=======  ENTRY BEGIN =======
+
+$_REQUEST DATA:
+	'info_hash' = ç‚¯’h]lQ1ÙÓ›H$éºüÏ
+	'peer_id' = -UT3420-f—o.Àô±RÚ‰
+	'port' = 25032
+	'uploaded' = 0
+	'downloaded' = 0
+	'left' = 0
+	'corrupt' = 0
+	'key' = A9BCEDE0
+	'event' = started
+	'numwant' = 200
+	'compact' = 1
+	'no_peer_id' = 1
+
+$_SERVER DATA:
+	'MIBDIRS' = C:/xampp/php/extras/mibs
+	'MYSQL_HOME' = \xampp\mysql\bin
+	'OPENSSL_CONF' = C:/xampp/apache/bin/openssl.cnf
+	'PHP_PEAR_SYSCONF_DIR' = \xampp\php
+	'PHPRC' = \xampp\php
+	'TMP' = \xampp\tmp
+	'HTTP_HOST' = localhost
+	'HTTP_USER_AGENT' = uTorrent/342(109418342)(38758)
+	'HTTP_ACCEPT_ENCODING' = gzip
+	'HTTP_CONNECTION' = Close
+	'PATH' = C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\VanDyke Software\Clients\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\MATLAB\R2013a\runtime\win64;C:\Program Files\MATLAB\R2013a\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files\Lenovo\Bluetooth Software\;C:\Program Files\Lenovo\Bluetooth Software\syswow64;C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin;C:\Dwimperl\perl\bin;C:\Dwimperl\perl\site\bin;C:\Dwimperl\c\bin;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\x64\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;.;;.;;.;
+	'SystemRoot' = C:\windows
+	'COMSPEC' = C:\windows\system32\cmd.exe
+	'PATHEXT' = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+	'WINDIR' = C:\windows
+	'SERVER_SIGNATURE' = <address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+
+	'SERVER_SOFTWARE' = Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3
+	'SERVER_NAME' = localhost
+	'SERVER_ADDR' = 127.0.0.1
+	'SERVER_PORT' = 80
+	'REMOTE_ADDR' = 127.0.0.1
+	'DOCUMENT_ROOT' = C:/xampp/htdocs
+	'REQUEST_SCHEME' = http
+	'CONTEXT_PREFIX' = 
+	'CONTEXT_DOCUMENT_ROOT' = C:/xampp/htdocs
+	'SERVER_ADMIN' = postmaster@localhost
+	'SCRIPT_FILENAME' = C:/xampp/htdocs/CODE_NAME-TPB/tracker/announce.php
+	'REMOTE_PORT' = 52168
+	'GATEWAY_INTERFACE' = CGI/1.1
+	'SERVER_PROTOCOL' = HTTP/1.1
+	'REQUEST_METHOD' = GET
+	'QUERY_STRING' = info_hash=%e7%82%1a%af%92h%5dlQ1%d9%d3%9bH%0c%24%e9%ba%fc%cf&peer_id=-UT3420-f%97o.%c0%f4%08%b1R%02%da%89&port=25032&uploaded=0&downloaded=0&left=0&corrupt=0&key=A9BCEDE0&event=started&numwant=200&compact=1&no_peer_id=1
+	'REQUEST_URI' = /CODE_NAME-TPB/tracker/announce.php?info_hash=%e7%82%1a%af%92h%5dlQ1%d9%d3%9bH%0c%24%e9%ba%fc%cf&peer_id=-UT3420-f%97o.%c0%f4%08%b1R%02%da%89&port=25032&uploaded=0&downloaded=0&left=0&corrupt=0&key=A9BCEDE0&event=started&numwant=200&compact=1&no_peer_id=1
+	'SCRIPT_NAME' = /CODE_NAME-TPB/tracker/announce.php
+	'PHP_SELF' = /CODE_NAME-TPB/tracker/announce.php
+	'REQUEST_TIME_FLOAT' = 1424832733.047
+	'REQUEST_TIME' = 1424832733
+
+=======  ENTRY END =======
+
+
+=======  ENTRY BEGIN =======
+
+$_REQUEST DATA:
+	'info_hash' = ç‚¯’h]lQ1ÙÓ›H$éºüÏ
+	'peer_id' = -UT3420-f—o.Àô±RÚ‰
+	'port' = 25032
+	'uploaded' = 0
+	'downloaded' = 0
+	'left' = 0
+	'corrupt' = 0
+	'key' = A9BCEDE0
+	'event' = started
+	'numwant' = 200
+	'compact' = 1
+	'no_peer_id' = 1
+
+$_SERVER DATA:
+	'MIBDIRS' = C:/xampp/php/extras/mibs
+	'MYSQL_HOME' = \xampp\mysql\bin
+	'OPENSSL_CONF' = C:/xampp/apache/bin/openssl.cnf
+	'PHP_PEAR_SYSCONF_DIR' = \xampp\php
+	'PHPRC' = \xampp\php
+	'TMP' = \xampp\tmp
+	'HTTP_HOST' = localhost
+	'HTTP_USER_AGENT' = uTorrent/342(109418342)(38758)
+	'HTTP_ACCEPT_ENCODING' = gzip
+	'HTTP_CONNECTION' = Close
+	'PATH' = C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\VanDyke Software\Clients\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\MATLAB\R2013a\runtime\win64;C:\Program Files\MATLAB\R2013a\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files\Lenovo\Bluetooth Software\;C:\Program Files\Lenovo\Bluetooth Software\syswow64;C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin;C:\Dwimperl\perl\bin;C:\Dwimperl\perl\site\bin;C:\Dwimperl\c\bin;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\x64\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;.;;.;;.;
+	'SystemRoot' = C:\windows
+	'COMSPEC' = C:\windows\system32\cmd.exe
+	'PATHEXT' = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+	'WINDIR' = C:\windows
+	'SERVER_SIGNATURE' = <address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+
+	'SERVER_SOFTWARE' = Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3
+	'SERVER_NAME' = localhost
+	'SERVER_ADDR' = 127.0.0.1
+	'SERVER_PORT' = 80
+	'REMOTE_ADDR' = 127.0.0.1
+	'DOCUMENT_ROOT' = C:/xampp/htdocs
+	'REQUEST_SCHEME' = http
+	'CONTEXT_PREFIX' = 
+	'CONTEXT_DOCUMENT_ROOT' = C:/xampp/htdocs
+	'SERVER_ADMIN' = postmaster@localhost
+	'SCRIPT_FILENAME' = C:/xampp/htdocs/CODE_NAME-TPB/tracker/announce.php
+	'REMOTE_PORT' = 52175
+	'GATEWAY_INTERFACE' = CGI/1.1
+	'SERVER_PROTOCOL' = HTTP/1.1
+	'REQUEST_METHOD' = GET
+	'QUERY_STRING' = info_hash=%e7%82%1a%af%92h%5dlQ1%d9%d3%9bH%0c%24%e9%ba%fc%cf&peer_id=-UT3420-f%97o.%c0%f4%08%b1R%02%da%89&port=25032&uploaded=0&downloaded=0&left=0&corrupt=0&key=A9BCEDE0&event=started&numwant=200&compact=1&no_peer_id=1
+	'REQUEST_URI' = /CODE_NAME-TPB/tracker/announce.php?info_hash=%e7%82%1a%af%92h%5dlQ1%d9%d3%9bH%0c%24%e9%ba%fc%cf&peer_id=-UT3420-f%97o.%c0%f4%08%b1R%02%da%89&port=25032&uploaded=0&downloaded=0&left=0&corrupt=0&key=A9BCEDE0&event=started&numwant=200&compact=1&no_peer_id=1
+	'SCRIPT_NAME' = /CODE_NAME-TPB/tracker/announce.php
+	'PHP_SELF' = /CODE_NAME-TPB/tracker/announce.php
+	'REQUEST_TIME_FLOAT' = 1424832744.047
+	'REQUEST_TIME' = 1424832744
+
+=======  ENTRY END =======
+
+
+=======  ENTRY BEGIN =======
+
+$_REQUEST DATA:
+	'info_hash' = ç‚¯’h]lQ1ÙÓ›H$éºüÏ
+	'peer_id' = -UT3420-f—o.Àô±RÚ‰
+	'port' = 25032
+	'uploaded' = 0
+	'downloaded' = 0
+	'left' = 0
+	'corrupt' = 0
+	'key' = A9BCEDE0
+	'event' = started
+	'numwant' = 200
+	'compact' = 1
+	'no_peer_id' = 1
+
+$_SERVER DATA:
+	'MIBDIRS' = C:/xampp/php/extras/mibs
+	'MYSQL_HOME' = \xampp\mysql\bin
+	'OPENSSL_CONF' = C:/xampp/apache/bin/openssl.cnf
+	'PHP_PEAR_SYSCONF_DIR' = \xampp\php
+	'PHPRC' = \xampp\php
+	'TMP' = \xampp\tmp
+	'HTTP_HOST' = localhost
+	'HTTP_USER_AGENT' = uTorrent/342(109418342)(38758)
+	'HTTP_ACCEPT_ENCODING' = gzip
+	'HTTP_CONNECTION' = Close
+	'PATH' = C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\VanDyke Software\Clients\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\MATLAB\R2013a\runtime\win64;C:\Program Files\MATLAB\R2013a\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files\Lenovo\Bluetooth Software\;C:\Program Files\Lenovo\Bluetooth Software\syswow64;C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin;C:\Dwimperl\perl\bin;C:\Dwimperl\perl\site\bin;C:\Dwimperl\c\bin;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\x64\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;.;;.;;.;
+	'SystemRoot' = C:\windows
+	'COMSPEC' = C:\windows\system32\cmd.exe
+	'PATHEXT' = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+	'WINDIR' = C:\windows
+	'SERVER_SIGNATURE' = <address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+
+	'SERVER_SOFTWARE' = Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3
+	'SERVER_NAME' = localhost
+	'SERVER_ADDR' = 127.0.0.1
+	'SERVER_PORT' = 80
+	'REMOTE_ADDR' = 127.0.0.1
+	'DOCUMENT_ROOT' = C:/xampp/htdocs
+	'REQUEST_SCHEME' = http
+	'CONTEXT_PREFIX' = 
+	'CONTEXT_DOCUMENT_ROOT' = C:/xampp/htdocs
+	'SERVER_ADMIN' = postmaster@localhost
+	'SCRIPT_FILENAME' = C:/xampp/htdocs/CODE_NAME-TPB/tracker/announce.php
+	'REMOTE_PORT' = 52191
+	'GATEWAY_INTERFACE' = CGI/1.1
+	'SERVER_PROTOCOL' = HTTP/1.1
+	'REQUEST_METHOD' = GET
+	'QUERY_STRING' = info_hash=%e7%82%1a%af%92h%5dlQ1%d9%d3%9bH%0c%24%e9%ba%fc%cf&peer_id=-UT3420-f%97o.%c0%f4%08%b1R%02%da%89&port=25032&uploaded=0&downloaded=0&left=0&corrupt=0&key=A9BCEDE0&event=started&numwant=200&compact=1&no_peer_id=1
+	'REQUEST_URI' = /CODE_NAME-TPB/tracker/announce.php?info_hash=%e7%82%1a%af%92h%5dlQ1%d9%d3%9bH%0c%24%e9%ba%fc%cf&peer_id=-UT3420-f%97o.%c0%f4%08%b1R%02%da%89&port=25032&uploaded=0&downloaded=0&left=0&corrupt=0&key=A9BCEDE0&event=started&numwant=200&compact=1&no_peer_id=1
+	'SCRIPT_NAME' = /CODE_NAME-TPB/tracker/announce.php
+	'PHP_SELF' = /CODE_NAME-TPB/tracker/announce.php
+	'REQUEST_TIME_FLOAT' = 1424832765.043
+	'REQUEST_TIME' = 1424832765
+
+=======  ENTRY END =======
+
+
+=======  ENTRY BEGIN =======
+
+$_REQUEST DATA:
+	'info_hash' = ç‚¯’h]lQ1ÙÓ›H$éºüÏ
+	'peer_id' = -UT3420-f—o.Àô±RÚ‰
+	'port' = 25032
+	'uploaded' = 0
+	'downloaded' = 0
+	'left' = 0
+	'corrupt' = 0
+	'key' = A9BCEDE0
+	'event' = started
+	'numwant' = 200
+	'compact' = 1
+	'no_peer_id' = 1
+
+$_SERVER DATA:
+	'MIBDIRS' = C:/xampp/php/extras/mibs
+	'MYSQL_HOME' = \xampp\mysql\bin
+	'OPENSSL_CONF' = C:/xampp/apache/bin/openssl.cnf
+	'PHP_PEAR_SYSCONF_DIR' = \xampp\php
+	'PHPRC' = \xampp\php
+	'TMP' = \xampp\tmp
+	'HTTP_HOST' = localhost
+	'HTTP_USER_AGENT' = uTorrent/342(109418342)(38758)
+	'HTTP_ACCEPT_ENCODING' = gzip
+	'HTTP_CONNECTION' = Close
+	'PATH' = C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\VanDyke Software\Clients\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\MATLAB\R2013a\runtime\win64;C:\Program Files\MATLAB\R2013a\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files\Lenovo\Bluetooth Software\;C:\Program Files\Lenovo\Bluetooth Software\syswow64;C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin;C:\Dwimperl\perl\bin;C:\Dwimperl\perl\site\bin;C:\Dwimperl\c\bin;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\x64\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;.;;.;;.;
+	'SystemRoot' = C:\windows
+	'COMSPEC' = C:\windows\system32\cmd.exe
+	'PATHEXT' = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+	'WINDIR' = C:\windows
+	'SERVER_SIGNATURE' = <address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+
+	'SERVER_SOFTWARE' = Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3
+	'SERVER_NAME' = localhost
+	'SERVER_ADDR' = 127.0.0.1
+	'SERVER_PORT' = 80
+	'REMOTE_ADDR' = 127.0.0.1
+	'DOCUMENT_ROOT' = C:/xampp/htdocs
+	'REQUEST_SCHEME' = http
+	'CONTEXT_PREFIX' = 
+	'CONTEXT_DOCUMENT_ROOT' = C:/xampp/htdocs
+	'SERVER_ADMIN' = postmaster@localhost
+	'SCRIPT_FILENAME' = C:/xampp/htdocs/CODE_NAME-TPB/tracker/announce.php
+	'REMOTE_PORT' = 52203
+	'GATEWAY_INTERFACE' = CGI/1.1
+	'SERVER_PROTOCOL' = HTTP/1.1
+	'REQUEST_METHOD' = GET
+	'QUERY_STRING' = info_hash=%e7%82%1a%af%92h%5dlQ1%d9%d3%9bH%0c%24%e9%ba%fc%cf&peer_id=-UT3420-f%97o.%c0%f4%08%b1R%02%da%89&port=25032&uploaded=0&downloaded=0&left=0&corrupt=0&key=A9BCEDE0&event=started&numwant=200&compact=1&no_peer_id=1
+	'REQUEST_URI' = /CODE_NAME-TPB/tracker/announce.php?info_hash=%e7%82%1a%af%92h%5dlQ1%d9%d3%9bH%0c%24%e9%ba%fc%cf&peer_id=-UT3420-f%97o.%c0%f4%08%b1R%02%da%89&port=25032&uploaded=0&downloaded=0&left=0&corrupt=0&key=A9BCEDE0&event=started&numwant=200&compact=1&no_peer_id=1
+	'SCRIPT_NAME' = /CODE_NAME-TPB/tracker/announce.php
+	'PHP_SELF' = /CODE_NAME-TPB/tracker/announce.php
+	'REQUEST_TIME_FLOAT' = 1424832806.047
+	'REQUEST_TIME' = 1424832806
+
+=======  ENTRY END =======
+
+
