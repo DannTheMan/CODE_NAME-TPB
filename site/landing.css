@@ -128,7 +128,7 @@
 	cursor: pointer;
 }
 
-.result : hover {
+.result:hover {
 	background-color: #6F6FaF;
 }
 
