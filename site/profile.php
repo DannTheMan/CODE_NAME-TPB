@@ -11,19 +11,21 @@
 	</head>
 
 	<body>
-<?php require 'database.php'; ?>
+<?php
+        require 'database.php';
+ ?>
 <!--?php $sql = "INSERT INTO torrents (name) VALUES ('johnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemi')";
     $sid = $pdo -> prepare($sql);
     $sid -> execute(); ?-->
 		<div id = "topBar">
 			<h1 id="pageTitle">Codename: TPB</h1>
 			<a id="home" href="landing.php">home</a>
-			<?php 
-				if(!isset($_COOKIE['asqCDhGVsulSU'])) {
-					echo "<a id='login' href='login.php'>login</a>";
-				} else {
-					echo "<div id='logout' href='.'>logout</div>";
-				}
+			<?php
+                if (!isset($_COOKIE['asqCDhGVsulSU'])) {
+                    echo "<a id='login' href='login.php'>login</a>";
+                } else {
+                    echo "<div id='logout' href='.'>logout</div>";
+                }
 			?>
 		</div>
 
@@ -34,11 +36,11 @@
 
 				<?php
 					$uname = $_GET['uname'];
-					foreach ($dbo->query("SELECT id FROM users WHERE username = \"$uname\"") as $row) {
+					foreach ($pdo->query("SELECT id FROM users WHERE username = \"$uname\"") as $row) {
 						$uid = $row[0];
 						break;
 					}
-					foreach ($dbo->query("SELECT name, email, age, gender FROM user_profiles WHERE uid = $uid")) {
+					foreach ($pdo->query("SELECT name, email, age, gender FROM user_profiles WHERE uid = $uid") as $row) {
 						$name = $row[0];
 						if ($name === null) {
 							$name = "";
