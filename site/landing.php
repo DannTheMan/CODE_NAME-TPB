@@ -23,8 +23,10 @@
             if (!isset($_COOKIE['asqCDhGVsulSU'])) {
                 echo "<a id='login' href='login.php'>login</a>";
             } else {
-                echo "<div id='profile' href='.'>profile</div>";
-                echo "<div id='logout' href='.'>logout</div>";
+                $tempCookie = $_COOKIE['asqCDhGVsulSU'];
+                $usrnm = $tempCookie;
+                echo "<a id='profile' href='prifile.php?uname=$usrnm'>profile</div>";
+                echo "<div id='logout' href='.'>$usrnm</div>";
             }
 			?>
 		</div>

@@ -26,7 +26,7 @@ window.onload = function () {
 			alert("Error:  No comment entered.");
 		}
 	};
-}
+};
 
 function fail(err) {
 	alert("Error: " + err);
