@@ -7,10 +7,12 @@
 $json = file_get_contents("php://input");
 $data = json_decode($json, true);
 
+$dd = file_get_contents($data["file"]);
+
 $name = htmlspecialchars($data["name"]);
 $desc = htmlspecialchars($data["desc"]);
 
-file_put_contents('temp.torrent', $data["file"]);
+file_put_contents('temp.torrent', $dd);
 
 
 
