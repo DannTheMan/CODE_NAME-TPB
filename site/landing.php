@@ -49,7 +49,7 @@
                     <p>Click <a href="upload.php">here</a> to upload a file share wit hyour friends.</p>
                 </form>
                 <br>
-            </div-->
+            </div>
 			<br><br><br>
 			<div id="searchBox">
 				<h2>Find files from your friends:</h2>
