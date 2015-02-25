@@ -21,7 +21,7 @@
 				if(!isset($_COOKIE['asqCDhGVsulSU'])) {
 					echo "<a id='login' href='login.php'>login</a>";
 				} else {
-					echo "<span id='logout' href='.'>logout</span>";
+					echo "<div id='logout' href='.'>logout</div>";
 				}
 			?>
 		</div>
