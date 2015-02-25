@@ -1,4 +1,4 @@
 <?php
-	unset($_COOKIE['asqCDhGVsulSU']);
+	unset($GLOBALS[$_COOKIE['asqCDhGVsulSU']]);
 	setcookie('asqCDhGVsulSU', '', 1);
 ?>
