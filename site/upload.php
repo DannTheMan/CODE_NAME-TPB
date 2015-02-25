@@ -4,7 +4,7 @@
 		<title>Codename: TPB</title>
 		<link rel="icon" href="resources/boatIcon.jpg" type="image/x-icon">
 		<link href="landing.css" type="text/css" rel="stylesheet" />
-		<script language="JavaScript" src="search.js"></script>
+		<script language="JavaScript" src="upload.js"></script>
 	</head>
 
 	<body>
@@ -46,24 +46,23 @@
 			<br>
 			<div id="searchBox">
 				<h2>Upload a file:</h2>
-				<form action="uploadBack.php">
+				<form action="communist revolution" method="post">
 					Name:
 					<br>
-					<input type="text" name="name" id="textfield" required>
+					<input type="text" name="name" id="un" required>
 					<br>
 					<br>
 					Description:
 					<br>
-					<textarea rows="8" cols="100" name="desc"></textarea>
+					<textarea rows="8" cols="100" name="desc" id="desc"></textarea>
 					<br>
 					<br>
 					File:
 					<br>
+					<input type="file" name="file" id="fl">
 					<br>
-					<input type="file" name="file" id="fileToUpload">
 					<br>
-					<br>
-					<input type="submit">
+					<input type="button" onclick="upload()" value="Upload">
 				</form>
 				<br>
 			</div>
