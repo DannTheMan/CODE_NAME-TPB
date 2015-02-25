@@ -16,7 +16,7 @@ function getData(n,myUrl,d,f) {
 		datatype : 'xml',
 		success : function(data) {
 			var d = true;//(data === 'true');
-			alert(data+"");
+			console.log(data+"");
 			ans = d;
 		},
 		complete : function() {
