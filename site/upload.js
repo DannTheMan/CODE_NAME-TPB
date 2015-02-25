@@ -33,6 +33,7 @@ function getData(n,myUrl,d,f) {
         type: 'POST',
         data: formData,
         success : function(data) {
+        	alert("ajk");
 			var d = true;//(data === 'true');
 			console.log(data+"");
 			ans = d;
