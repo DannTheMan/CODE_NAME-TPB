@@ -134,6 +134,7 @@
 
 .resn {
 	width: 75%;
+	overflow: scroll;
 }
 
 .ress {
