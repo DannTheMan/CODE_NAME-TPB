@@ -158,5 +158,6 @@ width: 75%;
 
 .ress, .resl, .divider {
 	float: right;
+	display: inline-block;
 }
 
