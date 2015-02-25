@@ -10,6 +10,16 @@ CREATE TABLE users
 	UNIQUE KEY username (username)
 );
 
+CREATE TABLE user_profiles
+(
+	uid int PRIMARY KEY NOT NULL,
+	name varchar(40),
+	email varchar(40),
+	age int(3),
+	gender varchar(1),
+	FOREIGN KEY (uid) REFERENCES users(id)
+);
+
 DROP TABLE IF EXISTS peers;
 CREATE TABLE `peers` (
     `id` INT(20) PRIMARY KEY AUTO_INCREMENT NOT NULL,    
@@ -57,3 +67,8 @@ CREATE TABLE comments
 CREATE FUNCTION saltedHash(username VARCHAR(255), password VARCHAR(255))
 RETURNS BINARY(20) DETERMINISTIC
 RETURN UNHEX(SHA1(CONCAT(username, password)));
+
+
+CREATE TRIGGER profileGen AFTER INSERT ON users
+	FOR EACH ROW
+		INSERT INTO user_profiles VALUES (uid, name, email, age, gender) (NEW.id, NULL, NULL, NULL, NULL)
