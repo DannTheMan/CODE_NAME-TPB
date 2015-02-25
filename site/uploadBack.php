@@ -10,9 +10,9 @@ $desc = htmlspecialchars($_POST["d"]);
 //$f = $_POST["f"];
 
 //$ff = new SplFileObject($f);
-$fileo = $_FILES["tester.txt"][0];
+//$fileo = $_FILES["tester.txt"][0];
 
-$file = file_get_contents($fileo);//$ff;
+$file = file_get_contents("tester.txt");//$ff;
 
 echo("  K $name K  ");
 //$file_string = file_get_contents($file);
