@@ -20,19 +20,17 @@ CREATE TABLE `peers` (
     `downloaded` INT(20) NOT NULL DEFAULT 0, 
     `remaining` INT(20) NOT NULL DEFAULT 0, 
     `update_time` INT NOT NULL, 
-    `expire_time` INT NOT NULL,
-    UNIQUE KEY info_hash (info_hash)
+    `expire_time` INT NOT NULL
 );
 
 CREATE TABLE torrents
 (
-	id int NOT NULL AUTO_INCREMENT,
-	name varchar(255) NOT NULL,
-	file mediumblob NOT NULL,
-	info_hash BINARY(20) NOT NULL,
-	description text NOT NULL,
-	PRIMARY KEY (id),
-	FOREIGN KEY (info_hash) REFERENCES peers(info_hash)
+	`id` int NOT NULL AUTO_INCREMENT,
+	`name` varchar(255) NOT NULL,
+	`file` mediumblob NOT NULL,
+	`info_hash` BINARY(20) NOT NULL,
+	`description` text NOT NULL,
+	PRIMARY KEY (id)
 );
 
 CREATE TABLE user_torents
