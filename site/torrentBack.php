@@ -11,8 +11,8 @@
 			$uid = $row[0];
 			break;
 		}
-		$pdo->query("INSERT INTO comments ('id', 'user_id', 'torrent_id', 'comment')
-					VALUES (NULL, $uid, $s, $ucomment)");
+		$pdo->query("INSERT INTO 'comments' ('user_id', 'torrent_id', 'comment')
+					VALUES ($uid, $s, $ucomment)");
 		echo('true');
 	}
 ?>
