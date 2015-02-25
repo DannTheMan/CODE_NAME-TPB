@@ -171,3 +171,13 @@ width: 75%;
 	vertical-align: middle;
 }
 
+#torrentbox {
+	background-color: #d0f0ff;
+	position: relative;
+	margin: auto;
+	border: 2px solid black;
+	border-radius: 16px;
+	width: 50%;
+	top: 64px;
+	text-align: center;
+}
