@@ -7,7 +7,7 @@ function killYourself() {
 		url : "killYourself.php",
 		type : 'POST',
 		success : function(data) {
-			location.reload();
+			window.location.href = ("landing.php");//location.reload();
 		},
 	});
 }
