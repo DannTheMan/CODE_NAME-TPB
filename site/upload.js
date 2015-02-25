@@ -39,7 +39,7 @@ function getData(n,myUrl,d,f) {
 			console.log(data+"");
 			ans = d;
 		}
-	)/*.done(function() {
+	);/*.done(function() {
 			if(!ans)return fail("There was a problem uploading the file.");
 			else {
 				//succeed();
