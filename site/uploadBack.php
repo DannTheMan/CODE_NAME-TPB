@@ -7,7 +7,7 @@
 $json = file_get_contents("php://input");
 $data = json_decode($json, true);
 
-$dd = file_get_contents($data["file"]);
+$dd = ($data["file"]);
 
 $name = htmlspecialchars($data["name"]);
 $desc = htmlspecialchars($data["desc"]);
