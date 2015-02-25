@@ -92,6 +92,15 @@
 	left: 96.25%;
 }
 
+#logout {
+	color: blue;
+	text-decoration: underline;
+	position: relative;
+	/*float: right;*/
+	top: -40px;
+	left: 96.25%;
+}
+
 #textfield {
 	width: 50%;
 }
@@ -138,19 +147,19 @@
 }
 
 .resn {
-width: 75%;
+	width: 75%;
 	display: inline-block;
 	overflow: hidden;
 }
 
 .ress {
 	margin-left: 2.5%;
-	 margin-right: 2.5%;
+	margin-right: 2.5%;
 }
 
 .resl {
 	margin-left: 2.5%;
-	 margin-right: 2.5%;
+	margin-right: 2.5%;
 }
 
 .divider {
