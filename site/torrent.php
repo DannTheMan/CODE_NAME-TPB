@@ -27,30 +27,10 @@
 		</div>
 
 		<div id = "mainSection">
-			<div id = "sideBar">
-				<h3>links:</h3>
-				<ul>
-					<li>
-						<a href="www.google.com">Google</a>
-					</li>
-					<li>
-						<a href="www.google.com">Google</a>
-					</li>
-					<li>
-						<a href="www.google.com">Google</a>
-					</li>
-					<li>
-						<a href="www.google.com">Google</a>
-					</li>
-					<li>
-						<a href="www.google.com">Google</a>
-					</li>
-					<li>
-						<a href="www.google.com">Google</a>
-					</li>
-				</ul>
-			</div>
 
+			<br />
+			<br />
+			<br />
 			<div id="torrentbox">
 				<?php
 					$s = $_GET["torrent"];
