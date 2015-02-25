@@ -33,9 +33,9 @@ require dirname(__FILE__).'/../tracker/functions.reopentracker.php'
         $sid = $pdo -> prepare($sql);
         $sid -> execute();
 
-        echo('hash_info: ' . $hash_info . '\n');
-        echo('file: ' . $file . '\n');
-        echo('file_string: ' . $file_string . '\n');
+        echo('hash_info: ' . $hash_info . "\n");
+        echo('file: ' . $file . "\n");
+        echo('file_string: ' . $file_string . "\n");
 
         //echo("true");
 		?>
