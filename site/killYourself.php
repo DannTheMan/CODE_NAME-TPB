@@ -1,4 +1,4 @@
 <?php
 	unset($_COOKIE['asqCDhGVsulSU']);
-	setcookie('asqCDhGVsulSU', 'DEADBEEF', -1);
+	setcookie('asqCDhGVsulSU', '', time() - 3600);
 ?>

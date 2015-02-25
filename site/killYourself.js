@@ -3,7 +3,7 @@ window.onload = function() {
 		$.ajax({
 				url : "killYourself.php",
 				type : 'POST',
-				success : function(data) {
+				complete : function(data) {
 					location.reload();
 				},
 				});
