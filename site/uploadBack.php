@@ -12,7 +12,7 @@ $desc = htmlspecialchars($data['desc']);
 $file = $data["file"];
 
 echo $file;
-
+echo serialize($data);
 //$ff = new SplFileObject($f);
 //$fileo = $_FILES["tester.txt"][0];
 
