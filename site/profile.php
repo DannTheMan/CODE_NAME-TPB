@@ -40,9 +40,21 @@
 					}
 					foreach ($dbo->query("SELECT name, email, age, gender FROM user_profiles WHERE uid = $uid")) {
 						$name = $row[0];
+						if ($name === null) {
+							$name = "";
+						}
 						$email = $row[1];
+						if ($email === null) {
+							$email = "";
+						}
 						$age = $row[2];
+						if ($age === null) {
+							$age = "";
+						}
 						$gender = $row[3];
+						if ($gender === null) {
+							$gender = "";
+						}
 						break;
 					}
 				?>
