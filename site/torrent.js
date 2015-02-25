@@ -28,6 +28,11 @@ window.onload = function () {
 	};
 }
 
+function fail(err) {
+	alert("Error: " + err);
+	return false;
+}
+
 function succeed() {
 	window.location.href = "torrent.php?torrent=" + torrentID;
 }
