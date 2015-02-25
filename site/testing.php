@@ -2,7 +2,7 @@
 <html>
 	<head>
         <title>Codename: TPB</title>
-        <link rel="icon" href="boatIcon.jpg" type="image/x-icon">
+        <link rel="icon" href="resources/boatIcon.jpg" type="image/x-icon">
 		<link href="landing.css" type="text/css" rel="stylesheet" />
 		<script language="JavaScript" src="landing.js"></script>
 	</head>
