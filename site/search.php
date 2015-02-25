@@ -53,8 +53,25 @@
                     foreach ($pdo->query("SELECT * FROM torrents WHERE name LIKE '%" . $s . "%'") as $row) {
                         $bl = true;
                         echo("<li><div class=\"result\" onclick=todownload(\"$row[0]\")><span class=\"resn\">$row[1]</span><span class=\"ressl\">
-                        <span class=\"divider\"></span>
-                        <span class=\"ress\">Seeders: 17</span><span class=\"divider\"></span><span class=\"resl\">Leechers: 5</span></span></div></li><br>");
+                        <span class=\"divider\"></span>");
+
+                        $seeders = 0;
+                    	foreach ($pdo->query("SELECT COUNT (DISTINCT p.id) FROM peers p, torrents t
+                    					WHERE p.info_hash = t.info_hash AND t.id = $row[0]
+                    					AND p.remaining = 0 AND p.uploaded > p.downloaded") as $rowi) {
+                    		$seeders = $rowi[0];
+                    		break;
+                    	}
+                    	//Calculate Leechers
+                    	$leechers = 0;
+                    	foreach ($pdo->query("SELECT COUNT (DISTINCT p.id) FROM peers p, torrents t
+                    					WHERE p.info_hash = t.info_hash AND t.id = $row[0]") as $rowi) {
+                    		$leechers = $rowi[0];
+                    		$leechers = $leechers - $seeders;
+                    		break;
+                    	}
+
+                        echo("<span class=\"ress\">Seeders: $seeders</span><span class=\"divider\"></span><span class=\"resl\">Leechers: $leechers</span></span></div></li><br>");
                     }
                     if(!$bl)echo("No results found<br><br>");
 					?>
