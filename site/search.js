@@ -1,3 +1,3 @@
-function toDownload(s){
+function todownload(s){
 	alert(s);
 }
