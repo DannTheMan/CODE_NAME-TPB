@@ -11,6 +11,7 @@ function upload(){
 	var myUrl = "uploadBack.php";
 	var n = document.getElementById("un").value;
 	var d = document.getElementById("desc").value;
+
 	//var f = document.getElementById("fl").value;
 	getData(n,myUrl,d,f);
 }
@@ -33,8 +34,30 @@ function getData(n,myUrl,d,f) {
 				//succeed();
 			}
 		}
+
+	/*var formData = new FormData($(this)[0]);
+
+    $.ajax({
+        url: myUrl,
+        type: 'POST',
+        data: formData,
+        success : function(data) {
+        	console.log("GOG");
+        	alert("ajk");
+			var d = true;//(data === 'true');
+			console.log(data+" :KKK");
+			ans = d;
+		},
+		complete : function() {
+			if(!ans)return fail("There was a problem uploading the file.");
+			else {
+				//succeed();
+			}},
+        cache: false,
+        contentType: false,
+        processData: false
 	
-	});
+	});*/
 }
 
 function succeed(){
@@ -47,3 +70,7 @@ function fail(err){
 	return false;
 }
 
+function gohome(inf){
+	alert(inf);
+	window.location.href = "landing.php";
+}

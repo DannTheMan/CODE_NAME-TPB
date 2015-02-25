@@ -4,7 +4,9 @@
 		<title>Codename: TPB</title>
 		<link rel="icon" href="resources/boatIcon.jpg" type="image/x-icon">
 		<link href="landing.css" type="text/css" rel="stylesheet" />
-		<script language="JavaScript" src="landing.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+        <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/rabbit.js"></script>
+        <script language="JavaScript" src="torrent.js"></script>
 	</head>
 
 	<body>
@@ -87,28 +89,14 @@
 				?>
 				<br />
 				<br />
-				<form action="<?php
-						$ucomment = $_POST['userComment'];
-						$tempCookie = $_COOKIE[crypt('username', 'askdalkweasdaaowej312sa9')];
-						if (strlen($ucomment) > 0 && isset($tempCookie)) {
-							$usrnm = $tempCookie;
-							foreach ($pdo->query(\"SELECT id FROM users WHERE username = $usrnm \") as $row) {
-								$uid = $row[0];
-								break;
-							}
-							$pdo->query(\"INSERT INTO comments (\'id\', \'user_id\', \'torrent_id\', \'comment\')
-								VALUES (NULL, $uid, $s, $ucomment));
 
-						} else if (!isset($tempCookie)) {
-							?> <script> alert('Error:  Not logged in.');</script><?php
-						} else {
-							?> <script> alert('Error:  No comment entered.');</script><?php
-						}
-						?>" method="POST">
-					Comment:<br />
-					<textarea name='userComment' id='userComment'></textarea><br />
-					<input type='submit' value='submit' />
-				</form>
+				<script type="text/javascript">
+					var torrentID = "<?php echo $s; ?>";
+				</script>
+
+				Comment:<br />
+				<textarea name='userComment' id='userComment'></textarea><br />
+				<input type='submit' value='submit' id='submitComment' />
 
 			</div>
 
