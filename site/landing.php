@@ -25,7 +25,7 @@
             } else {
                 $tempCookie = $_COOKIE['asqCDhGVsulSU'];
                 $usrnm = $tempCookie;
-                echo "<a id='profile' href='prifile.php?uname=$usrnm'>$usrnm</a>";
+                echo "<a id='profile' href='profile.php?uname=$usrnm'>$usrnm</a>";
                 echo "<div id='logout' href='.'>logout</div>";
             }
 			?>
