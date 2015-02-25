@@ -1,0 +1,112 @@
+#topBar {
+
+	top: 0%;
+	height: 80px;
+	background-color: #9fcfcf;
+	border: 2px solid black;
+	border-radius: 16px;
+	width: 96%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#mainSection {
+
+	margin: 0 auto;
+	margin-bottom: 32px;
+	position: absolute;
+	height: 1200px;
+	top: 120px;
+	border: 2px solid black;
+	border-radius: 16px;
+	width: 96%;
+	background-color: #9fcfcf;
+	background-image: url("pirateShip.png");
+	left: 0%;
+	right: 0%;
+}
+
+#sideBar {
+
+	top: 0%;
+	position: absolute;
+	width: 8.5%;
+	left: 0px;
+	bottom: 0px;
+	background-color: #effbd0;
+	border: 2px solid black;
+	border-radius: 16px;
+	text-align: center;
+}
+
+#pageTitle {
+
+	color: #a04040;
+	font-weight: bold;
+	text-align: center;
+}
+
+#searchBox {
+
+	background-color: #d0f0ff;
+	position: relative;
+	margin: auto;
+	border: 2px solid black;
+	border-radius: 16px;
+	width: 50%;
+	top: 64px;
+	text-align: center;
+}
+
+#resultsBox {
+
+	background-color: #d0f0ff;
+	position: relative;
+	margin: auto;
+	border: 2px solid black;
+	border-radius: 16px;
+	width: 75%;
+	top: 128px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#resultsMessage {
+	font-weight: bold;
+}
+
+#results {
+	display: none;
+}
+
+#login {
+	position: relative;
+	/*float: right;*/
+	top: -40px;
+	left: 96.25%;
+}
+
+#textfield {
+	width: 50%;
+}
+
+.passfield {
+
+}
+
+#dlBox {
+	background-color: #d0f0ff;
+	position: relative;
+	margin: auto;
+	border: 2px solid black;
+	border-radius: 16px;
+	width: 50%;
+	top: 64px;
+	text-align: center;
+}
+
+#loading {
+	margin: auto;
+	width: 10%;
+	background:url(loading.gif) no-repeat top left;
+}
