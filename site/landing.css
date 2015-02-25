@@ -102,7 +102,9 @@
 }
 
 #logout {
-	display: inline color : blue;
+	cursor: pointer;
+	display: inline;
+	color : blue;
 	text-decoration: underline;
 	position: relative;
 	/*float: right;*/
