@@ -10,13 +10,13 @@ $data = json_decode($json, true);
 $name = htmlspecialchars($data["name"]);
 $desc = htmlspecialchars($data["desc"]);
 
-file_put_contents("temp.torrent", $data["file"]);
+file_put_contents('temp.torrent', $data["file"]);
 
 
 
 $file = $data["file"];
 
-echo bdecode($file)['info'];
+echo bdecode($file)["info"];
 
 //$file = $data["file"];
 
@@ -27,7 +27,7 @@ echo bdecode($file)['info'];
 
 //echo("  K $name K  ");
 //$file_string = file_get_contents($file);
-$hash_info = sha1(bencode(bdecode($file)['info']));
+$hash_info = sha1(bencode(bdecode($file)["info"]));
 
 
 
