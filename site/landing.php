@@ -67,7 +67,7 @@
 			</div-->
 		</div>
 		
-		<div id="statsBox">
+		<div id="resultsBox">
                 <h2>Website Statistics:</h2>
                 <!--form action="search.php">
                     Search files by name:
@@ -91,7 +91,7 @@
                             $files = $rowi[0];
                             break;
                         }
-                        echo($file);
+                        echo($files);
                 echo("<br><br>Total number of seeders: ");
                 $seeders = 0;
                         foreach ($pdo->query("SELECT COUNT(p.id) FROM peers p, WHERE p.remaining = 0 AND p.uploaded > p.downloaded") as $rowi) {
