@@ -13,13 +13,16 @@
 		<div id = "topBar">
 			<h1 id="pageTitle">Codename: TPB</h1>
 			<a id="home" href="landing.php">home</a>
-			<?php 
-				if(!isset($_COOKIE['asqCDhGVsulSU'])) {
-					echo "<a id='login' href='login.php'>login</a>";
-				} else {
-					echo "<div id='logout' href='.'>logout</div>";
-				}
-			?>
+			<?php
+            if (!isset($_COOKIE['asqCDhGVsulSU'])) {
+                echo "<a id='login' href='login.php'>login</a>";
+            } else {
+                $tempCookie = $_COOKIE['asqCDhGVsulSU'];
+                $usrnm = $tempCookie;
+                echo "<a id='profile' href='profile.php?uname=$usrnm'>$usrnm</a>";
+                echo "<div id='logout' href='.'>logout</div>";
+            }
+            ?>
 		</div>
 
 		<div id = "mainSection">
