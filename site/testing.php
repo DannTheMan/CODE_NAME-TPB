@@ -26,8 +26,8 @@ require dirname(__FILE__).'/../tracker/functions.reopentracker.php'
 
         $file = $ff;
 
-        $file_string = file_get_contents($file);
-        $hash_info = sha1(bencode(bdecode($file_string)['info']));
+        //$file_string = file_get_contents($file);
+        $hash_info = sha1(bencode(bdecode($file)['info']));
 
         $sql = "INSERT INTO torrents (name,description,file) VALUES ('$name','$desc','$file')";
         //put real SQL stuff here
@@ -36,7 +36,7 @@ require dirname(__FILE__).'/../tracker/functions.reopentracker.php'
 
         echo('hash_info: ' . $hash_info . "<br>");
         echo('file: ' . $file . "<br>");
-        echo('file_string: ' . $file_string . "<br>");
+        //echo('file_string: ' . $file_string . "<br>");
 
         //echo("true");
 		?>
