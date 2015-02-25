@@ -54,12 +54,12 @@
 					<br>
 					Description:
 					<br>
-					<textarea rows="8" cols="100"></textarea>
+					<textarea rows="8" cols="100" name="desc"></textarea>
 					<br>
 					<br>
 					File:
 					<br>
-					<!--input type="text" name="name" id="textbox" required>
+					<input type="file" name="file" id="fileToUpload">
 					<br>
 					<br-->
 					<input type="submit">
