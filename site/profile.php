@@ -38,6 +38,8 @@
 					$uname = $_GET['uname'];
 					foreach ($pdo->query("SELECT id FROM users WHERE username = \"$uname\"") as $row) {
 						$uid = $row[0];
+				?>		<script type="text/javascript">var uid = <?php echo $uid; ?>;</script>
+				<?php
 						break;
 					}
 					foreach ($pdo->query("SELECT name, email, age, gender FROM user_profiles WHERE uid = $uid") as $row) {
