@@ -4,7 +4,7 @@ window.onload = function() {
 				url : "killYourself.php",
 				type : 'POST',
 				success : function(data) {
-					window.location.href = document.getElementById("logout").href;
+					location.reload();
 				},
 				});
 	}
