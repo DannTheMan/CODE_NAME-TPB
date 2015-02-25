@@ -229,3 +229,7 @@ textarea {
 	position: relative;
 	width: 80%;
 }
+
+#trackerUrl {
+	width: 127px;
+}

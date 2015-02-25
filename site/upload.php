@@ -48,7 +48,7 @@
 					<br>
 					<br>
 					Please use this tracker to create your torrent file: 
-					<input type="text" name="TrackerUrl" 
+					<input type="text" name="TrackerUrl" id="trackerUrl" 
 						value="cntpb.csse.rose-hulman.edu/CODE_NAME-TPB/tracker/announce.php" readonly>
 					<br>
 					<br>
