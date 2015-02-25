@@ -10,7 +10,7 @@ $desc = htmlspecialchars($_POST["d"]);
 //$f = $_POST["f"];
 
 //$ff = new SplFileObject($f);
-$fileo = $_FILES["f"][0];
+$fileo = $_FILES["tester.txt"][0];
 
 $file = file_get_contents($fileo);//$ff;
 
