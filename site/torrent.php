@@ -92,6 +92,7 @@
 
 				<script type="text/javascript">
 					var torrentID = "<?php echo $s; ?>";
+					var tempCookie = "<?php echo $_COOKIE['asqCDhGVsulSU']; ?>";
 				</script>
 
 				Comment:<br />
