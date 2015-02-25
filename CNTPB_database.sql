@@ -5,12 +5,9 @@ CREATE TABLE users
 (
 	id int NOT NULL AUTO_INCREMENT,
 	username varchar(255) NOT NULL,
-	email varchar(255) NOT NULL,
-	name varchar(255) NOT NULL,
-	hash BINARY(20) NOT NULL,
+	hash varchar(255) NOT NULL,
 	PRIMARY KEY (id),
-	UNIQUE KEY username (username),
-	UNIQUE KEY hash (hash)
+	UNIQUE KEY username (username)
 );
 
 CREATE TABLE torrents

@@ -7,7 +7,12 @@
 	</head>
 
 	<body>
-
+		<?php $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "cntpb";
+        $db = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8", "$username", "$password");
+		?>
 		<div id = "topBar">
 			<h1 id="pageTitle">Codename: TPB</h1>
 			<a id="login" href="login.php">login</a>
@@ -39,22 +44,9 @@
 			</div>
 
 			<div id="dlBox">
-                <h2>Share files with your friends:</h2>
-                <form action="action_page.php">
-                    <!--DO SOME STUFF!!!-->
-                    Search files by name:
-                    <br>
-                    <input type="text" name="searchtext" id="textfield" required>
-                    <br>
-                    <br>
-                    <input type="submit">
-                </form>
-                <br>
-            </div>
-			<br><br><br>
-			<div id="searchBox">
-				<h2>Find files from your friends:</h2>
-				<form action="search.php">
+				<h2>Share files with your friends:</h2>
+				<form action="action_page.php">
+					<!--DO SOME STUFF!!!-->
 					Search files by name:
 					<br>
 					<input type="text" name="searchtext" id="textfield" required>
@@ -64,13 +56,38 @@
 				</form>
 				<br>
 			</div>
-			<!--div id="resultsBox">
+			<br>
+			<br>
+			<br>
+			<div id="searchBox">
+				<h2>Find files from your friends:</h2>
+				<form action="search.php">
+					<!--DO SOME STUFF!!!-->
+					Search files by name:
+					<br>
+					<input type="text" name="searchtext" id="textfield" required>
+					<br>
+					<br>
+					<input type="submit">
+				</form>
+				<br>
+			</div>
+			<div id="resultsBox">
 				<h2>Results:</h2>
 				<br>
-				<p id="resultsMessage">
-					No results found with your current search.
-				</p><ul id="results"></ul>
-			</div-->
+				<!--p id="resultsMessage">
+				No results found with your current search.
+				</p-->
+				<ul id="results">
+					<?php
+                    $s = $_POST["searchtext"];
+
+                    foreach ($db->query("SELECT * FROM torrents WHERE name LIKE '$s'") as $row) {
+                        echo("<div class=\"result\"><span class=\"resn\">$row[1]</span><span class=\"ress\">17</span><span class=\"resl\">5</span></div>");
+                    }
+					?>
+				</ul>
+			</div>
 		</div>
 
 	</body>

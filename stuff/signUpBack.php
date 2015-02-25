@@ -16,17 +16,19 @@ $name = "";
 $ans = false;
 
 if (mysqli_num_rows($sid) == 0) {
-    $ans = 'true';
+    $ans = true;
+    $sql = "INSERT INTO users (username,hash) VALUES ('$uname','$ss')";
+    $sid = mysqli_query($conn, $sql);
+    //$sql = "UPDATE users SET hash='$ss' WHERE username='$uname'";
+    //$sid = mysqli_query($conn, $sql);
     
-    //DO STUFF!
-    
-    $cookie_name = crypt("username","askdalkweasdaaowej312sa9");
+    /*$cookie_name = crypt("username","askdalkweasdaaowej312sa9");
     $cookie_value = $name;
     $days = 1;
-    setcookie($cookie_name, $cookie_value, time() + (86400 * $days), "/");
+    setcookie($cookie_name, $cookie_value, time() + (86400 * $days), "/");*/
 }
 
-if (ans) {
+if ($ans) {
     echo('true');
 } else
     echo('false');
