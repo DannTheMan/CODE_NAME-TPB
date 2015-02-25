@@ -46,7 +46,10 @@
                 <form action="search.php">
                     Search files by name:
                     <br>
-                    <input type="text" name="searchtext" id="textfield" required>
+                    <input type="text" name="name" id="textfield" required>
+                    <br>
+                    <br>
+                    <input type="text" name="name" id="textbox" required>
                     <br>
                     <br>
                     <input type="submit">
