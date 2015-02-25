@@ -59,14 +59,15 @@
                     }
 				?>
 				<h2><?php echo $name ?></h2>
+				<h4>&#09;Seeders: 32 &nbsp;&nbsp;&nbsp;&nbsp;Leechers: 1,209&#09;</h4>
 				<br />
-				<h4>&#09;Seeders: 32 &#09;&#09;Leechers: 1,209&#09;</h4>
 				<p>
 					<?php echo $description ?>
 				</p>
 				<br />
 				<br />
 				<a href="<?php echo $file ?>" download="<?php echo $name ?>">Click here to download!</a>
+				<br />
 				<br />
 			</div>
 
