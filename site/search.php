@@ -70,7 +70,7 @@
                         echo("<li><div class=\"result\" onclick=todownload(\"$row[0]\")><span class=\"resn\">$row[1]</span><span class=\"divider\"></span>
                         <span class=\"ress\">Seeders: 17</span><span class=\"divider\"></span><span class=\"resl\">Leechers: 5</span></div></li><br>");
                     }
-                    if(!$bl)echo("No results found<br>");
+                    if(!$bl)echo("No results found<br><br>");
 					?>
 				</ul>
 			</div>
