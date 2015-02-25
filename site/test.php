@@ -9,6 +9,7 @@ $files = array();
 
 while($row = $stmt ->fetch(PDO::FETCH_ASSOC)) {
 	echo $row['info_hash'];
+	echo "<br />";
 }
 
 
