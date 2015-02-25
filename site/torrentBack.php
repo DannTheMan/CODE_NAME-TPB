@@ -3,7 +3,7 @@
 	if (!isset($_COOKIE['asqCDhGVsulSU'])) {
 		echo('false');
 	} else {
-		$ucomment = $_POST['userComment'];
+		$ucomment = $_POST['comments'];
 		$s = $_POST['torrent'];
 		$tempCookie = $_COOKIE['asqCDhGVsulSU'];
 		$usrnm = $tempCookie;
