@@ -139,23 +139,24 @@ width: 75%;
 }
 
 .ress {
-	float: right;
-	/*margin-left: 5%;
-	 margin-right: 5%;*/
+	margin-left: 2.5%;
+	 margin-right: 2.5%;
 }
 
 .resl {
-	float: right;
-	/*margin-left: 5%;
-	 margin-right: 5%;*/
+	margin-left: 2.5%;
+	 margin-right: 2.5%;
 }
 
 .divider {
-	float: right;
 	border-left: 1px solid gray;
 	border-right: 1px solid black;
 	height: 100% px;
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+
+.ress, .resl, .divider {
+	float: right;
 }
 
