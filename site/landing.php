@@ -4,6 +4,7 @@
 		<title>Codename: TPB</title>
 		<link rel="icon" href="resources/boatIcon.jpg" type="image/x-icon">
 		<link href="landing.css" type="text/css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
 		<script language="JavaScript" src="landing.js"></script>
 		<script language="JavaScript" src="killYourself.js"></script>
 	</head>
