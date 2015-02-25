@@ -151,16 +151,11 @@ width: 75%;
 .divider {
 	border-left: 1px solid gray;
 	border-right: 1px solid black;
-	height: 100% px;
+	height: 100%;
 	margin-left: 2.5%;
 	margin-right: 2.5%;
 }
 
-.ress, .resl, .divider {
-	position: relative;
-	display: inline-block;
+.ressl {
 	float: right;
-	margin: 16px;
-	height: 100%;
 }
-
