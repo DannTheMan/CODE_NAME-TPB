@@ -35,7 +35,7 @@
 define( 'DB_HOST', 'localhost' );
 
 // MySQL database username
-define( 'DB_USER', 'tpb' );
+define( 'DB_USER', 'root' );
 
 // MySQL database password
 define( 'DB_PASS', 'ChangeMe!' );

@@ -40,6 +40,19 @@ CREATE TABLE comments
 	FOREIGN KEY (torrent_id) REFERENCES torrents(id)
 );
 
+DROP TABLE IF EXISTS peers;
+CREATE TABLE `peers` (
+    `id` INT(20) PRIMARY KEY AUTO_INCREMENT NOT NULL,    
+    `info_hash` BINARY(20) NOT NULL, 
+    `ip` INT(11) NOT NULL, `port` INT(5) NOT NULL, 
+    `peer_id` BINARY(20) NOT NULL, 
+    `uploaded` INT(20) NOT NULL DEFAULT 0, 
+    `downloaded` INT(20) NOT NULL DEFAULT 0, 
+    `remaining` INT(20) NOT NULL DEFAULT 0, 
+    `update_time` INT NOT NULL, 
+    `expire_time` INT NOT NULL 
+);
+
 CREATE FUNCTION saltedHash(username VARCHAR(255), password VARCHAR(255))
 RETURNS BINARY(20) DETERMINISTIC
 RETURN UNHEX(SHA1(CONCAT(username, password)));
