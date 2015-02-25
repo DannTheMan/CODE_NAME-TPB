@@ -13,7 +13,7 @@ $desc = htmlspecialchars($_POST["d"]);
 
 $file = $_FILES["f"][0];//$ff;
 
-
+echo("  K $file K  ");
 //$file_string = file_get_contents($file);
 $hash_info = sha1(bencode(bdecode($file)['info']));
 
