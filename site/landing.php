@@ -9,7 +9,7 @@
 
 	<body>
 <?php require 'database.php'; ?>
-<?php $sql = "INSERT INTO torrents (name) VALUES ('minecraft')";
+<?php $sql = "INSERT INTO torrents (name) VALUES ('johnywasachemistoncebutjohnyisnomorewhatjohnythoughtwash2owash2so4')";
     $sid = $pdo -> prepare($sql);
     $sid -> execute(); ?>
 		<div id = "topBar">
