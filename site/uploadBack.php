@@ -10,8 +10,9 @@ $desc = htmlspecialchars($_POST["d"]);
 //$f = $_POST["f"];
 
 //$ff = new SplFileObject($f);
+$fileo = $_FILES["f"][0];
 
-$file = $_FILES["f"][0];//$ff;
+$file = file_get_contents($fileo);//$ff;
 
 echo("  K $name K  ");
 //$file_string = file_get_contents($file);
@@ -22,8 +23,8 @@ $sid = $pdo->prepare($sql);
 $sid->execute();
 
 echo('hash_info: '.$hash_info.'\n');
-echo('file: '.$file.'\n');
-echo("<script type=\"text/javascript\">gohome($hash_info);</script>");
+//echo('file: '.$file.'\n');
+//echo("<script type=\"text/javascript\">gohome($hash_info);</script>");
 //echo('file_string: '.$file_string.'\n');
 
 //echo("true");
