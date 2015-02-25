@@ -101,7 +101,7 @@
 	position: relative;
 	/*float: right;*/
 	top: -40px;
-	left: 92%;
+	left: 90%;
 }
 
 #home {
@@ -109,11 +109,23 @@
 	position: relative;
 	/*float: right;*/
 	top: -40px;
-	left: 90.25%;
+	left: 88.25%;
 	vertical-align: middle;
 }
 
 #logout {
+	cursor: pointer;
+	display: inline;
+	color: blue;
+	text-decoration: underline;
+	position: relative;
+	/*float: right;*/
+	top: -40px;
+	left: 90%;
+	vertical-align: middle;
+}
+
+#profile {
 	cursor: pointer;
 	display: inline;
 	color: blue;
