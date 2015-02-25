@@ -1,9 +1,17 @@
 function upload(){
 	alert("SADASD");
+
+	var reader = new FileReader();
+	reader.onload = function() {
+		var f = reader.result;
+		//console.log(reader.result)
+	};
+	console.log(reader.readAsBinaryString(document.getElementById("fl").files[0]));
+
 	var myUrl = "uploadBack.php";
 	var n = document.getElementById("un").value;
 	var d = document.getElementById("desc").value;
-	var f = document.getElementById("fl").value;
+	//var f = document.getElementById("fl").value;
 	getData(n,myUrl,d,f);
 }
 
