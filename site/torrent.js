@@ -1,6 +1,7 @@
 window.onload = function () {
 	document.getElementById("submitComment").onclick = function() {
 		if (document.getElementById("userComment").value.length > 0) {
+			var ans = "";
 			$.ajax({
 				url : "torrentBack.php",
 				torrent : torrentID,
