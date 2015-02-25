@@ -97,6 +97,7 @@
 	/*float: right;*/
 	top: -40px;
 	left: 90.25%;
+	vertical-align: middle;
 }
 
 #logout {
@@ -106,6 +107,7 @@
 	/*float: right;*/
 	top: -40px;
 	left: 94.25%;
+	vertical-align: middle;
 }
 
 #textfield {
