@@ -63,10 +63,11 @@
 				<ul id="results">
 					<?php
                     $s = htmlspecialchars($_GET["searchtext"]);
+                    echo("<br>");
 
                     foreach ($pdo->query("SELECT * FROM torrents WHERE name LIKE '$s'") as $row) {
-                        echo("<li><div class=\"result\" onclick=todownload(\"$row[0]\")><span class=\"resn\">$row[1]</span><span class=\"divider\"></div>
-                        <span class=\"ress\">Seeders: 17</span><span class=\"divider\"></div><span class=\"resl\">Leechers: 5</span></div></li><br>");
+                        echo("<li><div class=\"result\" onclick=todownload(\"$row[0]\")><span class=\"resn\">$row[1]</span><span class=\"divider\"></span>
+                        <span class=\"ress\">Seeders: 17</span><span class=\"divider\"></span><span class=\"resl\">Leechers: 5</span></div></li><br>");
                     }
                     //echo("<br>KKK-end<br>");
 					?>
