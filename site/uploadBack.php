@@ -48,7 +48,7 @@ $file_string = file_get_contents($file);
 $info_hash = sha1(bencode(bdecode($file_string)['info']));
 echo $info_hash;
 
-$sql = "INSERT INTO torrents (name, description, file, info_hash) VALUES (:name , :descr , :file , :info_hash )";
+$sql = "INSERT INTO torrents (name, description, file, info_hash) VALUES (:name , :descr , :file , UNHEX( ':info_hash' ))";
 //put real SQL stuff here
 $sid = $pdo -> prepare($sql);
 
