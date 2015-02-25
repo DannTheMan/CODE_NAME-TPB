@@ -83,7 +83,6 @@
 	border-radius: 16px;
 	background-color: #eeeeee;
 	width: 96%;
-	
 }
 
 #login {
@@ -129,15 +128,19 @@
 }
 
 .resn {
+	margin-left: 15%;
 	width: 75%;
 	border: 1px solid black;
 }
 
 .ress {
+	margin-left: 15%;
 	width: 12.5%;
 	border: 1px solid black;
 }
-.ress {
+
+.resl {
+	margin-left: 15%;
 	width: 12.5%;
 	border: 1px solid black;
 }
