@@ -9,7 +9,7 @@ function upload(){
 	var reader = new FileReader();
 	reader.onload = function() {
 		var f = reader.result;
-		console.log(reader.result)
+		//console.log(reader.result)
 
 		getData(n,myUrl,d,f);
 
@@ -32,24 +32,19 @@ function getData(n,myUrl,d,f) {
 		file:f
 	};
 	var jData = JSON.stringify(dataToSend);
-
-	$.ajax({
-		url : myUrl,
-		type: 'POST',
-		data: jData,
-		datatype : 'json',
-		success : function(data) {
+	//console.log(jData);
+	$.post(myUrl, jData, function(data) 
+		{
 			var d = true;//(data === 'true');
 			console.log(data+"");
 			ans = d;
-		},
-		complete : function() {
+		}
+	)/*.done(function() {
 			if(!ans)return fail("There was a problem uploading the file.");
 			else {
 				//succeed();
-			}
-		}
-
+			});
+		
 	/*var formData = new FormData($(this)[0]);
 
     $.ajax({
@@ -72,7 +67,7 @@ function getData(n,myUrl,d,f) {
         contentType: false,
         processData: false
 	*/
-	});
+	//});
 }
 
 function succeed(){

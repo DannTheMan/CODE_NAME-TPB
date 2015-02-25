@@ -4,14 +4,21 @@
 ?>
 <?php
 
-$json = $_POST;
+$json = file_get_contents("php://input");
+$data = json_decode($json, true);
 
-$data = json_decode(file_get_contents("php://input"));
+$name = htmlspecialchars($data["name"]);
+$desc = htmlspecialchars($data["desc"]);
 
-$name = htmlspecialchars($data['name']);
-$desc = htmlspecialchars($data['desc']);
+file_put_contents("temp.torrent", $data["file"]);
+
+
 
 $file = $data["file"];
+
+echo bdecode($file)['info'];
+
+//$file = $data["file"];
 
 //$ff = new SplFileObject($f);
 //$fileo = $_FILES["tester.txt"][0];
@@ -19,11 +26,18 @@ $file = $data["file"];
 //$file = file_get_contents("tester.txt");//$ff;
 
 //echo("  K $name K  ");
-$file_string = file_get_contents($file);
-$hash_info = sha1(bencode(bdecode($file_string)['info']));
+//$file_string = file_get_contents($file);
+$hash_info = sha1(bencode(bdecode($file)['info']));
 
-$sql = "INSERT INTO torrents (name,description,file) VALUES ('$name','$desc','$file')";//put real SQL stuff here
+
+
+$sql = "INSERT INTO torrents (name, description, file) VALUES (:name , :descr , :file )";//put real SQL stuff here
 $sid = $pdo->prepare($sql);
+
+$sid->bindParam(':name', $name);
+$sid->bindParam(':descr', $desc);
+$sid->bindParam(':file', $file);
+
 $sid->execute();
 
 //echo('hash_info: '.$hash_info.'\n');
