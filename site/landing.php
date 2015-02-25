@@ -66,8 +66,8 @@
 			</p><ul id="results"></ul>
 			</div-->
 		</div>
-		
-		<div id="resultsBox">
+		<br><br><br>
+		<div id="statsBox">
                 <h2>Website Statistics:</h2>
                 <!--form action="search.php">
                     Search files by name:
