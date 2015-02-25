@@ -215,10 +215,10 @@
 	margin: auto;
 	border: 2px solid black;
 	border-radius: 16px;
-	width: 50%;
+	width: 80%;
 	top: 64px;
 	text-align: center;
-	height: 90%;
+	height: 60%;
 	overflow-y: scroll;
 }
 
@@ -228,9 +228,11 @@
 	margin: auto;
 	border: 2px solid black;
 	border-radius: 16px;
-	width: 50%;
+	width: 80%;
 	top: 64px;
 	text-align: center;
+	height: 20%;
+	overflow-y: scroll;
 }
 
 .comment {
