@@ -18,10 +18,11 @@ require dirname(__FILE__).'/../tracker/functions.reopentracker.php'
         //$name = htmlspecialchars($_POST["n"]);
         ///$desc = htmlspecialchars($_POST["d"]);
 
-        //$ff = new SplFileObject($_POST["f"]);
         $name = "megatest";
         $desc = "a new test";
         $f = "tester.txt";
+        
+        $ff = new SplFileObject($f);
 
         $file = $ff;
 
@@ -33,9 +34,9 @@ require dirname(__FILE__).'/../tracker/functions.reopentracker.php'
         $sid = $pdo -> prepare($sql);
         $sid -> execute();
 
-        echo('hash_info: ' . $hash_info . "\n");
-        echo('file: ' . $file . "\n");
-        echo('file_string: ' . $file_string . "\n");
+        echo('hash_info: ' . $hash_info . "<br>");
+        echo('file: ' . $file . "<br>");
+        echo('file_string: ' . $file_string . "<br>");
 
         //echo("true");
 		?>
