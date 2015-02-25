@@ -34,9 +34,9 @@ function getData(n,myUrl,d,f) {
 	var jData = JSON.stringify(dataToSend);
 	$.ajax({
 		url : myUrl,
-		type : 'POST',
-		data : jData,
-		datatype : 'xml',
+		type: 'POST',
+		data: jData,
+		datatype : 'json',
 		success : function(data) {
 			var d = true;//(data === 'true');
 			console.log(data+"");
