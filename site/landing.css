@@ -157,5 +157,7 @@ width: 75%;
 }
 
 .ressl {
+	display: inline-block;
+	width: 25%;
 	float: right;
 }
