@@ -7,6 +7,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
         <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/rabbit.js"></script>
         <script language="JavaScript" src="torrent.js"></script>
+		<script language="JavaScript" src="killYourself.js"></script>
 	</head>
 
 	<body>
@@ -16,33 +17,17 @@
     $sid -> execute(); ?-->
 		<div id = "topBar">
 			<h1 id="pageTitle">Codename: TPB</h1>
-			<a id="login" href="login.php">login</a>
+			<a id="home" href="landing.php">home</a>
+			<?php 
+				if(!isset($_COOKIE['asqCDhGVsulSU'])) {
+					echo "<a id='login' href='login.php'>login</a>";
+				} else {
+					echo "<div id='logout' href='.'>logout</div>";
+				}
+			?>
 		</div>
 
 		<div id = "mainSection">
-			<div id = "sideBar">
-				<h3>links:</h3>
-				<ul>
-					<li>
-						<a href="www.google.com">Google</a>
-					</li>
-					<li>
-						<a href="www.google.com">Google</a>
-					</li>
-					<li>
-						<a href="www.google.com">Google</a>
-					</li>
-					<li>
-						<a href="www.google.com">Google</a>
-					</li>
-					<li>
-						<a href="www.google.com">Google</a>
-					</li>
-					<li>
-						<a href="www.google.com">Google</a>
-					</li>
-				</ul>
-			</div>
 
 			<div id="torrentbox">
 				<?php
@@ -82,7 +67,7 @@
 				<?php
 					$s = $_GET["torrent"];
 					$rows = $pdo->query("SELECT u.username, c.comment FROM comments c, users u 
-							WHERE c.torrent_id = $s AND u.id = c.user_id");
+							WHERE c.torrent_id = $s AND u.id = c.user_id ORDER BY c.id");
 					foreach ($rows as $row) {
 						echo "<div class=\"comment\"> <strong>$row[0]</strong>: $row[1]</div>";
 					}

@@ -89,7 +89,26 @@
 	position: relative;
 	/*float: right;*/
 	top: -40px;
-	left: 96.25%;
+	left: 94.25%;
+}
+
+#home {
+	display: inline;
+	position: relative;
+	/*float: right;*/
+	top: -40px;
+	left: 90.25%;
+	vertical-align: middle;
+}
+
+#logout {
+	display: inline color : blue;
+	text-decoration: underline;
+	position: relative;
+	/*float: right;*/
+	top: -40px;
+	left: 94.25%;
+	vertical-align: middle;
 }
 
 #textfield {
@@ -138,19 +157,19 @@
 }
 
 .resn {
-width: 75%;
+	width: 75%;
 	display: inline-block;
 	overflow: hidden;
 }
 
 .ress {
 	margin-left: 2.5%;
-	 margin-right: 2.5%;
+	margin-right: 2.5%;
 }
 
 .resl {
 	margin-left: 2.5%;
-	 margin-right: 2.5%;
+	margin-right: 2.5%;
 }
 
 .divider {

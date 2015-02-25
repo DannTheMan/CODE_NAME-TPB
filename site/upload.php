@@ -6,6 +6,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
 		<link href="landing.css" type="text/css" rel="stylesheet" />
 		<script language="JavaScript" src="upload.js"></script>
+        <script language="JavaScript" src="killYourself.js"></script>
 	</head>
 
 	<body>
@@ -14,34 +15,17 @@
 		?>
 		<div id = "topBar">
 			<h1 id="pageTitle">Codename: TPB</h1>
-			<a id="login" href="login.php">login</a>
+			<a id="home" href="landing.php">home</a>
+			<?php 
+				if(!isset($_COOKIE['asqCDhGVsulSU'])) {
+					echo "<a id='login' href='login.php'>login</a>";
+				} else {
+					echo "<div id='logout' href='.'>logout</div>";
+				}
+			?>
 		</div>
 
 		<div id = "mainSection">
-			<div id = "sideBar">
-				<h3>links:</h3>
-				<ul>
-					<li>
-						<a href="www.google.com">Google</a>
-					</li>
-					<li>
-						<a href="www.google.com">Google</a>
-					</li>
-					<li>
-						<a href="www.google.com">Google</a>
-					</li>
-					<li>
-						<a href="www.google.com">Google</a>
-					</li>
-					<li>
-						<a href="www.google.com">Google</a>
-					</li>
-					<li>
-						<a href="www.google.com">Google</a>
-					</li>
-				</ul>
-			</div>
-
 			<br>
 			<br>
 			<br>
