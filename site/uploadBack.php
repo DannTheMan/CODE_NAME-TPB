@@ -6,7 +6,7 @@
 
 $name = htmlspecialchars($_POST["n"]);
 $desc = htmlspecialchars($_POST["d"]);
-$file = $_POST["f"];
+$file = $_FILE["f"];
 
 $file_string = file_get_contents($file);
 $hash_info = sha1(bencode(bdecode($file_string)['info']));
