@@ -28,9 +28,6 @@
 
 		<div id = "mainSection">
 
-			<br />
-			<br />
-			<br />
 			<div id="torrentbox">
 				<?php
 					$s = $_GET["torrent"];
