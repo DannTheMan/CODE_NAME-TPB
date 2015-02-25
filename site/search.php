@@ -56,7 +56,7 @@
                         <span class=\"divider\"></span>");
 
                         $seeders = 0;
-                    	foreach ($pdo->query("SELECT COUNT (DISTINCT p.id) FROM peers p, torrents t
+                    	foreach ($pdo->query("SELECT COUNT(p.id) FROM peers p, torrents t
                     					WHERE p.info_hash = t.info_hash AND t.id = \"$row[0]\"
                     					AND p.remaining = 0 AND p.uploaded > p.downloaded") as $rowi) {
                     		$seeders = $rowi[0];
@@ -64,7 +64,7 @@
                     	}
                     	//Calculate Leechers
                     	$leechers = 0;
-                    	foreach ($pdo->query("SELECT COUNT (DISTINCT p.id) FROM peers p, torrents t
+                    	foreach ($pdo->query("SELECT COUNT(p.id) FROM peers p, torrents t
                     					WHERE p.info_hash = t.info_hash AND t.id = \"$row[0]\"") as $rowi) {
                     		$leechers = $rowi[0];
                     		$leechers = $leechers - $seeders;
