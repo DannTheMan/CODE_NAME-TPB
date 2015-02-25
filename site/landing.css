@@ -21,7 +21,7 @@
 	border-radius: 16px;
 	width: 96%;
 	background-color: #9fcfcf;
-	background-image: url("*/resources/pirateShip.png");
+	background-image: url("resources/pirateShip.png");
 	left: 0%;
 	right: 0%;
 }
@@ -108,7 +108,7 @@
 #loading {
 	margin: auto;
 	width: 10%;
-	background:url("*/resources/loading.gif") no-repeat top left;
+	background:url("resources/loading.gif") no-repeat top left;
 }
 
 .result {
