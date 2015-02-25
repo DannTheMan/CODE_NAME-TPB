@@ -372,7 +372,7 @@ class reopen_db extends PDO
     {
         if( !is_null($this->seeders) && !is_null($this->leechers) ) return TRUE;
         
-        $sql      = "SELECT remaining FROM ". DB_TABLE ." WHERE info_hash=:hash";
+        $sql      = "SELECT DISTINCT peer_id, remaining FROM ". DB_TABLE ." WHERE info_hash=:hash";
         $seeders  = 0;
         $leechers = 0;
         $values   = array(
