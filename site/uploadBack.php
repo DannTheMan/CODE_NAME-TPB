@@ -47,10 +47,36 @@ $file_string = file_get_contents($file);
 //echo("  K $name K  ");
 //$file_string = file_get_contents($file);
 
+$torrent_data = bdecode($file_string)
 $info_hash = sha1(bencode(bdecode($file_string)['info']));
-echo "info_hash: ".$info_hash;
-echo "<br />";
-echo "serialized bdecoded torrent file: " serialize(bdecode($file_string));
+
+//variables to get the # of user sharing the torrent
+$info = strtolower($info_hash);
+$scrape = str_replace('announce', 'scrape', $torrent_data['announce']);
+$sources = bdecode(@file_get_contents($scrape . '?info_hash=' . urlencode(hex2bin($info))));
+
+//display the files in the torrent
+$c = count($torrent_data['info']['files']);
+echo '<h2>Files</h2>';
+// if it has more then one file do a loop and display all the files; else display the name of the file
+if ($c > 1) {
+    for ($i = 0; $i < $c; $i++) {
+        echo $torrent_data['info']['files'][$i]['path']['0'] . '<br/>';
+    }
+} else {
+    echo $torrent_data['info']['name'] . '<br/>';
+}
+
+// let's display the sources
+$seeds = $sources['files'][hex2bin($info)]['complete'];
+$leechs = $sources['files'][hex2bin($info)]['incomplete'];
+$downloads = $sources['files'][hex2bin($info)]['downloaded'];
+
+echo '<h2>Sources</h2>' .
+    '<b>Seeds:</b> ' . $seeds . '<br/>' .
+    '<b>Leechs:</b> ' . $leechs . '<br/>' .
+    '<b>Downloads:</b> ' . $downloads . '<br/>';
+
 
 $sql = "INSERT INTO torrents (name, description, file, info_hash) VALUES (:name , :descr , :file , UNHEX( ':info_hash' ))";
 //put real SQL stuff here
