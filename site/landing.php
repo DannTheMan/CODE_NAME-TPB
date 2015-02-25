@@ -44,17 +44,12 @@
 
 			<div id="dlBox">
                 <h2>Share files with your friends:</h2>
-                <form action="action_page.php">
+                <form action="upload.php">
                     <!--DO SOME STUFF!!!-->
-                    Search files by name:
-                    <br>
-                    <input type="text" name="searchtext" id="textfield" required>
-                    <br>
-                    <br>
-                    <input type="submit">
+                    <p>Click <a href="upload.php">here</a> to upload a file share wit hyour friends.</p>
                 </form>
                 <br>
-            </div>
+            </div-->
 			<br><br><br>
 			<div id="searchBox">
 				<h2>Find files from your friends:</h2>
