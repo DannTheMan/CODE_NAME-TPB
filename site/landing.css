@@ -59,6 +59,7 @@
 }
 
 #statsBox {
+	clear: top;
 
 	background-color: #d0f0ff;
 	position: relative;
