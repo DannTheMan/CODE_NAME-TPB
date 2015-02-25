@@ -1,6 +1,6 @@
 <?php require 'database.php'; ?>
 <?php
-	if (!isset($tempCookie)) {
+	if (!isset($_COOKIE[crypt('username', 'askdalkweasdaaowej312sa9')])) {
 		<script> alert('Error:  Not logged in.');</script>
 		echo('false');
 	} else {
