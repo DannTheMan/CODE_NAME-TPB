@@ -59,9 +59,10 @@
 					<br>
 					File:
 					<br>
+					<br>
 					<input type="file" name="file" id="fileToUpload">
 					<br>
-					<br-->
+					<br>
 					<input type="submit">
 				</form>
 				<br>
