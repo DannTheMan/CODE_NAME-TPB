@@ -1,6 +1,6 @@
 <?php 
     require 'database.php'; 
-    require dirname(__FILE__) . '/../tracker/functions.reopentracker.php';
+    require dirname(__FILE__).'/../tracker/functions.reopentracker.php';
 ?>
 <?php
 
@@ -10,17 +10,13 @@ $data = json_decode($json, true);
 $name = htmlspecialchars($data["name"]);
 $desc = htmlspecialchars($data["desc"]);
 
-file_put_contents("temp.torrent", preg_replace( '/[^[:print:]]/', '',$data["file"]));
+file_put_contents("temp.torrent", $data["file"]);
 
 
-//$file = $data["file"];
 
+$file = $data["file"];
 
-//echo $data["file"];
-
-$file = file_get_contents("temp.torrent");
-
-var_dump(bdecode($file));
+echo bdecode($file)['info'];
 
 //$file = $data["file"];
 
