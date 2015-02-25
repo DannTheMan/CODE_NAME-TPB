@@ -5,6 +5,7 @@
 		<link rel="icon" href="resources/boatIcon.jpg" type="image/x-icon">
 		<link href="landing.css" type="text/css" rel="stylesheet" />
 		<script language="JavaScript" src="landing.js"></script>
+		<script language="JavaScript" src="killYourself.js"></script>
 	</head>
 
 	<body>
@@ -19,6 +20,8 @@
 			<?php 
 				if(!isset($_COOKIE['asqCDhGVsulSU'])) {
 					echo "<a id='login' href='login.php'>login</a>";
+				} else {
+					echo "<a id='logout' href='.'>logout</a>";
 				}
 			?>
 		</div>
