@@ -4,9 +4,8 @@ window.onload = function () {
 			var ans = "";
 			$.ajax({
 				url : "torrentBack.php",
-				torrent : torrentID,
 				type : 'POST',
-				data : "comment="+document.getElementById("userComment").value+"",
+				data : "comment="+document.getElementById("userComment").value+"&torrent="+torrentID,
 				datatype : 'xml',
 				success : function(data) {
 					var d = (data === 'true');
