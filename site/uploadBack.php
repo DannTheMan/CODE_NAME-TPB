@@ -46,7 +46,9 @@ $file_string = file_get_contents($file);
 //$file_string = file_get_contents($file);
 
 $info_hash = sha1(bencode(bdecode($file_string)['info']));
-echo $info_hash;
+echo "info_hash: ".$info_hash;
+echo "<br />";
+echo "serialized bdecoded torrent file: " serialize(bdecode($file_string));
 
 $sql = "INSERT INTO torrents (name, description, file, info_hash) VALUES (:name , :descr , :file , UNHEX( ':info_hash' ))";
 //put real SQL stuff here
@@ -63,7 +65,7 @@ $sid -> execute();
 //echo('file: '.$file.'\n');
 //echo('file_string: '.$file_string.'\n');
 //echo('hash_info: '.$hash_info.'\n');
-echo("<script type=\"text/javascript\">gohome();</script>");
+//echo("<script type=\"text/javascript\">gohome();</script>");
 //echo('file_string: '.$file_string.'\n');
 
 //echo("true");
