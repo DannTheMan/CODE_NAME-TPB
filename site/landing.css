@@ -76,7 +76,7 @@
 }
 
 #results {
-	list-style-image: url('sqpurple.gif');
+	list-style-image: url('resources/boatIcon.jpg');
 	position: relative;
 	margin: auto;
 	border: 1px solid black;
