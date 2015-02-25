@@ -218,6 +218,8 @@
 	width: 50%;
 	top: 64px;
 	text-align: center;
+	height: 90%;
+	overflow-y: scroll;
 }
 
 #torrentcomments {
