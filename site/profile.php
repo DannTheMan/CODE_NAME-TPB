@@ -34,6 +34,8 @@
 			<div id="personalInfoBox">
 				<h2>User Profile: <?php echo $_GET['uname']?></h2>
 
+				<script type="text/javascript">var uid = 1;</script>
+
 				<?php
 					$uname = $_GET['uname'];
 					foreach ($pdo->query("SELECT id FROM users WHERE username = \"$uname\"") as $row) {
