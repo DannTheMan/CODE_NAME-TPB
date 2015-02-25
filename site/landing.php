@@ -114,7 +114,7 @@
                     $bytes = $rowi[0];
                     break;
                 }
-                echo($bytes . " bytes");
+                echo($bytes . " bytes<br>");
 				?>
 				<br>
 			</div>
