@@ -6,7 +6,7 @@
 		<link href="landing.css" type="text/css" rel="stylesheet" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
         <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/rabbit.js"></script>
-        <script language="JavaScript" src="torrent.js"></script>
+        <script language="JavaScript" src="profile.js"></script>
 		<script language="JavaScript" src="killYourself.js"></script>
 	</head>
 
@@ -60,10 +60,21 @@
 						break;
 					}
 				?>
-				<div><strong>Name:</strong> <?php echo $name?></div>
-				<div><strong>Email:</strong> <?php echo $email?></div>
-				<div><strong>Age:</strong> <?php echo $age?></div>
-				<div><strong>Gender:</strong> <?php echo $gender?></div>				
+				<div><strong>Name:</strong> <?php echo $name?>
+					<textfield id='nametext' visibility:'hidden'></textfield></div>
+				<div><strong>Email:</strong> <?php echo $email?>
+					<textfield id='emailtext' visibility:'hidden'></textfield></div>
+				<div><strong>Age:</strong> <?php echo $age?>
+					<textfield id='agetext' visibility:'hidden'></textfield></div>
+				<div><strong>Gender:</strong> <?php echo $gender?>
+					<textfield id='gendertext' visibility:'hidden'></textfield></div>				
+
+				<?php
+					if (isset($_COOKIE['asqCDhGVsulSU']) && $_COOKIE['asqCDhGVsulSU'] == $uname) {
+						echo "<button type='button' onclick='modifyProfile();' id='mod'>Click here to modify your profile!</button>";
+					}
+				?>
+				<button type='button' onclick='submitToDb();' visibility:'hidden' id='sumbit'>Submit Changes</button>
 
 			</div>
 
