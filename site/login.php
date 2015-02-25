@@ -13,7 +13,7 @@
 <?php require 'database.php'; ?>
         <div id = "topBar">
             <h1 id="pageTitle">Codename: TPB</h1>
-            <a id="login" href="landing.php">home</a>
+            <a id="home" href="landing.php">home</a>
         </div>
 
         <div id = "mainSection">
