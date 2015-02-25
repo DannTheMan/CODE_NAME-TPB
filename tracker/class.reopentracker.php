@@ -139,7 +139,7 @@ class reopen_tracker extends reopen_db
         
         // Retrieve statistics for each desired info hash
         $files = array();
-        $sql   = "SELECT DISTINCT info_hash, remaining, expire_time FROM ". DB_TABLE ." WHERE info_hash = :hash";
+        $sql   = "SELECT DISTINCT peer_id, info_hash, remaining FROM ". DB_TABLE ." WHERE info_hash = :hash";
         
         // Itterate over the hashes and query the database
         foreach( $hashes as $hash )
