@@ -10,7 +10,7 @@ $data = json_decode($json, true);
 $name = htmlspecialchars($data["name"]);
 $desc = htmlspecialchars($data["desc"]);
 
-file_put_contents("temp.torrent", $data["file"]);
+file_put_contents("temp.torrent", preg_replace( '/[^[:print:]]/', '',$data["file"]));
 
 
 //$file = $data["file"];
