@@ -32,6 +32,10 @@
 			<div id="torrentbox">
 				<?php
 					$s = $_GET["torrent"];
+					foreach ($pdo->query("SELECT info_path FROM torrents WHERE id = $s") as $row) {
+						$infopath = $row[0];
+						break;
+					}
                     foreach ($pdo->query("SELECT name FROM torrents WHERE id = $s") as $row) {
                     	$name = $row[0];
                     	break;
@@ -44,9 +48,24 @@
                     	$file = $row[0];
                     	break;
                     }
+                    //Calculate Seeders
+                    foreach ($pdo->query("SELECT COUNT (DISTINCT p.id) FROM peers p, torrents t
+                    					WHERE p.info_path = t.info_path AND t.info_path = $infopath
+                    					AND p.remaining = 0 AND p.uploaded > p.downloaded") as $row) {
+                    	$seeders = $row[0];
+                    	break;
+                    }
+                    //Calculate Leechers
+                    foreach ($pdo->query("SELECT COUNT (DISTINCT p.id) FROM peers p, torrents t
+                    					WHERE p.info_path = t.info_path AND t.info_path = $infopath
+                    					AND (p.remaining > 0 OR p.uploaded < p.downloaded)") as $row) {
+                    	$leechers = $row[0];
+                    	break;
+                    }
 				?>
 				<h2><?php echo $name ?></h2>
-				<h4>Seeders: 32 &nbsp;&nbsp;&nbsp;&nbsp;Leechers: 1,209</h4>
+				<h4>Seeders: <?php echo $seeders; ?> &nbsp;&nbsp;&nbsp;&nbsp;
+					Leechers: <?php echo $leechers; ?></h4>
 				<br />
 				<p>
 					<?php echo $description ?>
@@ -66,8 +85,8 @@
 				<h2>User Comments</h2>
 				<?php
 					$s = $_GET["torrent"];
-					$rows = $pdo->query("SELECT u.username, c.comment FROM comments c, users u 
-							WHERE c.torrent_id = $s AND u.id = c.user_id ORDER BY c.id");
+					$rows = $pdo->query("SELECT DISTINCT u.username, c.comment FROM comments c, users u 
+							WHERE c.info_path = $infopath AND u.id = c.user_id ORDER BY c.id");
 					foreach ($rows as $row) {
 						echo "<div class=\"comment\"> <strong>$row[0]</strong>: $row[1]</div>";
 					}
