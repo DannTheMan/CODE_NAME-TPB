@@ -42,9 +42,14 @@
 					<textarea rows="8" cols="100" name="d" id="desc"></textarea>
 					<br>
 					<br>
-					File:
+					Torrent File:
 					<br>
 					<input type="file" name="f" id="fl">
+					<br>
+					<br>
+					Please use this tracker to create your torrent file: 
+					<input type="text" name="TrackerUrl" 
+						value="cntpb.csse.rose-hulman.edu/CODE_NAME-TPB/tracker/announce.php" readonly>
 					<br>
 					<br>
 					<input type="submit" value="Send File">
