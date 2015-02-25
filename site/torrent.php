@@ -80,7 +80,7 @@
 					$rows = $pdo->query("SELECT u.username, c.comment FROM comments c, users u 
 							WHERE c.torrent_id = $s AND u.id = c.user_id");
 					foreach ($rows as $row) {
-						echo '<div class="comment"> $row["u.username"] : $row["c.comment"]  </div>';
+						echo '<div class="comment"> $row["username"] : $row["comment"]  </div>';
 					}
 				?>
 			</div>
