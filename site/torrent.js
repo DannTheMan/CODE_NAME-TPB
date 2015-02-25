@@ -1,4 +1,5 @@
 window.onload = function () {
+	alert(torrentID);
 	document.getElementById("submitComment").onclick = function() {
 		if (document.getElementById("userComment").value.length > 0) {
 			var ans = "";
