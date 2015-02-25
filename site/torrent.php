@@ -88,17 +88,18 @@
 				<br />
 				<br />
 				<form action="<?php
-						if (strlen($_POST['userComment']) > 0 &&
-						    isset($_COOKIE[crypt('username', 'askdalkweasdaaowej312sa9')])) {
-							$usrnm = $_COOKIES[crypt('username','askdalkweasdaaowej312sa9')];
+						$ucomment = $_POST['userComment'];
+						$tempCookie = $_COOKIE[crypt('username', 'askdalkweasdaaowej312sa9')];
+						if (strlen($ucomment) > 0 && isset($tempCookie)) {
+							$usrnm = $tempCookie;
 							foreach ($pdo->query(\"SELECT id FROM users WHERE username = $usrnm \") as $row) {
 								$uid = $row[0];
 								break;
 							}
 							$pdo->query(\"INSERT INTO comments (\'user_id\', \'torrent_id\', \'comment\')
-								VALUES ($uid, $s, $_POST[\'userComment\']));
+								VALUES ($uid, $s, $ucomment));
 
-						} else if (!isset($_COOKIE[crypt('username', 'askdalkweasdaaowej312sa9')])) {
+						} else if (!isset($tempCookie)) {
 							?> <script> alert('Error:  Not logged in.');</script><?php
 						} else {
 							?> <script> alert('Error:  No comment entered.');</script><?php
