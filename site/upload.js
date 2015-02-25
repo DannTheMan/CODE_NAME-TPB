@@ -1,19 +1,26 @@
 function upload(){
 	alert("SADASD");
 
+	var n = document.getElementById("un").value;
+	var d = document.getElementById("desc").value;
+
+	var myUrl = "uploadBack.php";
+
 	var reader = new FileReader();
 	reader.onload = function() {
 		var f = reader.result;
 		//console.log(reader.result)
+
+		getData(n,myUrl,d,f);
+
 	};
 	console.log(reader.readAsBinaryString(document.getElementById("fl").files[0]));
 
-	var myUrl = "uploadBack.php";
-	var n = document.getElementById("un").value;
-	var d = document.getElementById("desc").value;
+	
+	
 
 	//var f = document.getElementById("fl").value;
-	getData(n,myUrl,d,f);
+	
 }
 
 function getData(n,myUrl,d,f) {
@@ -56,8 +63,8 @@ function getData(n,myUrl,d,f) {
         cache: false,
         contentType: false,
         processData: false
-	
-	});*/
+	*/
+	});
 }
 
 function succeed(){

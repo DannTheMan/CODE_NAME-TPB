@@ -47,7 +47,7 @@
 			<br>
 			<div id="searchBox">
 				<h2>Upload a file:</h2>
-				<form action="uploadBack.php" method="post">
+				<form action="nothing" method="post">
 					Name:
 					<br>
 					<input type="text" name="n" id="un" required>
@@ -63,8 +63,7 @@
 					<input type="file" name="f" id="fl">
 					<br>
 					<br>
-					<input type="submit" >
-					<!--onclick="upload()" value="Upload"-->
+					<input type="button" onclick="upload()" value="Upload">
 				</form>
 				<br>
 			</div>

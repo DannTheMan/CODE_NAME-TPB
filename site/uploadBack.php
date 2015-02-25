@@ -7,16 +7,16 @@
 $name = htmlspecialchars($_POST["n"]);
 $desc = htmlspecialchars($_POST["d"]);
 
-//$f = $_POST["f"];
+$f = $_POST["f"];
 
 //$ff = new SplFileObject($f);
 //$fileo = $_FILES["tester.txt"][0];
 
-$file = file_get_contents("tester.txt");//$ff;
+//$file = file_get_contents("tester.txt");//$ff;
 
-echo("  K $name K  ");
-//$file_string = file_get_contents($file);
-//$hash_info = sha1(bencode(bdecode($file)['info']));
+//echo("  K $name K  ");
+$file_string = file_get_contents($file);
+$hash_info = sha1(bencode(bdecode($file)['info']));
 
 $sql = "INSERT INTO torrents (name,description,file) VALUES ('$name','$desc','$file')";//put real SQL stuff here
 $sid = $pdo->prepare($sql);
