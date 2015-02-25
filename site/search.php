@@ -65,7 +65,7 @@
                     $s = htmlspecialchars($_GET["searchtext"]);
                     echo("<br>");
                     $bl = false;
-                    foreach ($pdo->query("SELECT * FROM torrents WHERE name LIKE '$s'") as $row) {
+                    foreach ($pdo->query("SELECT * FROM torrents WHERE name LIKE '%" . $s . "%'") as $row) {
                         $bl = true;
                         echo("<li><div class=\"result\" onclick=todownload(\"$row[0]\")><span class=\"resn\">$row[1]</span><span class=\"divider\"></span>
                         <span class=\"ress\">Seeders: 17</span><span class=\"divider\"></span><span class=\"resl\">Leechers: 5</span></div></li><br>");
