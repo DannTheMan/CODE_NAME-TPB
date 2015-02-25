@@ -32,6 +32,7 @@ function getData(n,myUrl,d,f) {
 		file:f
 	};
 	var jData = JSON.stringify(dataToSend);
+	
 	$.ajax({
 		url : myUrl,
 		type: 'POST',

@@ -1,6 +1,6 @@
 <?php 
     require 'database.php'; 
-    require dirname(__FILE__).'/../tracker/functions.reopentracker.php'
+    require dirname(__FILE__).'/../tracker/functions.reopentracker.php';
 ?>
 <?php
 
