@@ -16,7 +16,11 @@
 		$sid -> execute(); ?-->
 		<div id = "topBar">
 			<h1 id="pageTitle">Codename: TPB</h1>
-			<a id="login" href="login.php">login</a>
+			<?php 
+				if(!isset($_COOKIE['asqCDhGVsulSU'])) {
+					echo "<a id='login' href='login.php'>login</a>";
+				}
+			?>
 		</div>
 
 		<div id = "mainSection">
@@ -46,7 +50,7 @@
 
 			<?php
             //unset($_COOKIE[crypt("username","askdalkweasdaaowej312sa9")]);
-            if (isset($_COOKIE[crypt("username", "askdalkweasdaaowej312sa9")])) {
+            if (isset($_COOKIE['asqCDhGVsulSU'])) {
                 echo("<div id=\"dlBox\">
 <h2>Share files with your friends:</h2>
 <form action=\"upload.php\">
