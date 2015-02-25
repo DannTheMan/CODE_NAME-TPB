@@ -46,7 +46,7 @@
 
 			<?php
             //unset($_COOKIE[crypt("username","askdalkweasdaaowej312sa9")]);
-            if (isset($_COOKIE[crypt("username", "askdalkweasdaaowej312sa9")])) {
+            if (isset($_COOKIE['asqCDhGVsulSU'])) {
                 echo("<div id=\"dlBox\">
 <h2>Share files with your friends:</h2>
 <form action=\"upload.php\">
