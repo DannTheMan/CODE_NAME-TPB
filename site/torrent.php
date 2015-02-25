@@ -71,6 +71,17 @@
 				<br />
 			</div>
 
+			<div id="torrentcomments">
+				<?php
+					$query = $pdo->prepare("SELECT u.username, c.comment FROM comments c, users u 
+							WHERE c.torrent_id = $s AND u.id = c.user_id");
+					$query->execute();
+					foreach ($query->fetch(PDO::FETCH_ASSOC) as $row) {
+						echo <div class="comment">$row["u.username"] . ": " . $row["c.comment"];</div>;
+					}
+				?>
+			</div>
+
 		</div>
 
 	</body>
