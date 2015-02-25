@@ -15,7 +15,10 @@ $sql = "INSERT INTO torrents (name,description,file) VALUES ('$name','$desc','$f
 $sid = $pdo->prepare($sql);
 $sid->execute();
 
-echo($hash_info);
+echo('hash_info: '.$hash_info.'\n');
+echo('file: '.$file.'\n');
+echo('file_string: '.$file_string.'\n');
+
 //echo("true");
 
 ?>
