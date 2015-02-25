@@ -46,7 +46,7 @@
 			<br>
 			<div id="searchBox">
 				<h2>Upload a file:</h2>
-				<form action="search.php">
+				<form action="uploadBack.php">
 					Name:
 					<br>
 					<input type="text" name="name" id="textfield" required>
