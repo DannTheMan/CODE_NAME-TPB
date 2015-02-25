@@ -76,6 +76,7 @@
 			<br />
 
 			<div id="torrentcomments">
+				<h2>User Comments</h2>
 				<?php
 					$s = $_GET["torrent"];
 					$rows = $pdo->query("SELECT u.username, c.comment FROM comments c, users u 
