@@ -133,23 +133,26 @@
 }
 
 .resn {
-	width: 75%;
-	overflow: scroll;
+	display: inline-block;
+	overflow: hidden;
 }
 
 .ress {
+	float: right;
 	/*margin-left: 5%;
-	margin-right: 5%;*/
+	 margin-right: 5%;*/
 	width: 12.5%;
 }
 
 .resl {
+	float: right;
 	/*margin-left: 5%;
-	margin-right: 5%;*/
+	 margin-right: 5%;*/
 	width: 12.5%;
 }
 
 .divider {
+	float: right;
 	border-left: 1px solid gray;
 	border-right: 1px solid black;
 	height: 100% px;
