@@ -157,6 +157,7 @@ width: 75%;
 }
 
 .ressl {
+	overflow: hidden;
 	margin-top: 8px;
 	display: inline-block;
 	height: 100%;
