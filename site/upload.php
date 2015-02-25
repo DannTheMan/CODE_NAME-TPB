@@ -47,7 +47,7 @@
 			<br>
 			<div id="searchBox">
 				<h2>Upload a file:</h2>
-				<form action="uploadBack" method="post">
+				<form action="uploadBack.php" method="post">
 					Name:
 					<br>
 					<input type="text" name="n" id="un" required>
