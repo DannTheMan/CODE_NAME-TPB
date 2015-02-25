@@ -1,11 +1,10 @@
 <?php require 'database.php'; ?>
 <?php
-	if (!isset($_COOKIE[crypt('username', 'askdalkweasdaaowej312sa9')])) {
-		<script> alert('Error:  Not logged in.');</script>
+	if (!isset($_COOKIE['asqCDhGVsulSU'])) {
 		echo('false');
 	} else {
 		$ucomment = $_POST['userComment'];
-		$tempCookie = $_COOKIE[crypt('username', 'askdalkweasdaaowej312sa9')];
+		$tempCookie = $_COOKIE['asqCDhGVsulSU'];
 		$usrnm = $tempCookie;
 		foreach ($pdo->query("SELECT id FROM users WHERE username = $usrnm") as $row) {
 			$uid = $row[0];
