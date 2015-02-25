@@ -7,11 +7,11 @@
 $name = htmlspecialchars($_POST["n"]);
 $desc = htmlspecialchars($_POST["d"]);
 
-$f = $_POST["f"];
+//$f = $_POST["f"];
 
-$ff = new SplFileObject($f);
+//$ff = new SplFileObject($f);
 
-$file = $ff;
+$file = $_FILES["f"][0];//$ff;
 
 
 //$file_string = file_get_contents($file);

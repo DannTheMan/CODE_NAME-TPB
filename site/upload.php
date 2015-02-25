@@ -50,17 +50,17 @@
 				<form action="communist revolution" method="post">
 					Name:
 					<br>
-					<input type="text" name="name" id="un" required>
+					<input type="text" name="n" id="un" required>
 					<br>
 					<br>
 					Description:
 					<br>
-					<textarea rows="8" cols="100" name="desc" id="desc"></textarea>
+					<textarea rows="8" cols="100" name="d" id="desc"></textarea>
 					<br>
 					<br>
 					File:
 					<br>
-					<input type="file" name="file" id="fl">
+					<input type="file" name="f" id="fl">
 					<br>
 					<br>
 					<input type="button" onclick="upload()" value="Upload">
