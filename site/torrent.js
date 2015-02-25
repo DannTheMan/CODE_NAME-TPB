@@ -1,7 +1,6 @@
 window.onload = function () {
 
 	document.getElementById("submitComment").onclick = function() {
-		alert(tempCookie);
 		if (document.getElementById("userComment").value.length > 0) {
 			var ans = "";
 			$.ajax({
