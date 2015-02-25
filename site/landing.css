@@ -128,6 +128,10 @@
 	cursor: pointer;
 }
 
+.result : hover {
+	background-color: #6F6FaF;
+}
+
 .resn {
 	width: 75%;
 }
