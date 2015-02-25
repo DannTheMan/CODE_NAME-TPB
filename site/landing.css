@@ -76,7 +76,14 @@
 }
 
 #results {
-	/*display: none;*/
+	list-style-image: url('sqpurple.gif');
+	position: relative;
+	margin: auto;
+	border: 1px solid black;
+	border-radius: 16px;
+	background-color: #eeeeee;
+	width: 96%;
+	
 }
 
 #login {
@@ -108,15 +115,15 @@
 #loading {
 	margin: auto;
 	width: 10%;
-	background:url("resources/loading.gif") no-repeat top left;
+	background: url("resources/loading.gif") no-repeat top left;
 }
 
 .result {
 	position: relative;
-	height: 96px;
+	height: 32px;
 	width: 90%;
-	left: 10%;
+	margin: auto;
 	border: 1px solid black;
 	border-radius: 16px;
-	background-color: #9fcfcf;
+	background-color: #FFFFF0;
 }

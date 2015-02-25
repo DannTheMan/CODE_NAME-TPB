@@ -7,13 +7,7 @@
 		<script language="JavaScript" src="landing.js"></script>
 	</head>
 
-	<body>
-		<?php $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "cntpb";
-        $db = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8", "$username", "$password");
-		?>
+	<body><?php require 'database.php'; ?>
 		<div id = "topBar">
 			<h1 id="pageTitle">Codename: TPB</h1>
 			<a id="login" href="login.php">login</a>
@@ -68,10 +62,10 @@
 				</p-->
 				<ul id="results">
 					<?php
-                    $s = $_GET["searchtext"];
+                    $s = htmlspecialchars($_GET["searchtext"]);
 
-                    foreach ($db->query("SELECT * FROM torrents WHERE name LIKE '$s'") as $row) {
-                        echo("<li><div class=\"result\">asdad<span class=\"resn\">$row[1]</span><span class=\"ress\">17</span><span class=\"resl\">5</span></div></li>");
+                    foreach ($pdo->query("SELECT * FROM torrents WHERE name LIKE '$s'") as $row) {
+                        echo("<li><div class=\"result\" onclick=todownload(\"$row[0]\")>asdad<span class=\"resn\">$row[1]</span><span class=\"ress\">17</span><span class=\"resl\">5</span></div></li>");
                     }
                     echo("<br>KKK-end<br>");
 					?>
