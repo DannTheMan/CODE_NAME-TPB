@@ -157,7 +157,9 @@ width: 75%;
 }
 
 .ress, .resl, .divider {
-	float: right;
 	display: inline-block;
+	float: right;
+	margin: 16px;
+	width: 64px;
 }
 
