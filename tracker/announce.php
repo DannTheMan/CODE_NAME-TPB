@@ -14,7 +14,7 @@ require 'config.inc.php';
 require 'class.reopendb.php';
 require 'class.reopentracker.php';
 require 'functions.reopentracker.php';
-log_request('announce');
+//log_request('announce');
 $rotdb = new reopen_tracker;
 
 $rotdb->announce();

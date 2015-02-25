@@ -14,7 +14,7 @@ require 'class.reopendb.php';
 require 'class.reopentracker.php';
 require 'functions.reopentracker.php';
 
-log_request('scrape');
+//log_request('scrape');
 $rotdb = new reopen_tracker;
 
 $rotdb->scrape();
