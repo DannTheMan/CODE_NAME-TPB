@@ -4,7 +4,7 @@
 		<title>Codename: TPB</title>
 		<link rel="icon" href="resources/boatIcon.jpg" type="image/x-icon">
 		<link href="landing.css" type="text/css" rel="stylesheet" />
-		<script language="JavaScript" src="landing.js"></script>
+		<script language="JavaScript" src="search.js"></script>
 	</head>
 
 	<body><?php require 'database.php'; ?>
@@ -65,9 +65,9 @@
                     $s = htmlspecialchars($_GET["searchtext"]);
 
                     foreach ($pdo->query("SELECT * FROM torrents WHERE name LIKE '$s'") as $row) {
-                        echo("<li><div class=\"result\" onclick=todownload(\"$row[0]\")>asdad<span class=\"resn\">$row[1]</span><span class=\"ress\">17</span><span class=\"resl\">5</span></div></li>");
+                        echo("<li><div class=\"result\" onclick=todownload(\"$row[0]\")><span class=\"resn\">$row[1]</span><span class=\"ress\">Seeders: 17</span><span class=\"resl\">Leechers: 5</span></div></li><br>");
                     }
-                    echo("<br>KKK-end<br>");
+                    //echo("<br>KKK-end<br>");
 					?>
 				</ul>
 			</div>
