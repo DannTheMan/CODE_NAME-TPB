@@ -15,6 +15,7 @@
 		?>
 		<div id = "topBar">
 			<h1 id="pageTitle">Codename: TPB</h1>
+			<a id="home" href="landing.php">home</a>
 			<?php 
 				if(!isset($_COOKIE['asqCDhGVsulSU'])) {
 					echo "<a id='login' href='login.php'>login</a>";
