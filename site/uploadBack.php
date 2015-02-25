@@ -4,10 +4,12 @@
 ?>
 <?php
 
-$name = htmlspecialchars($_POST["n"]);
-$desc = htmlspecialchars($_POST["d"]);
+$data = $_POST["data"];
 
-$file = $_POST["f"];
+$name = htmlspecialchars($data['name']);
+$desc = htmlspecialchars($data['desc']);
+
+$file = $data["file"];
 
 echo $file;
 

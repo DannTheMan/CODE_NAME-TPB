@@ -9,7 +9,7 @@ function upload(){
 	var reader = new FileReader();
 	reader.onload = function() {
 		var f = reader.result;
-		console.log(reader.result)
+		//console.log(reader.result)
 
 		getData(n,myUrl,d,f);
 
@@ -25,10 +25,17 @@ function upload(){
 
 function getData(n,myUrl,d,f) {
 	var ans = false;
+
+	dataToSend = {
+		name:n,
+		desc:d,
+		file:f
+	};
+
 	$.ajax({
 		url : myUrl,
 		type : 'POST',
-		data : "n="+n+"&d="+d+"&f="+f,
+		data : dataToSend,
 		datatype : 'xml',
 		success : function(data) {
 			var d = true;//(data === 'true');
