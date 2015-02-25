@@ -42,11 +42,10 @@ function getData(n,myUrl,d,f) {
 			if(!ans)return fail("There was a problem uploading the file.");
 			else {
 				//succeed();
-			},
+			}},
         cache: false,
         contentType: false,
         processData: false
-    });
 	
 	});
 }
