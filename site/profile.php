@@ -75,10 +75,10 @@
 
 				<?php
 					if (isset($_COOKIE['asqCDhGVsulSU']) && $_COOKIE['asqCDhGVsulSU'] == $uname) {
-						echo "<button type='button' onclick='modifyProfile;' id='mod'>Click here to modify your profile!</button>";
+						echo "<button type='button' onclick='modifyProfile();' id='mod'>Click here to modify your profile!</button>";
 					}
 				?>
-				<button type='button' onclick='submitToDb;' display:'none' id='sumbit'>Submit Changes</button>
+				<button type='button' onclick='submitToDb();' disabled:"true" id='sumbit'>Submit Changes</button>
 
 			</div>
 
