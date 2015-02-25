@@ -85,6 +85,30 @@
 						echo "<div class=\"comment\"> <strong>$row[0]</strong>: $row[1]</div>";
 					}
 				?>
+				<br />
+				<br />
+				<form action="<?php
+						if (strlen($_POST['userComment']) > 0 &&
+						    isset($_COOKIE[crypt('username', 'askdalkweasdaaowej312sa9')])) {
+							$usrnm = $_COOKIES[crypt('username','askdalkweasdaaowej312sa9')];
+							foreach ($pdo->query(\"SELECT id FROM users WHERE username = $usrnm \") as $row) {
+								$uid = $row[0];
+								break;
+							}
+							$pdo->query(\"INSERT INTO comments (\'user_id\', \'torrent_id\', \'comment\')
+								VALUES ($uid, $s, $_POST[\'userComment\']));
+
+						} else if (!isset($_COOKIE[crypt('username', 'askdalkweasdaaowej312sa9')])) {
+							?> <script> alert('Error:  Not logged in.');</script><?php
+						} else {
+							?> <script> alert('Error:  No comment entered.');</script><?php
+						}
+						?>">
+					Comment:<br />
+					<textarea name='userComment' id='userComment'></textarea><br />
+					<input type='submit' value='submit' />
+				</form>
+
 			</div>
 
 		</div>
