@@ -8,7 +8,7 @@
 		$tempCookie = $_COOKIE['asqCDhGVsulSU'];
 		$usrnm = $tempCookie;
 		$uid = 1;
-		foreach ($pdo->query("SELECT id FROM users WHERE username = $usrnm") as $row) {
+		foreach ($pdo->query("SELECT id FROM users WHERE username = '$usrnm'") as $row) {
 			$uid = $row[0];
 			break;
 		}
