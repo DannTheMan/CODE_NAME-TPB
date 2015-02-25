@@ -10,7 +10,7 @@
     </head>
 
     <body>
-
+<?php require 'database.php'; ?>
         <div id = "topBar">
             <h1 id="pageTitle">Codename: TPB Login</h1>
             <a id="login" href="landing.php">home</a>

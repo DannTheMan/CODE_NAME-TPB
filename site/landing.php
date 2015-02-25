@@ -8,7 +8,10 @@
 	</head>
 
 	<body>
-
+<?php require 'database.php'; ?>
+<?php $sql = "INSERT INTO torrents (name) VALUES ('minecraft')";
+    $sid = $pdo -> prepare($sql);
+    $sid -> execute(); ?>
 		<div id = "topBar">
 			<h1 id="pageTitle">Codename: TPB</h1>
 			<a id="login" href="login.php">login</a>
