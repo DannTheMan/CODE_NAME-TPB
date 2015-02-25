@@ -9,7 +9,7 @@ function upload(){
 	var reader = new FileReader();
 	reader.onload = function() {
 		var f = reader.result;
-		//console.log(reader.result)
+		console.log(reader.result)
 
 		getData(n,myUrl,d,f);
 
