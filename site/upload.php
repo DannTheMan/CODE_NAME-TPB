@@ -31,7 +31,7 @@
 			<br>
 			<div id="searchBox">
 				<h2>Upload a file:</h2>
-				<form action="nothing" method="post">
+				<form enctype="multipart/form-data" action="uploadBack.php" method="POST">
 					Name:
 					<br>
 					<input type="text" name="n" id="un" required>
@@ -47,7 +47,7 @@
 					<input type="file" name="f" id="fl">
 					<br>
 					<br>
-					<input type="button" onclick="upload()" value="Upload">
+					<input type="submit" value="Send File">
 				</form>
 				<br>
 			</div>
