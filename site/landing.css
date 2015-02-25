@@ -167,6 +167,6 @@ width: 75%;
 .resl, .ress, .divider {
 	margin-top: auto;
 	margin-bottom: auto;
-	
+	vertical-align: middle;
 }
 
