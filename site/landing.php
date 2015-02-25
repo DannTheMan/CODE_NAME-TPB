@@ -42,14 +42,16 @@
 				</ul>
 			</div>
 
-			<div id="dlBox">
+			<?php
+			$ck = $_COOKIE[crypt("username","askdalkweasdaaowej312sa9")];
+			if(isset($ck)){echo("<div id=\"dlBox\">
                 <h2>Share files with your friends:</h2>
-                <form action="upload.php">
-                    <!--DO SOME STUFF!!!-->
-                    <p>Click <a href="upload.php">here</a> to upload a file share wit hyour friends.</p>
+                <form action=\"upload.php\">
+                    <p>Click <a href=\"upload.php\">here</a> to upload a file share with your friends.</p>
                 </form>
                 <br>
-            </div>
+            </div>");
+            ?>
 			<br><br><br>
 			<div id="searchBox">
 				<h2>Find files from your friends:</h2>
