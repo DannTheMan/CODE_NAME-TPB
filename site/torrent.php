@@ -51,7 +51,7 @@
                     //Calculate Seeders
                     $seeders = 0;
                     foreach ($pdo->query("SELECT COUNT (DISTINCT p.id) FROM peers p, torrents t
-                    					WHERE p.info_hash = t.info_hash AND t.info_hash = $infohash
+                    					WHERE p.info_hash = t.info_hash AND t.info_hash = \"$infohash\"
                     					AND p.remaining = 0 AND p.uploaded > p.downloaded") as $row) {
                     	$seeders = $row[0];
                     	break;
@@ -59,7 +59,7 @@
                     //Calculate Leechers
                     $leechers = 0;
                     foreach ($pdo->query("SELECT COUNT (DISTINCT p.id) FROM peers p, torrents t
-                    					WHERE p.info_hash = t.info_hash AND t.info_hash = $infohash") as $row) {
+                    					WHERE p.info_hash = t.info_hash AND t.info_hash = \"$infohash\"") as $row) {
                     	$leechers = $row[0];
                     	$leechers = $leechers - $seeders;
                     	break;
