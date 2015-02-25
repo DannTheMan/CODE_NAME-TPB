@@ -35,7 +35,8 @@ function getData(n,myUrl,d,f) {
         success : function(data) {
         	alert("ajk");
 			var d = true;//(data === 'true');
-			console.log(data+"");
+			console.log("ADFASFSdf\n\nd\n");
+			console.log(data+" :KKK");
 			ans = d;
 		},
 		complete : function() {
