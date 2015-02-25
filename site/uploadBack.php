@@ -1,3 +1,5 @@
+<!--
+
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -9,7 +11,7 @@
     </head>
 
     <body>
-
+-->
 <?php
     require 'database.php';
     require dirname(__FILE__) . '/../tracker/functions.reopentracker.php';
@@ -70,6 +72,6 @@ $sid -> execute();
 
 //echo("true");
 ?>
-
+<!--
     </body>
-</html>
+</html>-->
