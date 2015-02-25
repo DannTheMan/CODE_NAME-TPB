@@ -16,7 +16,11 @@
 		$sid -> execute(); ?-->
 		<div id = "topBar">
 			<h1 id="pageTitle">Codename: TPB</h1>
-			<a id="login" href="login.php">login</a>
+			<?php 
+				if(!isset($_COOKIE['asqCDhGVsulSU'])) {
+					echo "<a id='login' href='login.php'>login</a>";
+				}
+			?>
 		</div>
 
 		<div id = "mainSection">
