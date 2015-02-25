@@ -59,7 +59,7 @@
                     }
 				?>
 				<h2><?php echo $name ?></h2>
-				<h4>&#09;Seeders: 32 &nbsp;&nbsp;&nbsp;&nbsp;Leechers: 1,209&#09;</h4>
+				<h4>Seeders: 32 &nbsp;&nbsp;&nbsp;&nbsp;Leechers: 1,209</h4>
 				<br />
 				<p>
 					<?php echo $description ?>
@@ -73,11 +73,10 @@
 
 			<div id="torrentcomments">
 				<?php
-					$query = $pdo->prepare("SELECT u.username, c.comment FROM comments c, users u 
+					$comments = $pdo->query("SELECT u.username, c.comment FROM comments c, users u 
 							WHERE c.torrent_id = $s AND u.id = c.user_id");
-					$query->execute();
-					foreach ($query->fetch(PDO::FETCH_ASSOC) as $row) {
-						echo <div class="comment">$row["u.username"] . ": " . $row["c.comment"];</div>;
+					foreach ($comments->fetch(PDO::FETCH_ASSOC) as $row) {
+						echo '<div class="comment">$row["u.username"]' . ": " . $row["c.comment"] . '</div>';
 					}
 				?>
 			</div>
