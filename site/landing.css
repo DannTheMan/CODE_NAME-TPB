@@ -89,14 +89,14 @@
 	position: relative;
 	/*float: right;*/
 	top: -40px;
-	left: 96.25%;
+	left: 94.25%;
 }
 
 #home {
 	position: relative;
 	/*float: right;*/
 	top: -40px;
-	right: 96.25%;
+	left: 90.25%;
 }
 
 #logout {
@@ -105,7 +105,7 @@
 	position: relative;
 	/*float: right;*/
 	top: -40px;
-	left: 96.25%;
+	left: 94.25%;
 }
 
 #textfield {

@@ -13,33 +13,11 @@
 <?php require 'database.php'; ?>
         <div id = "topBar">
             <h1 id="pageTitle">Codename: TPB</h1>
-            <a id="login" href="landing.php">home</a>
+            <a id="home" href="landing.php">home</a>
         </div>
 
         <div id = "mainSection">
-            <div id = "sideBar">
-                <h3>links:</h3>
-                <ul>
-                    <li>
-                        <a href="www.google.com">Google</a>
-                    </li>
-                    <li>
-                        <a href="www.google.com">Google</a>
-                    </li>
-                    <li>
-                        <a href="www.google.com">Google</a>
-                    </li>
-                    <li>
-                        <a href="www.google.com">Google</a>
-                    </li>
-                    <li>
-                        <a href="www.google.com">Google</a>
-                    </li>
-                    <li>
-                        <a href="www.google.com">Google</a>
-                    </li>
-                </ul>
-            </div>
+            
 
             <div id="searchBox">
                 <h2>Create a username and password:</h2>
