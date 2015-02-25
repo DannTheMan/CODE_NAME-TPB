@@ -32,8 +32,8 @@
 			<div id="torrentbox">
 				<?php
 					$s = $_GET["torrent"];
-					foreach ($pdo->query("SELECT info_path FROM torrents WHERE id = $s") as $row) {
-						$infopath = $row[0];
+					foreach ($pdo->query("SELECT info_hash FROM torrents WHERE id = $s") as $row) {
+						$infohash = $row[0];
 						break;
 					}
                     foreach ($pdo->query("SELECT name FROM torrents WHERE id = $s") as $row) {
@@ -50,14 +50,14 @@
                     }
                     //Calculate Seeders
                     foreach ($pdo->query("SELECT COUNT (DISTINCT p.id) FROM peers p, torrents t
-                    					WHERE p.info_path = t.info_path AND t.info_path = $infopath
+                    					WHERE p.info_hash = t.info_hash AND t.info_hash = $infohash
                     					AND p.remaining = 0 AND p.uploaded > p.downloaded") as $row) {
                     	$seeders = $row[0];
                     	break;
                     }
                     //Calculate Leechers
                     foreach ($pdo->query("SELECT COUNT (DISTINCT p.id) FROM peers p, torrents t
-                    					WHERE p.info_path = t.info_path AND t.info_path = $infopath
+                    					WHERE p.info_hash = t.info_hash AND t.info_hash = $infohash
                     					AND (p.remaining > 0 OR p.uploaded < p.downloaded)") as $row) {
                     	$leechers = $row[0];
                     	break;
@@ -86,7 +86,7 @@
 				<?php
 					$s = $_GET["torrent"];
 					$rows = $pdo->query("SELECT DISTINCT u.username, c.comment FROM comments c, users u 
-							WHERE c.info_path = $infopath AND u.id = c.user_id ORDER BY c.id");
+							WHERE u.id = c.user_id ORDER BY c.id");
 					foreach ($rows as $row) {
 						echo "<div class=\"comment\"> <strong>$row[0]</strong>: $row[1]</div>";
 					}
