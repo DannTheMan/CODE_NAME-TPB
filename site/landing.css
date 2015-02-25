@@ -92,6 +92,13 @@
 	left: 96.25%;
 }
 
+#home {
+	position: relative;
+	/*float: right;*/
+	top: -40px;
+	right: 96.25%;
+}
+
 #logout {
 	color: blue;
 	text-decoration: underline;
