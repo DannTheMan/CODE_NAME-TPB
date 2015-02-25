@@ -7,7 +7,7 @@
 $name = htmlspecialchars($_POST["n"]);
 $desc = htmlspecialchars($_POST["d"]);
 
-$f = $_POST["f"];
+$file = $_POST["f"];
 
 //$ff = new SplFileObject($f);
 //$fileo = $_FILES["tester.txt"][0];
@@ -24,6 +24,8 @@ $sid->execute();
 
 //echo('hash_info: '.$hash_info.'\n');
 echo('file: '.$file.'\n');
+echo('file_string: '.$file_string.'\n');
+echo('hash_info: '.$hash_info.'\n');
 //echo("<script type=\"text/javascript\">gohome($hash_info);</script>");
 //echo('file_string: '.$file_string.'\n');
 
