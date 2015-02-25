@@ -33,9 +33,9 @@ function getData(n,myUrl,d,f) {
         type: 'POST',
         data: formData,
         success : function(data) {
+        	console.log("GOG");
         	alert("ajk");
 			var d = true;//(data === 'true');
-			console.log("ADFASFSdf\n\nd\n");
 			console.log(data+" :KKK");
 			ans = d;
 		},
