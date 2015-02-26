@@ -57,7 +57,7 @@ function getSignedUp(s,myUrl,un) {
 		datatype : 'xml',
 		success : function(data) {
 			fmsg+=data;
-			var d = (data === 'true');
+			var d = (data.contains("true"));
 			ans = d;
 		},
 		complete : function() {
