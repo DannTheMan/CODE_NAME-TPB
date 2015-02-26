@@ -70,6 +70,18 @@
 	top: 448px;
 }
 
+#statsbox {
+
+	background-color: #d0f0ff;
+	position: relative;
+	margin: auto;
+	border: 2px solid black;
+	border-radius: 16px;
+	width: 50%;
+	text-align: center;
+	top: 448px;
+}
+
 #resultsBox {
 
 	background-color: #d0f0ff;
