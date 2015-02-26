@@ -25,11 +25,11 @@ function submitToDb() {
 		updateGender(gender);
 	}
 
-	/*document.getElementById("nametext").style.display = 'none';
+	document.getElementById("nametext").style.display = 'none';
 	document.getElementById("emailtext").style.display = 'none';
 	document.getElementById("agetext").style.display = 'none';
 	document.getElementById("gendertext").style.display = 'none';
-	document.getElementById("sumbit").style.display = 'none';*/
+	document.getElementById("sumbit").style.display = 'none';
 	document.getElementById("mod").style.display = 'inline-block';
 
 	document.getElementById("sumbit").style.display = 'none';
