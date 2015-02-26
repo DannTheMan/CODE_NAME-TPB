@@ -69,7 +69,7 @@
 				<div><strong>Email:</strong> <?php echo $email?>
 					<textfield id='emailtext' class = "pfield"></textfield></div>
 				<div><strong>Age:</strong> <?php echo $age?>
-					<textfield id='agetext' class = "pfield"></textfield></div>
+					<textfield id='agetext' class = "pfield">awdawhelloworld</textfield></div>
 				<div><strong>Gender:</strong> <?php echo $gender?>
 					<textfield id='gendertext' class = "pfield"></textfield></div>				
 
