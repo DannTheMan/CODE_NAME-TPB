@@ -73,6 +73,9 @@
 				<h4>Seeders: <?php echo $seeders; ?> &nbsp;&nbsp;&nbsp;&nbsp;
 					Leechers: <?php echo $leechers; ?></h4>
 				<br />
+				<br>
+				</div>
+				<div id="resultsBox">
 				<p>
 					<?php echo $description ?>
 				</p>
