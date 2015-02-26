@@ -14,7 +14,7 @@ window.onload = function () {
 				},
 				complete : function() {
 					if(!ans) {
-						return fail("There was a problem logging in to your account.");
+						return fail("You must be logged in to comment.");
 					} else {
 						succeed();
 					}
