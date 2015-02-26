@@ -13,9 +13,6 @@
 	<body>
 <?php require 'database.php'; ?>
 <?php require 'torrent_Parse.php'; ?>
-<!--?php $sql = "INSERT INTO torrents (name) VALUES ('johnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemi')";
-    $sid = $pdo -> prepare($sql);
-    $sid -> execute(); ?-->
 		<div id = "topBar">
 			<h1 id="pageTitle">Codename: TPB</h1>
 			<a id="home" href="landing.php">home</a>
@@ -113,8 +110,8 @@
 				<h2>User Comments</h2>
 				<?php
 					$s = $_GET["torrent"];
-					$rows = $pdo->query("SELECT DISTINCT u.username, c.comment FROM comments c, users u 
-							WHERE u.id = c.user_id ORDER BY c.id");
+					$rows = $pdo->query("SELECT DISTINCT u.username, c.comment FROM comments c, users u
+							WHERE u.id = c.user_id AND c.torrent_id = $s ORDER BY c.id");
 					foreach ($rows as $row) {
 						echo "<div class=\"comment\"> <strong>$row[0]</strong>: $row[1]</div>";
 					}
