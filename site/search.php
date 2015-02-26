@@ -80,6 +80,7 @@
                     if(!$bl)echo("No results found<br><br>");
 					?>
 				</ul>
+				<br><br>
 			</div>
 		</div>
 
