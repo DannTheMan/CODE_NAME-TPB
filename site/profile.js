@@ -21,7 +21,7 @@ function submitToDb() {
 		updateAge(age);
 	}
 	var gender = document.getElementById("gendertext").value;
-	if (gender.length == 1) {
+	if (gender != null && gender.length == 1) {
 		updateGender(gender);
 	}
 
