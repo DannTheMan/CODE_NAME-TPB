@@ -111,13 +111,13 @@
                 }
                 echo($leechers);
                 echo("<br><br>Seeder/Leecher ratio: " . ((($seeders / $leechers) * 100) . "%"));
-                echo("<br><br>Total amount of data uploaded: ");
+                /*echo("<br><br>Total amount of data uploaded: ");
                 $bytes = 0;
                 foreach ($pdo->query("SELECT SUM(p.downloaded) FROM peers as p") as $rowi) {
                     $bytes = $rowi[0];
                     break;
                 }
-                echo($bytes . " bytes<br>");
+                echo($bytes . " bytes<br>");*/
 				?>
 				<br>
 			</div>
