@@ -52,7 +52,13 @@
                     	$file = $row[0];
                     	break;
                     }
-                    //Calculate Seeders
+                    $scrape = "cntpb.csse.rose-hulman.edu/CODE_NAME-TPB/tracker/scrape.php";
+                    $source = bdecode(@file_get_contents($scrape . "?info_hash=" . urlencode(hex2bin($infohash))));
+                    $seeders = $source['files'][hex2bin($infohash)]['complete'];
+                    $leechers = $source['files'][hex2bin($infohash)]['incomplete'];
+					$downloads = $source['files'][hex2bin($infohash)]['downloaded'];
+
+                    /*//Calculate Seeders
                     $seeders = 0;
                     foreach ($pdo->query("SELECT COUNT(p.id) FROM peers p, torrents t
                     					WHERE p.info_hash = t.info_hash AND t.info_hash = \"$infohash\"
@@ -67,7 +73,7 @@
                     	$leechers = $row[0];
                     	$leechers = $leechers - $seeders;
                     	break;
-                    }
+                    }*/
 				?>
 				<h2><?php echo $name ?></h2>
 				<?php echo("<a href=\"downloadFile.php?id=$s\">Click here to download!</a>") ?>
