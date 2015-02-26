@@ -3,7 +3,7 @@ function modifyProfile() {
 	document.getElementById("emailtext").style.display = 'inline-block';
 	document.getElementById("agetext").style.display = 'inline-block';
 	document.getElementById("gendertext").style.display = 'inline-block';
-	document.getElementById("sumbit").style.display = 'inline-block';
+	document.getElementById("submit").style.display = 'inline-block';
 	document.getElementById("mod").style.display = 'none';
 }
 
@@ -29,10 +29,10 @@ function submitToDb() {
 	document.getElementById("emailtext").style.display = 'none';
 	document.getElementById("agetext").style.display = 'none';
 	document.getElementById("gendertext").style.display = 'none';
-	document.getElementById("sumbit").style.display = 'none';
+	document.getElementById("submit").style.display = 'none';
 	document.getElementById("mod").style.display = 'inline-block';
 
-	document.getElementById("sumbit").style.display = 'none';
+	document.getElementById("submit").style.display = 'none';
 }
 
 function updateName(n) {
