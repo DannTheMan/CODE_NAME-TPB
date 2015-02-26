@@ -59,7 +59,7 @@ function getSignedUp(s,myUrl,un) {
 		success : function(data) {
 			fmsg+=data;
 			chk+=data;
-			var d = ((chk).contains("true"));
+			var d = (chk.indexOf("true") > -1);
 			ans = d;
 		},
 		complete : function() {
