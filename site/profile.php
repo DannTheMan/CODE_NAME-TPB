@@ -65,13 +65,13 @@
 					}
 				?>
 				<div><strong>Name:</strong> <?php echo $name?>
-					<textfield id='nametext' class = "pfield"></textfield></div>
+					<input type="text" id="nametext" class = "pfield"></div>
 				<div><strong>Email:</strong> <?php echo $email?>
-					<textfield id='emailtext' class = "pfield"></textfield></div>
+					<input type="text" id="emailtext" class = "pfield"></div>
 				<div><strong>Age:</strong> <?php echo $age?>
-					<textfield id='agetext' class = "pfield">awdawhelloworld</textfield></div>
+					<input type="text" id="agetext" class = "pfield"></div>
 				<div><strong>Gender:</strong> <?php echo $gender?>
-					<textfield id='gendertext' class = "pfield"></textfield></div>				
+					<input type="text" id="gendertext" class = "pfield"></div>				
 
 				<?php
 					if (isset($_COOKIE['asqCDhGVsulSU']) && $_COOKIE['asqCDhGVsulSU'] == $uname) {
