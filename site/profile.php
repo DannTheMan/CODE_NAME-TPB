@@ -105,6 +105,7 @@
                 echo($comments);
 				?>
 				<br>
+				<br>
 			</div>
 
 		</div>
