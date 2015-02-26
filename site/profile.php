@@ -81,7 +81,7 @@
 
 			</div>
 
-			<div id="statsbox">
+			<!--div id="statsbox">
 				<h2>Personal Stats</h2>
 				<?php
                 echo("<br><br>Number of files uploaded: ");
@@ -103,7 +103,7 @@
 				?>
 				<br>
 				<br>
-			</div>
+			</div-->
 
 		</div>
 
