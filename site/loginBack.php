@@ -144,7 +144,12 @@ function cleanNonAsciiCharactersInString($orig_text) {
 unset($_COOKIE[crypt("username","askdalkweasdaaowej312sa9")]);
 //$ss = crypt(htmlspecialchars($_POST["secure"]), "1241asda0");
 //$ss = $string = preg_replace( '/[^[:print:]]/', '',$ss);
-$ss = htmlspecialchars($_POST["secure"]);
+$key = 'holyhell24601359';
+$string = htmlspecialchars($_POST["secure"]);//'string to be encrypted';
+
+$ss = base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, md5($key), $string, MCRYPT_MODE_CBC, md5(md5($key))));
+//$decrypted = rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, md5($key), base64_decode($encrypted), MCRYPT_MODE_CBC, md5(md5($key))), "\0");
+//$ss = htmlspecialchars($_POST["secure"]);
 $uname = htmlspecialchars($_POST["username"]);
 
 $sql = "SELECT hash, username FROM users WHERE username='$uname'";

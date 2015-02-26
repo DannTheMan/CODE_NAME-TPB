@@ -4,8 +4,11 @@ require 'database.php';
 <?php
 unset($_COOKIE[crypt("username", "askdalkweasdaaowej312sa9")]);
 $uname = htmlspecialchars($_POST["username"]);
-$ss = htmlspecialchars($_POST["secure"]);//crypt(htmlspecialchars($_POST["secure"]), "1241asda0");
+//$ss = htmlspecialchars($_POST["secure"]);//crypt(htmlspecialchars($_POST["secure"]), "1241asda0");
+$key = 'holyhell24601359';
+$string = htmlspecialchars($_POST["secure"]);//'string to be encrypted';
 
+$ss = base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, md5($key), $string, MCRYPT_MODE_CBC, md5(md5($key))));
 $sql = "SELECT username FROM users WHERE username='$uname'";
 $sid = $pdo -> prepare($sql);
 $sid -> execute();
