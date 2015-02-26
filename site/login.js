@@ -50,6 +50,7 @@ function getSignedUp(s,myUrl,un) {
 	//var uname = document.getElementById("un").value;
 	var formData = "username="+un+"&secure="+s;
 	var fmsg = "There was a problem logging in to your account.\n";
+	var chk = "";
 	$.ajax({
 		url : myUrl,// + "?un="+un,
 		type : 'POST',
@@ -57,7 +58,8 @@ function getSignedUp(s,myUrl,un) {
 		datatype : 'xml',
 		success : function(data) {
 			fmsg+=data;
-			var d = (data.contains("true"));
+			chk+=data;
+			var d = ((chk).contains("true"));
 			ans = d;
 		},
 		complete : function() {
