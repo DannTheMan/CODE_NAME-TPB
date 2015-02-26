@@ -94,7 +94,7 @@
                     $files = $rowi[0];
                     break;
                 }
-                echo($files);
+                echo($files);/*
                 echo("<br><br>Total number of seeders: ");
                 $seeders = 0;
                 foreach ($pdo->query("SELECT COUNT(p.id) FROM peers p, WHERE p.remaining = 0 AND p.uploaded > p.downloaded") as $rowi) {
@@ -110,7 +110,7 @@
                     break;
                 }
                 echo($leechers);
-                echo("<br><br>Seeder/Leecher ratio: " . ((($seeders / $leechers) * 100) . "%"));
+                echo("<br><br>Seeder/Leecher ratio: " . ((($seeders / $leechers) * 100) . "%"));*/
                 /*echo("<br><br>Total amount of data uploaded: ");
                 $bytes = 0;
                 foreach ($pdo->query("SELECT SUM(p.downloaded) FROM peers as p") as $rowi) {
@@ -119,6 +119,7 @@
                 }
                 echo($bytes . " bytes<br>");*/
 				?>
+				<br>
 				<br>
 			</div>
 			<!--div id="resultsBox">
