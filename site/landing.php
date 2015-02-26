@@ -102,6 +102,8 @@
                 foreach ($pdo->query("SELECT DISTINCT file FROM torrents") as $row) {
                     $file = $row[0];
 
+                    var_dump($file);
+
                     $info = strtolower(sha1(bencode(bdecode($file)['info'])));
 
                     var_dump($info);
