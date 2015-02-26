@@ -1,3 +1,7 @@
+<?php
+	require dirname(__FILE__) . '/../tracker/functions.reopentracker.php';
+?>
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -102,23 +106,13 @@
                 foreach ($pdo->query("SELECT DISTINCT file FROM torrents") as $row) {
                     $file = $row[0];
 
-                    var_dump($file);
-
                     $info = strtolower(sha1(bencode(bdecode($file)['info'])));
-
-                    var_dump($info);
 
                     $torrent_data = bdecode($file);
 
-                    var_dump($torrent_data);
-
                     $scrape = str_replace('announce', 'scrape', $torrent_data['announce']);
 
-                    var_dump($scrape);
-
                     $sources =  bdecode(@file_get_contents($scrape . '?info_hash=' . urlencode(hex2bin($info))));
-
-                    var_dump($sources);
 
                     $seeders = $seeders + $sources['files'][hex2bin($info)]['complete'];
                     $leechers = $leechers + $sources['files'][hex2bin($info)]['incomplete'];
