@@ -1,3 +1,4 @@
+
 function modifyProfile() {
 	document.getElementById("nametext").style.display = 'inline-block';
 	document.getElementById("emailtext").style.display = 'inline-block';
@@ -9,20 +10,23 @@ function modifyProfile() {
 
 function submitToDb() {
 	var name = document.getElementById("nametext").value;
+	
+	var uid = document.getElementById("uidt").innerText;
+	
 	if (name != "") {
-		updateName(name);
+		updateName(name,uid);
 	}
 	var email = document.getElementById("emailtext").value;
 	if (email != "") {
-		updateEmail(email);
+		updateEmail(email,uid);
 	}
 	var age = document.getElementById("agetext").value;
 	if (age != null && age != "" && age.length <= 3) {
-		updateAge(age);
+		updateAge(age,uid);
 	}
 	var gender = document.getElementById("gendertext").value;
 	if (gender != null && gender.length == 1) {
-		updateGender(gender);
+		updateGender(gender,uid);
 	}
 
 	document.getElementById("nametext").style.display = 'none';
@@ -35,7 +39,7 @@ function submitToDb() {
 	document.getElementById("submit").style.display = 'none';
 }
 
-function updateName(n) {
+function updateName(n,uid) {
 	$.ajax({
 		url : "profileBack.php",
 		type : 'POST',
@@ -52,7 +56,7 @@ function updateName(n) {
 	});
 }
 
-function updateEmail(n) {
+function updateEmail(n,uid) {
 	$.ajax({
 		url : "profileBack.php",
 		type : 'POST',
@@ -69,7 +73,7 @@ function updateEmail(n) {
 	});
 }
 
-function updateAge(n) {
+function updateAge(n,uid) {
 	$.ajax({
 		url : "profileBack.php",
 		type : 'POST',
@@ -86,7 +90,7 @@ function updateAge(n) {
 	});
 }
 
-function updateGender(n) {
+function updateGender(n,uid) {
 	$.ajax({
 		url : "profileBack.php",
 		type : 'POST',
