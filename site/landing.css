@@ -242,8 +242,8 @@
 	width: 80%;
 	top: 64px;
 	text-align: center;
-	height: 10%;
-	overflow: hidden;
+	height: 20%;
+	overflow-x: hidden;
 }
 
 #torrentcomments {
