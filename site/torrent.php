@@ -56,11 +56,11 @@
                     //create sources
                     $sources =  bdecode(@file_get_contents($scrape . '?info_hash=' . urlencode(hex2bin($info))));
                     //get variables
-                    $seeds = $sources['files'][hex2bin($info)]['complete'];
-                    $leechs = $sources['files'][hex2bin($info)]['incomplete'];
+                    $seeders = $sources['files'][hex2bin($info)]['complete'];
+                    $leechers = $sources['files'][hex2bin($info)]['incomplete'];
                     $downloads = $sources['files'][hex2bin($info)]['downloaded'];
 
-                    var_dump($sources);
+                    //var_dump($seeds);
 
                     //$scrape = "cntpb.csse.rose-hulman.edu/CODE_NAME-TPB/tracker/scrape.php";
                     //$source = bdecode(@file_get_contents($scrape . "?info_hash=" . urlencode(hex2bin($infohash))));
