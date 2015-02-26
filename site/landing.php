@@ -106,6 +106,8 @@
                     $torrent_data = bdecode($file);
                     $scrape = str_replace('announce', 'scrape', $torrent_data['announce']);
 
+                    var_dump($scrape);
+
                     $sources =  bdecode(@file_get_contents($scrape . '?info_hash=' . urlencode(hex2bin($info))));
 
                     var_dump($sources);
