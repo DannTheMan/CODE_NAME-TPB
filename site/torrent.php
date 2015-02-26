@@ -12,6 +12,7 @@
 
 	<body>
 <?php require 'database.php'; ?>
+<?php require 'torrent_Parse.php'; ?>
 <!--?php $sql = "INSERT INTO torrents (name) VALUES ('johnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemi')";
     $sid = $pdo -> prepare($sql);
     $sid -> execute(); ?-->
@@ -52,7 +53,11 @@
                     	break;
                     }
                     //Calculate Seeders
-                    $seeders = 0;
+                    $tfile = new torrent_File($file);
+                    $leechers = $tfile->leechs;
+                    $seeders = $tfile->seeds;
+
+                    /*$seeders = 0;
                     foreach ($pdo->query("SELECT COUNT(p.id) FROM peers p, torrents t
                     					WHERE p.info_hash = t.info_hash AND t.info_hash = \"$infohash\"
                     					AND p.remaining = 0 AND p.uploaded > p.downloaded") as $row) {
@@ -66,7 +71,7 @@
                     	$leechers = $row[0];
                     	$leechers = $leechers - $seeders;
                     	break;
-                    }
+                    }*/
 				?>
 				<h2><?php echo $name ?></h2>
 				<?php echo("<a href=\"downloadFile.php?id=$s\">Click here to download!</a>") ?>
