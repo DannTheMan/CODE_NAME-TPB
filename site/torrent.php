@@ -88,7 +88,9 @@
 				<h2><?php echo $name ?></h2>
 				<?php echo("<a href=\"downloadFile.php?id=$s\">Click here to download!</a>") ?>
 				<h4>Seeders: <?php echo $seeders; ?> 
-					Leechers: <?php echo $leechers; ?></h4>
+					Leechers: <?php echo $leechers; ?>
+					<br /><br />
+					Total Downloads: <?php echo $downloads; ?></h4>
 				<br />
 				<br>
 				</div>
