@@ -74,7 +74,7 @@
                     		break;
                     	}
 
-                        echo("<span class=\"ress\">Seeders: $seeders</span><span class=\"divider\"></span><span class=\"resl\">Leechers: $leechers</span></span></div></li><br>");
+                        //echo("<span class=\"ress\">Seeders: $seeders</span><span class=\"divider\"></span><span class=\"resl\">Leechers: $leechers</span></span></div></li><br>");
                     }
                     if(!$bl)echo("No results found<br><br>");
 					?>
