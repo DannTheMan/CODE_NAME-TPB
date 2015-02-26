@@ -101,7 +101,6 @@
                 $downloads = 0;
                 foreach ($pdo->query("SELECT DISTINCT file FROM torrents") as $row) {
                     $file = $row[0];
-                    var_dump($file);
 
                     $info = strtolower(sha1(bencode(bdecode($file)['info'])));
                     $torrent_data = bdecode($file);
@@ -109,9 +108,12 @@
 
                     $sources =  bdecode(@file_get_contents($scrape . '?info_hash=' . urlencode(hex2bin($info))));
 
+                    var_dump($sources);
+
                     $seeders = $seeders + $sources['files'][hex2bin($info)]['complete'];
                     $leechers = $leechers + $sources['files'][hex2bin($info)]['incomplete'];
                     $downloads = $downloads + $sources['files'][hex2bin($info)]['downloaded'];
+
                 }
                 echo("<br><br>Total Seeders: ");
                 echo($seeders);
