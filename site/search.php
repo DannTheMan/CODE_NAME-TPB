@@ -55,8 +55,9 @@
                     $bl = false;
                     foreach ($pdo->query("SELECT * FROM torrents WHERE name LIKE '%" . $s . "%'") as $row) {
                         $bl = true;
-                        echo("<li><div class=\"result\" onclick=todownload(\"$row[0]\")><span class=\"resn\">$row[1]</span><span class=\"ressl\">
-                        <span class=\"divider\"></span>");
+                        //echo("<li><div class=\"result\" onclick=todownload(\"$row[0]\")><span class=\"resn\">$row[1]</span><span class=\"ressl\">
+                        //<span class=\"divider\"></span>");
+                        echo("<li><div class=\"result\" onclick=todownload(\"$row[0]\")><span class=\"resn\">$row[1]</span>");
 
                         $seeders = 0;
                     	foreach ($pdo->query("SELECT COUNT(p.id) FROM peers p, torrents t
@@ -73,7 +74,7 @@
                     		$leechers = $leechers - $seeders;
                     		break;
                     	}
-
+                        echo("<br>");
                         //echo("<span class=\"ress\">Seeders: $seeders</span><span class=\"divider\"></span><span class=\"resl\">Leechers: $leechers</span></span></div></li><br>");
                     }
                     if(!$bl)echo("No results found<br><br>");
