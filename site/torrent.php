@@ -95,6 +95,7 @@
 				<br>
 				</div>
 				<div id="torrdesBox">
+					<h2>Description:</h2>
 				<p>
 					<?php echo $description ?>
 				</p>
