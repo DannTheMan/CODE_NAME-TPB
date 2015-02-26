@@ -37,7 +37,7 @@ function submitToDb() {
 
 function updateName(n) {
 	$.ajax({
-		url : "torrentBack.php",
+		url : "profileBack.php",
 		type : 'POST',
 		data : "name="+n+"&uid="+uid,
 		datatype : 'xml',
@@ -54,7 +54,7 @@ function updateName(n) {
 
 function updateEmail(n) {
 	$.ajax({
-		url : "torrentBack.php",
+		url : "profileBack.php",
 		type : 'POST',
 		data : "email="+n+"&uid="+uid,
 		datatype : 'xml',
@@ -71,7 +71,7 @@ function updateEmail(n) {
 
 function updateAge(n) {
 	$.ajax({
-		url : "torrentBack.php",
+		url : "profileBack.php",
 		type : 'POST',
 		data : "age="+n+"&uid="+uid,
 		datatype : 'xml',
@@ -88,7 +88,7 @@ function updateAge(n) {
 
 function updateGender(n) {
 	$.ajax({
-		url : "torrentBack.php",
+		url : "profileBack.php",
 		type : 'POST',
 		data : "gender="+n+"&uid="+uid,
 		datatype : 'xml',
