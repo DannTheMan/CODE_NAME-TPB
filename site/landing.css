@@ -59,7 +59,7 @@
 }
 
 #statsBox {
-	
+
 	background-color: #d0f0ff;
 	position: relative;
 	margin: auto;
@@ -109,7 +109,7 @@
 	position: relative;
 	/*float: right;*/
 	top: -40px;
-	left: 90.25%;
+	left: 88.25%;
 	vertical-align: middle;
 }
 
@@ -122,6 +122,18 @@
 	/*float: right;*/
 	top: -40px;
 	left: 92%;
+	vertical-align: middle;
+}
+
+#profile {
+	cursor: pointer;
+	display: inline;
+	color: blue;
+	text-decoration: underline;
+	position: relative;
+	/*float: right;*/
+	top: -40px;
+	left: 90%;
 	vertical-align: middle;
 }
 
@@ -248,4 +260,13 @@ textarea {
 
 #trackerUrl {
 	width: 400px;
+}
+
+.pfield {
+	display: none;
+	width: 100px;
+}
+
+#submit {
+	display: none;
 }
