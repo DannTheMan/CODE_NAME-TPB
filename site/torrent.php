@@ -78,7 +78,7 @@
 				<br />
 				<br />
 				<?php echo("<a href=\"downloadFile?id=$s\">Click here to download!</a>") ?>
-				<a href="<?php echo $file ?>" download="<?php echo $name ?>">Click here to download!</a>
+				<!--a href="<?php echo $file ?>" download="<?php echo $name ?>">Click here to download!</a-->
 				<br />
 				<br />
 			</div>
