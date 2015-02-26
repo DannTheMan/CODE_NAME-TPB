@@ -56,6 +56,7 @@
                     $leechers = 0;
                     $seeders = 0;
                     $tfile = new torrent_File($file);
+                    $tfile->basic_output();
                     $leechers = $tfile->leechs;
                     $seeders = $tfile->seeds;
 
