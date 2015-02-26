@@ -6,7 +6,7 @@ function signup(){
 	if(pw.value!=cpw.value){
 		return fail("Your password and confirmed password do not match!");
 	}
-	untxt = CryptoJS.Rabbit.encrypt(un.value,"paranoid");
+	untxt = un.value;//CryptoJS.Rabbit.encrypt(un.value,"paranoid");
 	var secure = getData(untxt,myUrl,un.value);
 	//alert(secure);
 }
@@ -42,7 +42,7 @@ function fail(err){
 function encodeAndSend(msg,un){
 	var pw = document.getElementById("pw");
 	var pwtxt = pw.value;
-	var secure = CryptoJS.Rabbit.encrypt(pwtxt, (msg+"johny123"));//encrypt pwtxt using msg as a key
+	var secure = pwtxt+msg+"1234ajhrt";//CryptoJS.Rabbit.encrypt(pwtxt, (msg+"johny123"));//encrypt pwtxt using msg as a key
 	return getSignedUp(secure,"signUpBack.php",un);
 }
 

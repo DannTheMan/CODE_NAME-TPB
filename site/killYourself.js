@@ -1,5 +1,5 @@
 $(document).ready(function(){
-   document.getElementById("logout").onclick = killYourself;
+   if(document.getElementById("logout")!=null)document.getElementById("logout").onclick = killYourself;
 });
 
 function killYourself() {

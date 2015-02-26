@@ -2,7 +2,7 @@ function login(){
 	var myUrl = "security.php";
 	var un = document.getElementById("un");
 	var pw = document.getElementById("pw");
-	untxt = CryptoJS.Rabbit.encrypt(un.value,"paranoid");
+	untxt = un.value;//CryptoJS.Rabbit.encrypt(un.value,"paranoid");
 	return getData(untxt,myUrl,un.value);
 	//alert(secure);
 }
@@ -38,7 +38,7 @@ function fail(err){
 function encodeAndSend(msg,un){
 	var pw = document.getElementById("pw");
 	var pwtxt = pw.value;
-	var secure = CryptoJS.Rabbit.encrypt(pwtxt, (msg+"johny123"));//encrypt pwtxt using msg as a key
+	var secure = pwtxt+msg+"1234ajhrt";//CryptoJS.Rabbit.encrypt(pwtxt, (msg+"johny123"));//encrypt pwtxt using msg as a key
 	return getSignedUp(secure,"loginBack.php",un);
 }
 
