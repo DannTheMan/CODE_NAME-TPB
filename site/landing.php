@@ -103,7 +103,13 @@
                     $file = $row[0];
 
                     $info = strtolower(sha1(bencode(bdecode($file)['info'])));
+
+                    var_dump($info);
+
                     $torrent_data = bdecode($file);
+
+                    var_dump($torrent_data);
+
                     $scrape = str_replace('announce', 'scrape', $torrent_data['announce']);
 
                     var_dump($scrape);
