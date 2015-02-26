@@ -55,10 +55,9 @@
                     //Calculate Seeders
                     $leechers = 0;
                     $seeders = 0;
-                    $tfile = new torrent_File($file);
-                    $tfile->basic_output();
-                    $leechers = $tfile->leechs;
-                    $seeders = $tfile->seeds;
+                    $file->basic_output();
+                    $leechers = $file->leechs;
+                    $seeders = $file->seeds;
 
                     /*$seeders = 0;
                     foreach ($pdo->query("SELECT COUNT(p.id) FROM peers p, torrents t
