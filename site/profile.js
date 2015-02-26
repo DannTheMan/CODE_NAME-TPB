@@ -37,6 +37,8 @@ function submitToDb() {
 	document.getElementById("mod").style.display = 'inline-block';
 
 	document.getElementById("submit").style.display = 'none';
+	alert("KKK");
+	location.reload();
 }
 
 function updateName(n,uid) {
