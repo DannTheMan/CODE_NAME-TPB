@@ -4,7 +4,7 @@ require 'database.php';
 <?php
 unset($_COOKIE[crypt("username", "askdalkweasdaaowej312sa9")]);
 $uname = htmlspecialchars($_POST["username"]);
-$ss = crypt(htmlspecialchars($_POST["secure"]), "1241asda0");
+$ss = htmlspecialchars($_POST["secure"]);//crypt(htmlspecialchars($_POST["secure"]), "1241asda0");
 
 $sql = "SELECT username FROM users WHERE username='$uname'";
 $sid = $pdo -> prepare($sql);
