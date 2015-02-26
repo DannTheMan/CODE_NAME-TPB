@@ -47,7 +47,7 @@ function encodeAndSend(msg,un){
 }
 
 function getSignedUp(s,myUrl,un) {
-	var ans = false;
+	var ans = true;
 	var temp = document.createElement("span");
 	temp.setAttribute("class","loading");
 	document.getElementById("loadingHere").appendChild(temp);

@@ -28,6 +28,7 @@ if ($sid->rowCount() == 0) {
     $sql = "INSERT INTO user_profiles (name,email,age,gender,uid) VALUES ('new_user','','','',$uid)";
     $sid = $pdo -> prepare($sql);
     $sid -> execute();
+    $ans = true;
     //$sql = "UPDATE users SET hash='$ss' WHERE username='$uname'";
     //$sid = mysqli_query($conn, $sql);
 
