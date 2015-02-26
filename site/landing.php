@@ -126,7 +126,7 @@
                 echo($leechers);
 
                 echo("<br><br>Total Downloads: ");
-                echo($downloades);
+                echo($downloads);
 
                 /*
                 echo("<br><br>Total number of seeders: ");
