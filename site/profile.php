@@ -14,9 +14,6 @@
 <?php
         require 'database.php';
  ?>
-<!--?php $sql = "INSERT INTO torrents (name) VALUES ('johnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemijohnywasachemi')";
-    $sid = $pdo -> prepare($sql);
-    $sid -> execute(); ?-->
 		<div id = "topBar">
 			<h1 id="pageTitle">Codename: TPB</h1>
 			<a id="home" href="landing.php">home</a>
