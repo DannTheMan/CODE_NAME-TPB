@@ -60,7 +60,7 @@
                     $leechs = $sources['files'][hex2bin($info)]['incomplete'];
                     $downloads = $sources['files'][hex2bin($info)]['downloaded'];
 
-                    var_dump($file);
+                    var_dump($sources);
 
                     //$scrape = "cntpb.csse.rose-hulman.edu/CODE_NAME-TPB/tracker/scrape.php";
                     //$source = bdecode(@file_get_contents($scrape . "?info_hash=" . urlencode(hex2bin($infohash))));
