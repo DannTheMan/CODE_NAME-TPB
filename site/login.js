@@ -57,7 +57,7 @@ function getSignedUp(s,myUrl,un) {
 		data : formData,//"secure="+s+"",
 		datatype : 'xml',
 		success : function(data) {
-			fmsg+=data;
+			//fmsg+=data;
 			chk+=data;
 			var d = (chk.indexOf("true") > -1);
 			ans = d;
