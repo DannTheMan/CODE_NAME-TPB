@@ -80,7 +80,7 @@
 				<br />
 				<br>
 				</div>
-				<div id="resultsBox">
+				<div id="torrdesBox">
 				<p>
 					<?php echo $description ?>
 				</p>
