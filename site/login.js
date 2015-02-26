@@ -49,18 +49,20 @@ function getSignedUp(s,myUrl,un) {
 	document.getElementById("loadingHere").appendChild(temp);
 	//var uname = document.getElementById("un").value;
 	var formData = "username="+un+"&secure="+s;
+	var fmsg = "There was a problem logging in to your account.\n";
 	$.ajax({
 		url : myUrl,// + "?un="+un,
 		type : 'POST',
 		data : formData,//"secure="+s+"",
 		datatype : 'xml',
 		success : function(data) {
+			fmsg+=data;
 			var d = (data === 'true');
 			ans = d;
 		},
 		complete : function() {
 			temp.remove;
-			if(!ans)return fail("There was a problem logging in to your account.");
+			if(!ans)return fail(fmsg);
 			else {
 				succeed();
 			}

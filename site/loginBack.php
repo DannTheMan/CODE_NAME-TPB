@@ -158,6 +158,7 @@ if ($sid->rowCount() == 0) {
         $f0 = cleanNonAsciiCharactersInString($found[0]);//'/[^[:print:]]/', '',$found[0]);
         if(strcmp($f0,$ss)==0){$ans = true;
         $name = $found[1];}
+        echo(strcmp($f0,$ss)." : ".$ss.$f0);
     }
 
     if ($ans) {$cookie_name = crypt("username","askdalkweasdaaowej312sa9");
