@@ -78,7 +78,7 @@
 						echo "<button type='button' onclick='modifyProfile();' id='mod'>Click here to modify your profile!</button>";
 					}
 				?>
-				<button type='button' onclick='submitToDb();' display='none' id='sumbit'>Submit Changes</button>
+				<button type='button' onclick='submitToDb();' display='none' id='submit'>Submit Changes</button>
 
 			</div>
 
