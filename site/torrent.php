@@ -52,11 +52,22 @@
                     	$file = $row[0];
                     	break;
                     }
-                    $scrape = "cntpb.csse.rose-hulman.edu/CODE_NAME-TPB/tracker/scrape.php";
-                    $source = bdecode(@file_get_contents($scrape . "?info_hash=" . urlencode(hex2bin($infohash))));
-                    $seeders = $source['files'][hex2bin($infohash)]['complete'];
-                    $leechers = $source['files'][hex2bin($infohash)]['incomplete'];
-					$downloads = $source['files'][hex2bin($infohash)]['downloaded'];
+                    //set uo stuff for sources
+                    $info = strtolower(sha1(bencode(bdecode($file)['info'])));
+                    $torrent_data = bdecode($file);
+                    $scrape = str_replace('announce', 'scrape', $torrent_data['announce']);
+                    //create sources
+                    $sources =  bdecode(@file_get_contents($scrape . '?info_hash=' . urlencode(hex2bin($info))));
+                    //get variables
+                    $seeds = $sources['files'][hex2bin($info)]['complete'];
+                    $leechs = $sources['files'][hex2bin($info)]['incomplete'];
+                    $downloads = $sources['files'][hex2bin($info)]['downloaded'];
+
+                    //$scrape = "cntpb.csse.rose-hulman.edu/CODE_NAME-TPB/tracker/scrape.php";
+                    //$source = bdecode(@file_get_contents($scrape . "?info_hash=" . urlencode(hex2bin($infohash))));
+                    //$seeders = $source['files'][hex2bin($infohash)]['complete'];
+                    //$leechers = $source['files'][hex2bin($infohash)]['incomplete'];
+					//$downloads = $source['files'][hex2bin($infohash)]['downloaded'];
 
                     /*//Calculate Seeders
                     $seeders = 0;
