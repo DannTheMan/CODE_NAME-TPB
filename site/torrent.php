@@ -69,6 +69,7 @@
                     }
 				?>
 				<h2><?php echo $name ?></h2>
+				<?php echo("<a href=\"downloadFile.php?id=$s\">Click here to download!</a>") ?>
 				<h4>Seeders: <?php echo $seeders; ?> &nbsp;&nbsp;&nbsp;&nbsp;
 					Leechers: <?php echo $leechers; ?></h4>
 				<br />
