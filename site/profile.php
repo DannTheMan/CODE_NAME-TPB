@@ -31,7 +31,7 @@
 
 		<div id = "mainSection">
 
-			<div id="personalInfoBox">
+			<div id="searchBox">
 				<h2>User Profile: <?php echo $_GET['uname']?></h2>
 
 				<script type="text/javascript">var uid = 1;</script>
