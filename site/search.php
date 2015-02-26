@@ -62,7 +62,7 @@
                         echo("<li><div class=\"result\" onclick=todownload(\"$row[0]\")><span class=\"resn\">$row[1]</span><span class=\"ressl\">
                         <span class=\"divider\"></span>");
                         //echo("<li><div class=\"result\" onclick=todownload(\"$row[0]\")><span class=\"resn\">$row[1]</span>");
-                        $file = $row[2]
+                        $file = $row[2];
 
                         //set uo stuff for sources
 	                    $info = strtolower(sha1(bencode(bdecode($file)['info'])));
