@@ -75,6 +75,15 @@
 	                    $leechers = $sources['files'][hex2bin($info)]['incomplete'];
 	                    $downloads = $sources['files'][hex2bin($info)]['downloaded'];
 
+	                    if(!isset($seeders))
+	                    {
+	                    	$seeders = 0;
+	                    }
+	                     if(!isset($leechers))
+	                    {
+	                    	$leechers = 0;
+	                    }
+
 
 	                    /*
                     	foreach ($pdo->query("SELECT COUNT(p.id) FROM peers p, torrents t
