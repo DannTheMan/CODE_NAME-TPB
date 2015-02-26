@@ -53,6 +53,8 @@
                     	break;
                     }
                     //Calculate Seeders
+                    $leechers = 0;
+                    $seeders = 0;
                     $tfile = new torrent_File($file);
                     $leechers = $tfile->leechs;
                     $seeders = $tfile->seeds;
