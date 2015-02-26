@@ -17,7 +17,7 @@ function submitToDb() {
 		updateEmail(email);
 	}
 	var age = document.getElementById("agetext").value;
-	if (age != "" && age.length <= 3) {
+	if (age != null && age != "" && age.length <= 3) {
 		updateAge(age);
 	}
 	var gender = document.getElementById("gendertext").value;
