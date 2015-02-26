@@ -67,20 +67,20 @@
 					}
 				?>
 				<div><strong>Name:</strong> <?php echo $name?>
-					<input type="text" display="none" id="nametext" class = "pfield"></div>
+					<input type="text" display="none" id="nametext" class = "pfield"></div><br>
 				<div><strong>Email:</strong> <?php echo $email?>
-					<input type="text" display="none" id="emailtext" class = "pfield"></div>
+					<input type="text" display="none" id="emailtext" class = "pfield"></div><br>
 				<div><strong>Age:</strong> <?php echo $age?>
-					<input type="text" display="none" id="agetext" class = "pfield"></div>
+					<input type="text" display="none" id="agetext" class = "pfield"></div><br>
 				<div><strong>Gender:</strong> <?php echo $gender?>
-					<input type="text" display="none" id="gendertext" class = "pfield"></div>				
+					<input type="text" display="none" id="gendertext" class = "pfield"></div>		<br>		
 
 				<?php
 					if (isset($_COOKIE['asqCDhGVsulSU']) && $_COOKIE['asqCDhGVsulSU'] == $uname) {
 						echo "<button type='button' onclick='modifyProfile();' id='mod'>Click here to modify your profile!</button>";
 					}
 				?>
-				<button type='button' onclick='submitToDb();' display='none' id='submit'>Submit Changes</button>
+				<button type='button' onclick='submitToDb();' display='none' id='submit'>Submit Changes</button><br>
 
 			</div>
 
