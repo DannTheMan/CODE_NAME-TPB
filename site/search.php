@@ -1,3 +1,7 @@
+<?php
+	require dirname(__FILE__) . '/../tracker/functions.reopentracker.php';
+?>
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -55,11 +59,24 @@
                     $bl = false;
                     foreach ($pdo->query("SELECT * FROM torrents WHERE name LIKE '%" . $s . "%'") as $row) {
                         $bl = true;
-                        //echo("<li><div class=\"result\" onclick=todownload(\"$row[0]\")><span class=\"resn\">$row[1]</span><span class=\"ressl\">
-                        //<span class=\"divider\"></span>");
-                        echo("<li><div class=\"result\" onclick=todownload(\"$row[0]\")><span class=\"resn\">$row[1]</span>");
+                        echo("<li><div class=\"result\" onclick=todownload(\"$row[0]\")><span class=\"resn\">$row[1]</span><span class=\"ressl\">
+                        <span class=\"divider\"></span>");
+                        //echo("<li><div class=\"result\" onclick=todownload(\"$row[0]\")><span class=\"resn\">$row[1]</span>");
+                        $file = $row[2]
 
-                        $seeders = 0;
+                        //set uo stuff for sources
+	                    $info = strtolower(sha1(bencode(bdecode($file)['info'])));
+	                    $torrent_data = bdecode($file);
+	                    $scrape = str_replace('announce', 'scrape', $torrent_data['announce']);
+	                    //create sources
+	                    $sources =  bdecode(@file_get_contents($scrape . '?info_hash=' . urlencode(hex2bin($info))));
+	                    //get variables
+	                    $seeders = $sources['files'][hex2bin($info)]['complete'];
+	                    $leechers = $sources['files'][hex2bin($info)]['incomplete'];
+	                    $downloads = $sources['files'][hex2bin($info)]['downloaded'];
+
+
+	                    /*
                     	foreach ($pdo->query("SELECT COUNT(p.id) FROM peers p, torrents t
                     					WHERE p.info_hash = t.info_hash AND t.id = \"$row[0]\"
                     					AND p.remaining = 0 AND p.uploaded > p.downloaded") as $rowi) {
@@ -73,9 +90,9 @@
                     		$leechers = $rowi[0];
                     		$leechers = $leechers - $seeders;
                     		break;
-                    	}
-                        echo("<br>");
-                        //echo("<span class=\"ress\">Seeders: $seeders</span><span class=\"divider\"></span><span class=\"resl\">Leechers: $leechers</span></span></div></li><br>");
+                    	}*/
+                        //echo("<br>");
+                        echo("<span class=\"ress\">Seeders: $seeders</span><span class=\"divider\"></span><span class=\"resl\">Leechers: $leechers</span></span></div></li><br>");
                     }
                     if(!$bl)echo("No results found<br><br>");
 					?>
