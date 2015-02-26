@@ -253,7 +253,7 @@
 	border: 2px solid black;
 	border-radius: 16px;
 	width: 80%;
-	top: 64px;
+	top: 512px;
 	text-align: center;
 	height: 20%;
 	overflow-y: scroll;
@@ -285,4 +285,16 @@ textarea {
 
 #uidt {
 	display: none;
+}
+
+#torrdesBox {
+background-color: #d0f0ff;
+	position: relative;
+	margin: auto;
+	border: 2px solid black;
+	border-radius: 16px;
+	width: 75%;
+	top: 128px;
+	text-align: center;
+	font-weight: bold;
 }
