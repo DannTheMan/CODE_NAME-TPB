@@ -84,6 +84,29 @@
 
 			</div>
 
+			<div id="statsbox">
+				<h2>Personal Stats</h2>
+				<?php
+                echo("<br><br>Number of files uploaded: ");
+                $files = 0;
+                foreach ($pdo->query("SELECT COUNT(id) FROM user_torents ut, users u
+                		WHERE u.id = ut.user_id AND u.name = \"$uname\"") as $rowi) {
+                    $files = $rowi[0];
+                    break;
+                }
+                echo($files);
+                echo("<br><br>Number of comments written: ");
+                $comments = 0;
+                foreach ($pdo->query("SELECT COUNT(id) FROM comments c, users u WHERE c.user_id = u.id
+                		AND u.name = \"$uname\"") as $rowi) {
+                	$comments = $rowi[0];
+                break;
+                }
+                echo($comments);
+				?>
+				<br>
+			</div>
+
 		</div>
 
 	</body>
