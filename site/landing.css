@@ -59,7 +59,7 @@
 }
 
 #statsBox {
-	
+
 	background-color: #d0f0ff;
 	position: relative;
 	margin: auto;
@@ -263,5 +263,6 @@ textarea {
 }
 
 .pfield {
+	display: none;
 	width: 100px;
 }
