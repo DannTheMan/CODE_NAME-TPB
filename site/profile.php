@@ -80,7 +80,7 @@
 						echo "<button type='button' onclick='modifyProfile();' id='mod'>Click here to modify your profile!</button>";
 					}
 				?>
-				<button type='button' onclick='submitToDb();' display='none' id='submit'>Submit Changes</button><br>
+				<button type='button' onclick='submitToDb();' display='none' id='submit'>Submit Changes</button><br><br><br>
 
 			</div>
 
