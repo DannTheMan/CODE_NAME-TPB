@@ -1,4 +1,4 @@
-<!--
+
 
 <!DOCTYPE HTML>
 <html>
@@ -11,7 +11,7 @@
     </head>
 
     <body>
--->
+
 <?php
     require 'database.php';
     require 'torrent_Parse.php';
@@ -56,7 +56,9 @@ $sid -> bindParam(':description', $desc);
 
 $sid -> execute();
 
+echo "<script type=\"text/javascript\">gohome();</script>";
+
 ?>
-<!--
+
     </body>
-</html>-->
+</html>
