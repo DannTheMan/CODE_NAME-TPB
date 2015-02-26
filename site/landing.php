@@ -94,7 +94,35 @@
                     $files = $rowi[0];
                     break;
                 }
-                echo($files);/*
+                echo($files);
+
+                $seeders = 0;
+                $leechers = 0;
+                $downloads = 0;
+                foreach ($pdo->query("SELECT DISTINCT file FROM torrents") as $row) {
+                    $file = $row[0];
+
+
+                    $info = strtolower(sha1(bencode(bdecode($file)['info'])));
+                    $torrent_data = bdecode($file);
+                    $scrape = str_replace('announce', 'scrape', $torrent_data['announce']);
+
+                    $sources =  bdecode(@file_get_contents($scrape . '?info_hash=' . urlencode(hex2bin($info))));
+
+                    $seeders = $seeders + $sources['files'][hex2bin($info)]['complete'];
+                    $leechers = $leechers + $sources['files'][hex2bin($info)]['incomplete'];
+                    $downloads = $downloads + $sources['files'][hex2bin($info)]['downloaded'];
+                }
+                echo("<br><br>Total Seeders: ");
+                echo($seeders);
+
+                echo("<br><br>Total Leechers: ");
+                echo($leechers);
+
+                echo("<br><br>Total Downloads: ");
+                echo($downloades);
+
+                /*
                 echo("<br><br>Total number of seeders: ");
                 $seeders = 0;
                 foreach ($pdo->query("SELECT COUNT(p.id) FROM peers p, WHERE p.remaining = 0 AND p.uploaded > p.downloaded") as $rowi) {
